@@ -1,2 +1,2 @@
 HomePage : blog 1 <br />
-Default post : xslebgram.xyz
+Default post : text 1
