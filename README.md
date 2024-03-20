@@ -1,1 +1,1 @@
-all page : 
+HomePage : blog 1
