@@ -1,7 +1,7 @@
 # Site
-name: "AdabunAlima5"
-title: "AdabunAlima5"
-description: "AdabunAlima5 is a blog about entertainment and interesting information"
+name: "Rfazriansyah376"
+title: "Rfazriansyah376"
+description: "my blog is a blog about entertainment and interesting information"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /
@@ -17,10 +17,10 @@ authors:
     name: Admin
     display_name: Admin
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
+    email: rfazriansyah376@gmail.com
     web: https://www.xselebgram.xyz
     twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    description: "Author of this blog"
   john:
     name: John
     display_name: John    
