@@ -3,7 +3,7 @@ layout: postfazri
 title:  "michelleryu28 - The Importance of Social Media Listening for Digital Businesses: Key Strategies and Benefits"
 author: admin
 categories: [blog,michelleryu28]
-image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdAAJx1A-PxYgavGibNE4Q0m53k_wkHOQSy0FY-1vmGrAwAIClBpDbGn8N9GIdK1w58iVZSWBHJlxmJdpYIO0574UvG8CQPLg7iOM1Bnr93iOpQwee8wsNgvjObpD-LTk9jXgB65LjBg2sbDo_3CGN_R3sdDwN-ewW3nSJt3Gagx9wKXTRR-qxVk97qTh6/s1600/Michelle%20Ryu%20michelleryu28.jpg"cc
+image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdAAJx1A-PxYgavGibNE4Q0m53k_wkHOQSy0FY-1vmGrAwAIClBpDbGn8N9GIdK1w58iVZSWBHJlxmJdpYIO0574UvG8CQPLg7iOM1Bnr93iOpQwee8wsNgvjObpD-LTk9jXgB65LjBg2sbDo_3CGN_R3sdDwN-ewW3nSJt3Gagx9wKXTRR-qxVk97qTh6/s1600/Michelle%20Ryu%20michelleryu28.jpg"
 ---
 
 
