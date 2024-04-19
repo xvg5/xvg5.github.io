@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  "Marianagrey69 : Successful Social Media Content Formats: Insights from Case Studies & Examples"
+layout: post1
+title:  "Successful Social Media Content Formats: Insights from Case Studies & Examples"
 author: admin
-categories: [blog,Marianagrey69]
-image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfFrcKax8BwfhVWR1kRKFrDyPZZo9KgjQBMge0jNBkXIEvQT6LWmzeVxE605cHlsKlDbcbgx_4vpposecqUqncrVJVZXbaTbqxv1RgeUgCB5Y2Fh79eh3sh0xH3p7vBaqM-Krnc-BqxVnDUmASb6uh7P_WN1Ua0tAqQogTHmLLYDLLvcEb3TQuLkgST3Lv/s1600/marianagrey69.jpg"
+categories: [blog]
+image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX9T32AcxSsZrysHjYPn1Mu4N_G8v3Gz_Di6GWaY27tsIYOxn48lFLQen-tfHlSo73oCpA1PvMklv5wsb4yBJYh8igbBex0P_SSWfMKGuVUPF18MWfW2z1rU8chHUhKOG_pbwNCVfQfsFhSp1drc3Ov6Y-C4Y1Hu6TzYs_cv5-xaasIeBIBN329FKZTC0/s1600/20240419_195100.png"
 ---
 
 
