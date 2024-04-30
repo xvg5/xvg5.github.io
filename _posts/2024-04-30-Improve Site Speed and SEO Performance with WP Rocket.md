@@ -2,8 +2,6 @@
 layout: post5
 title:  "Improve Site Speed and SEO Performance with WP Rocket"
 author: admin
-tags: [blog]
-categories: [blog]
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdFRrZERQPDtB3F4ya9og0W5FiDCLGL00N7Mdh25dtDOVrheqtmxLxmao0yvuZEwIGSnfT6kcKky_mGYTzgE-RYPunt0KtNUGH3NU268wAH2fLzur_Uc_hxT9Z6lQPdiSY4nFz1P-Osil1RfJS0SYdgt4jkPyxLc47VY332gpx6Eu781Sxoh8hTRV12Z6m/s1600/20240429_220902.png"
 description: "Enhance your site speed and SEO with WP Rocket, a powerful WordPress plugin. Learn how its features can optimize loading times and boost rankings."
 ---
