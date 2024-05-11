@@ -3,12 +3,12 @@ layout: post48
 title:  "Maximizing Yoast SEO Features for Website Optimization"
 author: admin
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg35spi3N1labAhT4M0wJ5iXGnvmuoGPJX_DUQeQsE2jZ0UTFBwG5KzpFJXIwQ8i2pIt2p3YMeofqnLbpy-cDbKfMHlY_lWwAt_8j85tmxF0WNepaqDqqwYCYHqO4wyvQCyJ7TylYGOQ1siMlxjHNxIpLB96iJBYvjSDlztQikD9Jc7-hUNQEeM9XwySUDB/s1600/20240511_085255.jpg"
-video: "https://video.twimg.com/ext_tw_video/1693903818025537537/pu/vid/540x540/Cgi5QtGgOhX1ASZR.mp4"
 ---
 
 
 
 <p>Yoast SEO is a powerful tool that can help website owners and content creators improve their search engine optimization (SEO) efforts. By analyzing performance with Yoast SEO, you can gain valuable insights into how well your website is performing in terms of SEO and take steps to improve its visibility in search engine results. In this article, we will discuss how to effectively analyze performance with Yoast SEO and make the most out of its features.</p>
+<iframe src="https://video.twimg.com/ext_tw_video/1693903818025537537/pu/vid/540x540/Cgi5QtGgOhX1ASZR.mp4" />
 <h2>Understanding the Importance of Yoast SEO</h2>
 <p>Yoast SEO is a popular WordPress plugin that helps users optimize their websites for search engines. It provides a wide range of features that can help improve the SEO of your website, including meta tags, XML sitemaps, and content analysis tools. By using Yoast SEO, you can ensure that your website is optimized for search engines and is more likely to be found by potential visitors.</p>
 <h2>Setting Up Yoast SEO for Your Website</h2>
