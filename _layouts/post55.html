@@ -1,0 +1,602 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+
+
+
+
+tiwirhma__
+Tiwi Rahma Widi
+ mysunshineworldhome
+mysunshineworldhome
+mysunshine🏡
+ camila.zc
+camila.zc
+Maria Camila
+ modelmajestyofficial
+modelmajestyofficial
+modelmajestyofficial
+ aihamanasu_ai
+aihamanasu_ai
+はまなす🇯🇵
+ madhuriimua
+madhuriimua
+Madhuri Upadhya Sapkota ( ilovemenmyself)
+ xarablake
+xarablake
+ rutbarainbowofficial
+rutbarainbowofficial
+rutba rainbow official
+ moji_060
+moji_060
+𝑰𝒎𝒚𝒐𝒖𝒓 𝑴𝒐💜
+ indy_sky.sea
+indy_sky.sea
+Indy Chananthida Oonpradid
+ itslucysrealestate
+itslucysrealestate
+ _pilotwife_3
+_pilotwife_3
+PilotWife3
+ hendi.official1
+hendi.official1
+hendi irawan
+ makkah._madinah786
+makkah._madinah786
+Makkah614
+ trendy.humor
+trendy.humor
+TRENDY HUMOR
+ jinshouzhe
+jinshouzhe
+Shouzhe Jin
+ mirandah9
+mirandah9
+Alexa Miranda
+ zafira_wndaa
+zafira_wndaa
+Zafira Wanda | nesyaast | siitianghunn | sintyamarisca
+ jittima_007
+jittima_007
+Jittima Saebang
+ mithue_125
+mithue_125
+Kimoecu Arci
+ dwina_fanniaofficial
+dwina_fanniaofficial
+Andi Dwina Isfani
+ davigul
+davigul
+Leo 🦁
+ grosirig
+grosirig
+grosir IG
+ sarah.nouara.official
+sarah.nouara.official
+Sarah Nouara 󱢏
+ banat_turkey
+banat_turkey
+صفحة بنات تركيا ❤️
+ pola_bassmaxwin
+pola_bassmaxwin
+ngebass
+ mbak_nurofficial
+mbak_nurofficial
+Mbak Nur
+ vesta_singer.dark
+vesta_singer.dark
+Valeriya Simulik
+ elina.devia
+elina.devia
+Elina Devi
+ ayeshaakhan_official
+ayeshaakhan_official
+Ayesha Khan
+ payalvarma3770
+payalvarma3770
+PayalVarma
+ alinaslifeabroad
+alinaslifeabroad
+Alina Brown
+ krungii
+krungii
+운동하는 시아 / Sia
+aypmt_
+ vaniagemash_club
+vaniagemash_club
+VANIA GEMASH CLUB
+ ki.em729
+ki.em729
+kiem
+ aline.isern
+aline.isern
+Aline Isern
+ carroterapiabm
+carroterapiabm
+Bianca Marques
+ p.storejakarta_
+p.storejakarta_
+PHONE STORE ADMIN KINTAN
+ rajamichat_id
+rajamichat_id
+🥇Raja MiChat
+ chungcecali7
+chungcecali7
+Delina.
+ nick_30744
+nick_30744
+Nick Nittaya
+ belakang_kelas
+belakang_kelas
+BELAKANG KELAS
+ streetfashiongirls.asian
+streetfashiongirls.asian
+Chinese Beautiful Girls On The Street
+ sophieraiin
+sophieraiin
+Sophie Rain
+ onlybikinimodel
+onlybikinimodel
+🅑🅘🅚🅘🅝🅘 | 🅜🅞🅓🅔🅛🅢 | 🅞🅝🅛🅨
+ jasmineine2
+jasmineine2
+Jasmine Ine
+ surti_aaa
+surti_aaa
+komonitas_jandadesa
+ javaclassico.sneakers
+javaclassico.sneakers
+SEPATU BERCLASS HARGA MASYARAKAT
+ disha.kumari89
+disha.kumari89
+Disha Kumari
+ symavermaaa
+symavermaaa
+Syma Verma
+ nuntawan.a
+nuntawan.a
+Nuntawan Prasansri
+ anu_me_
+anu_me_
+Anam Jahangir
+ novipetanihappy
+novipetanihappy
+NOVI PETANI HAPPY
+ avasbaddies
+avasbaddies
+Ava 💖
+ poppyziio_11
+poppyziio_11
+Pop Natchawan
+ laopo9899
+laopo9899
+ cheering_studio
+cheering_studio
+cheering girl's shop
+ luanastomazz
+luanastomazz
+Luana Tomaz 💫
+ fere.shteh7142
+fere.shteh7142
+/فرشته نیکخو /برنج/بادام/چای
+ sragenkita
+sragenkita
+Sragen Kita
+ nathalacolombiana
+nathalacolombiana
+Anguie Nathalia Garcia Vargas
+ blondesglobe
+blondesglobe
+Blondes Globe ✨
+ djjadedee
+djjadedee
+JADE DEE
+ ohdubai
+ohdubai
+Yoonusali Mudavankulavan
+ superstackedstacy3
+superstackedstacy3
+ 2020_ceo
+2020_ceo
+高雄鼓山 吃起來香酥雞專門店
+ sierra_onyx
+sierra_onyx
+Sierra 🧚🏼‍♀️
+ katheriinkeiy
+katheriinkeiy
+María Ortega
+ tit_sass
+tit_sass
+titsass
+ yesalova_
+yesalova_
+Yesa Oktafia Lovers
+ itswi77
+itswi77
+Iswi
+ islamituindahkekal
+islamituindahkekal
+Islam itu Indah
+ rojjana_2539
+rojjana_2539
+เซลรจ เซลหลักสกายเมดคลินิก
+ boba.smp
+boba.smp
+ susah.sayang
+susah.sayang
+masa depanmu✍
+ tonmo.y900
+tonmo.y900
+Cikku
+ mynamelitta
+mynamelitta
+Litta Amelia
+ farrahangella
+farrahangella
+𝑭𝑨𝑹𝑹𝑨𝑯 𝑨𝑰𝑵 𝑴𝑨𝑫𝒁𝑳𝑨𝑵
+ siffa361
+siffa361
+Siffa Bella
+ lidyasofiandaa
+lidyasofiandaa
+Lidya sofianda
+ tatataitaa_
+tatataitaa_
+Epa Despita
+ area_gunawan
+area_gunawan
+Area Gunawan
+ sailor_russia
+sailor_russia
+Real Rapunzel
+ brbs.tania
+brbs.tania
+Tania Barbosa
+ jakarta.keras
+jakarta.keras
+JAKARTA KERAS
+ natural_yuuko
+natural_yuuko
+ゆぅ子
+ maryam.ba.35
+maryam.ba.35
+مریم
+ dindaaawd.13
+dindaaawd.13
+dinda
+ actress_addict11
+actress_addict11
+𝗔𝗰𝘁𝗿𝗲𝘀𝘀 𝗔𝗱𝗱𝗶𝗰𝘁
+ noshin_if
+noshin_if
+ afresh25
+afresh25
+ novaliaagung93
+novaliaagung93
+𝐎𝐯𝐚 𝐅𝐚𝐬𝐡𝐢𝐨
+ amy_marie_ai
+amy_marie_ai
+Amy Marie
+ pola_slotmaxwin
+pola_slotmaxwin
+pola maxwin
+ tikagatax
+tikagatax
+ rojhalat_kurd1
+rojhalat_kurd1
+ڕۆژهەڵات کۆرد1
+ kainideeaa
+kainideeaa
+mo nyari apa tante/OM??
+ amira_err
+amira_err
+Amira Khadija
+ deep_.queen_015
+deep_.queen_015
+𝗱𝗲𝗲𝗽 𝗾𝘂𝗲𝗲𝗻 👸🏻
+ jiyaakhan938
+jiyaakhan938
+Jiyaa Khan
+ babyshimaofficial
+babyshimaofficial
+NENG BABY SHIMA
+ fashion.n7a
+fashion.n7a
+FASHION.N7
+ jilbabsemok
+jilbabsemok
+Jilbab Semok
+ dakota_soos
+dakota_soos
+Dakota
+ armahhyantii
+armahhyantii
+𝑨𝒓𝒎𝒂𝒉𝒚𝒂𝒏𝒕𝒊 𝑬𝒌𝒂 𝑺𝒂𝒑𝒖𝒕𝒓𝒊.𝑨
+ gemoyy__sexyy
+gemoyy__sexyy
+Gemoy Perusak Pikiran
+ that_same_alenka
+that_same_alenka
+Alena Ostanova
+ umikaltsump
+umikaltsump
+Umi Kaltsum Permatasari
+ jesikahenpo
+jesikahenpo
+jesika
+ agen_jodoh33
+agen_jodoh33
+Anita_agen jodoh
+ ridhibhabhi3
+ridhibhabhi3
+Ridhi
+ mannatgoel
+mannatgoel
+Mannat goel
+ pola_bangbono
+pola_bangbono
+pola_bangbono
+ queen_fff
+queen_fff
+Suthathip chosen
+ farrahraktion
+farrahraktion
+farrah raktion
+ sheilamhr23
+sheilamhr23
+Sheila Maharani
+ siscanataliaa
+siscanataliaa
+Siscanataliaa⚕️
+ sesilia_anggun6
+sesilia_anggun6
+anggun
+ tj.phi
+tj.phi
+Phi Tjin Pui
+ the_bxst_____
+the_bxst_____
+𝐓𝐡𝐞 𝐁𝐱𝐱𝐭
+ vinezamaliareal
+vinezamaliareal
+Vinez amaliareal
+ leni.khajidah
+leni.khajidah
+ men.click3
+men.click3
+Katherine
+ cimawar_shi
+cimawar_shi
+Panggil Cici
+ 1424bekmurod_
+1424bekmurod_
+ tasya.silla
+tasya.silla
+tasya
+ berliana_mss
+berliana_mss
+DJ BERLIN
+ babymind88
+babymind88
+Korawan Kotchasaena
+ fitness_gym_girls_5
+fitness_gym_girls_5
+Pooja Kumari
+ nadheera.luxury
+nadheera.luxury
+NADHEERA LUXURY
+ emperorspaofficial
+emperorspaofficial
+Emperor Spa
+ ce.crystine
+ce.crystine
+Ce Kristina
+ sunita_chavan_1910
+sunita_chavan_1910
+sunita chavan
+ hobby.gituan
+hobby.gituan
+𝐇𝐨𝐛𝐛𝐲 𝐊𝐞𝐧𝐢𝐤𝐦𝐚𝐭𝐚𝐧🌺
+ zee.univers
+zee.univers
+𝙕𝙚𝙚.𝙪𝙣𝙞𝙫𝙚𝙧𝙨 🍉
+ little.pihu
+little.pihu
+Vaishnavi jaiswal🐼
+ sanggau.city
+sanggau.city
+𝐒𝐚𝐧𝐠𝐠𝐚𝐮 𝐂𝐢𝐭𝐲 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐬𝐢
+ brittanyelizabethxoxo
+brittanyelizabethxoxo
+Brittany Elizabeth Welsh
+ tony_czech
+tony_czech
+Tony czech
+ charusharma0108
+charusharma0108
+Charu
+ mina_albaiaty
+mina_albaiaty
+Mina Albaiaty مينا البياتي
+ roop_257
+roop_257
+♥ HIYA ♥ چاندی
+ tamba8505
+tamba8505
+Tam BA
+ gulorom_kenjayeva_officiall
+gulorom_kenjayeva_officiall
+Gulorom Singer
+ busesahq
+busesahq
+ romantic_couple_rishi
+romantic_couple_rishi
+True_lovers
+ elena._flores._
+elena._flores._
+Elena Flores
+ erinwilliams_1
+erinwilliams_1
+Erin Williams
+ pritii_233
+pritii_233
+pritii_233 ❤️❤️😋😚💞💞
+ mahjong.memek
+mahjong.memek
+mahjongmemek
+ pilot_leidi
+pilot_leidi
+Leidi Patiño
+ murtinsaleh
+murtinsaleh
+Murtin Saleh
+ pola_wak_egek
+pola_wak_egek
+pola_wak_egek
+ intanaafifah__
+intanaafifah__
+intnaffh-
+ syalsabhlla
+syalsabhlla
+Call me Asya 💐
+ _yasmeen_sidhu
+_yasmeen_sidhu
+Yas Sidhu🧜🏻‍♀️
+ jeeja_20
+jeeja_20
+จ้า มร๊ะจร๊ะ ทริงจรา
+ nanacha_0211
+nanacha_0211
+なな茶🍵
+ realengineer16
+realengineer16
+RealEngineer🌏
+ house__of_honeey
+house__of_honeey
+sweet and spice
+ arthurgiuliosetiawan
+arthurgiuliosetiawan
+Arthur Giulio Setiawan
+ erlin_aaprillia
+erlin_aaprillia
+Erlina Aprilia
+ nisan_yagmuru_6082
+nisan_yagmuru_6082
+Nisan Yagmuru Ateş
+ aida_kiehl
+aida_kiehl
+Aida
+ kontenrakyat.id
+kontenrakyat.id
+warga online
+ mamamuda.99
+mamamuda.99
+MaMa Muda
+ deassfra_
+deassfra_
+Dea savira
+ ornilaafroz
+ornilaafroz
+Ornila Afroz
+ wnda_punk020
+wnda_punk020
+Wanda Maulana
+ mmonn_m
+mmonn_m
+Duangkamon Mny
+ firacantika_real
+firacantika_real
+Rahmalia Safira
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+

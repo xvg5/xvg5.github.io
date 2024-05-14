@@ -1,0 +1,729 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+
+
+nategatsby
+Nate Johnson
+ lilyhazexx
+lilyhazexx
+lil
+ youngmasterburrows
+youngmasterburrows
+Burrows
+ natasha_crown_official1
+natasha_crown_official1
+Natasha Crown
+ melaninlodge
+melaninlodge
+Melanin lodge 😍🍯
+ beautygrammss
+beautygrammss
+Beautygrammss
+ centricslayerzz
+centricslayerzz
+ imtazvazz
+imtazvazz
+Taz Vaz 😍🇧🇧🇵🇦♐️✨
+ barbiegomez_latina
+barbiegomez_latina
+Leidy MV
+ justt.kam
+justt.kam
+Kam, Esq.
+ prosagencyy
+prosagencyy
+Pros Agency
+ damndimeracks
+damndimeracks
+Dimeracks
+ twistedlenzphoto
+twistedlenzphoto
+TwistedLenz
+ emmievixen_2.0
+emmievixen_2.0
+Emmie Vixen
+ vision.musics
+vision.musics
+Vision Est. 24
+ sevynn75
+sevynn75
+Monique Cook
+ bloomingtrendzz
+bloomingtrendzz
+Blooming Trendzz
+ stormimaya
+stormimaya
+Stormi Maya ™
+ allskinempire
+allskinempire
+𝐃𝐌 𝐅𝐎𝐑 𝐏𝐑𝐎𝐌𝐎/𝐅𝐄𝐀𝐓𝐔𝐑𝐄 𝐑𝐀𝐓𝐄𝐒
+ blackslayerss
+blackslayerss
+BLACK SLAYERS😍
+ jawdropping_villa
+jawdropping_villa
+Jawdropping villa
+ corinna4keeps
+corinna4keeps
+Corinna 🌸
+ slaybeautt
+slaybeautt
+Opeyemi ❤️
+ cire.traore
+cire.traore
+Cire traore
+ timasavage.xo
+timasavage.xo
+Tima Savage X
+ jassyskyy
+jassyskyy
+Jassy ♡
+ baddie4keeps
+baddie4keeps
+ iamkieranicole
+iamkieranicole
+Kiera.
+ josafinaa
+josafinaa
+Josie 🤩
+ millie2wild
+millie2wild
+millie🍒
+ ellie2dope
+ellie2dope
+Ellie Taylor ♡
+ zoeybrooksxo
+zoeybrooksxo
+Zoey Brooks💕
+ itsavagrey
+itsavagrey
+Savagery X
+ littledolljplay
+littledolljplay
+Jada
+ kiarapeachlegit
+kiarapeachlegit
+Chiara P
+ theprincess_miaa
+theprincess_miaa
+Princess Mia
+ blackskinbeautys
+blackskinbeautys
+ james.oneil10
+james.oneil10
+James O’Neil
+ keonadove_
+keonadove_
+Keona Dove
+ vocalmindsophia
+vocalmindsophia
+Sophia Vee
+ 876lizzy
+876lizzy
+Leiza-Mae Keane
+ s4rahbaby
+s4rahbaby
+Sarah Jade ♡
+ mamasikaa_
+mamasikaa_
+Masika Estelle🦋
+ nodiamonds_
+nodiamonds_
+ loversensess
+loversensess
+Couple TOYS
+ ilovesashakay
+ilovesashakay
+Sasha-Kay
+ loverainatiffiny
+loverainatiffiny
+Raina Tiffiny
+ myah.jane_
+myah.jane_
+Myah Jane
+ loversense.s
+loversense.s
+Couple S3x Toyz
+ centricbaddies
+centricbaddies
+ attrvtive
+attrvtive
+Atrractive
+ secretsofaphrodite
+secretsofaphrodite
+✨ A p ɧ ɾ σ ɗ i t e ✨
+ slimmceetv
+slimmceetv
+Main Page | @Slimmcee
+ kem_indians_
+kem_indians_
+𝐊𝐄𝐌 𝐈𝐍𝐃𝐈𝐀𝐍𝐒
+ badalyx
+badalyx
+Bad Alyx
+ nicaracurls
+nicaracurls
+Zhiné (Zuh-Nay) Torres
+ alorahnaomi
+alorahnaomi
+ maybae_20
+maybae_20
+M Yassine
+ moise_kean
+moise_kean
+Moise kean 🦍
+ emaliebbyx
+emaliebbyx
+Emalie
+ blackskinwomen
+blackskinwomen
+Black Skin Women
+ lover.senses
+lover.senses
+ eurikapratts
+eurikapratts
+Eurika Pratts
+ melanin_villa
+melanin_villa
+melanin villa
+ caramel_baddiess
+caramel_baddiess
+C U
+ timasavagex_fanpage
+timasavagex_fanpage
+Melanin Queens
+ rissaar8
+rissaar8
+Rissa ♛
+ onlyxemmaroseb
+onlyxemmaroseb
+EMMA DELAROSE
+ cokababii
+cokababii
+C0KA💗
+ onlyemmaxrose
+onlyemmaxrose
+Tai Mercier
+ lill.tayeee
+lill.tayeee
+ alaiasface
+alaiasface
+𝐀 𝐋 𝐀 𝐈 𝐀 🪞
+ leandraglow
+leandraglow
+Glo leandra ⚡️⛈️⚡️
+ dayinthelifeofju
+dayinthelifeofju
+Juliana Marie 🦋
+ edwinacarlaisaac
+edwinacarlaisaac
+Edwina Carla Isaacs
+ isingsimone
+isingsimone
+Simone R. Martin, Esq.
+ beautywithcarmine
+beautywithcarmine
+Carmine
+ sam.tokeo
+sam.tokeo
+Sam
+ icy.cold
+icy.cold
+Ice
+ reflecting_society
+reflecting_society
+|LOVE| |MOTIVATION| |HUMANITY|
+ nysinysi333
+nysinysi333
+Natasha
+ karrma_rayy
+karrma_rayy
+Karrma 🦄💙
+ jasmineangel.priv
+jasmineangel.priv
+Jasmineangel 🌶
+ angelaamoure
+angelaamoure
+Angela
+ samtokeo
+samtokeo
+Sam
+ clementinexox
+clementinexox
+Clementine
+ mariaroseflora
+mariaroseflora
+María Magdalena 🧿📿
+ shoplovevera
+shoplovevera
+Love, Vera
+ sn0rti
+sn0rti
+🇺🇸snörti 🇱🇷
+ loversenses
+loversenses
+Couple Toyz
+ viral.vidssss
+viral.vidssss
+Viral Memes
+ bribabyrod
+bribabyrod
+BRI RODRIGUEZ
+ inkedupbadiie
+inkedupbadiie
+Inkedupbadiie
+ urbbykatlynx
+urbbykatlynx
+ hamer2hanover
+hamer2hanover
+Rennata Hamer
+ r.anaeeee
+r.anaeeee
+𝑺𝒄𝒖𝒍𝒑𝒕𝑭𝒊𝒕𝑩𝒚𝑻𝒂𝒚
+ aureliafoxx1
+aureliafoxx1
+Aurelia Fox
+ fernurri
+fernurri
+FERNANDA
+ natalia_baby23
+natalia_baby23
+Natalia Battige
+ aaliyanaboooo
+aaliyanaboooo
+Aaliyana Battige
+ melaninstunners
+melaninstunners
+Ayo💞💞
+ allbaddiesfeed
+allbaddiesfeed
+ janiellemiclat
+janiellemiclat
+Janielle Miclat
+ barbiedla
+barbiedla
+Bárbara Daniela
+ keonadovee
+keonadovee
+Keona Dove
+ post.rion.backup
+post.rion.backup
+ℝ𝕚𝕠𝕟 𝟚.𝟘
+ itznybabyy_
+itznybabyy_
+Wildcard🎯😍
+ xo_pandora_fx
+xo_pandora_fx
+🖤💜Mia♥️🖤
+ santas_sweetest
+santas_sweetest
+🎧✮ 🍓 bonnie ★ ˙🍓 ̟ !! ♡
+ shein_airfryer
+shein_airfryer
+Jill
+ waylajayla
+waylajayla
+Jayla
+ ily_raeell
+ily_raeell
+Rae Ell
+ sociallyconnect
+sociallyconnect
+𝐒𝐎𝐂𝐈𝐀𝐋𝐋𝐘 𝐂𝐎𝐍𝐍𝐄𝐂𝐓
+ youlovechina2
+youlovechina2
+Muah, no bars 😘
+ suellakane
+suellakane
+𝑲𝑰𝑵𝑮 𝑺𝑼𝑬
+ kieranicolemain
+kieranicolemain
+KieraNicole✨
+ priny__tastic
+priny__tastic
+AFRIKANDOLL AKA DA SLAY DIVA💅🏾
+ lust4ava
+lust4ava
+Savagery X
+ _southfinest
+_southfinest
+Southfinest
+ iamkxngjacob
+iamkxngjacob
+KXNGJACOB
+ brazilianhottiiee
+brazilianhottiiee
+Brazilian Hottiiee
+ streambabee
+streambabee
+Streambabee
+ errbodyluvsbetty
+errbodyluvsbetty
+Errbodyluvsbetty
+ melanincandyqueen_backup
+melanincandyqueen_backup
+Melanincandyqueen back up
+ melanincandyqueen2
+melanincandyqueen2
+Melanincandyqueen
+ melaninjen.art
+melaninjen.art
+Rockstar🎸| Mermaid🧜🏽‍♀️|Data Analyst 📊•Fitness 🧘🏽‍♀️
+ beautifulsunnie
+beautifulsunnie
+ juicycee_
+juicycee_
+UNIQUE LEE
+ _annesoloo_
+_annesoloo_
+ㅤ A N N E ✘ S O P H I E
+ chineseruchee
+chineseruchee
+ChineseRuchee
+ endismom_
+endismom_
+1of1🦋
+ janayxoxo_
+janayxoxo_
+Nay 💋
+ mikojazmyn
+mikojazmyn
+☆
+ saintziya
+saintziya
+🐸 Saint Ziya 🐸
+ chynaciara1
+chynaciara1
+Chyna Ciara
+ emmanuella__m
+emmanuella__m
+𝐼𝓉’𝓈 𝐸𝓂𝓂𝒶𝓃𝓊𝑒𝓁𝓁𝒶
+ carmineroseofficial
+carmineroseofficial
+CarmineRose
+ ebonyscity
+ebonyscity
+Ebony City ⛲️
+ melaninscity
+melaninscity
+Melanins City
+ realkkvsh
+realkkvsh
+kk
+ denimsslayers
+denimsslayers
+DENIMS SLAYERS
+ lalaminaj__
+lalaminaj__
+LaLa
+ bobianathebuilder
+bobianathebuilder
+Nina Maureen Galy
+ lizethmos_
+lizethmos_
+Liz
+ geisha_noir_xo
+geisha_noir_xo
+Throat Goat 😜
+ entrancing_daily
+entrancing_daily
+ yepimtheone
+yepimtheone
+6 Foot Beauty
+ _ray_jay__
+_ray_jay__
+Ray Jay
+ messykassy
+messykassy
+Kassy Galvan
+ a1baess
+a1baess
+A1Baes
+ kkvsh
+kkvsh
+🇯🇲🦂🇸🇻
+ ilovemymelanin.shop
+ilovemymelanin.shop
+I ❤️ MY MELANIN
+ melaninscastle
+melaninscastle
+𝐌𝐄𝐋𝐀𝐍𝐈𝐍𝐒 𝐂𝐀𝐒𝐓𝐋𝐄
+ thesublilith22
+thesublilith22
+Lilith
+ godschildvoo
+godschildvoo
+CT.
+ bossy.of
+bossy.of
+Bossy.Of
+ shesuhkeeper
+shesuhkeeper
+𝐵𝒶𝒹𝒹𝒾𝑒𝓈 𝒢𝒶𝓁𝓁𝑒𝓇𝓎
+ votefornina
+votefornina
+Nina Galy
+ lawretta_12
+lawretta_12
+LADY 🇬🇭
+ ms.sakimo
+ms.sakimo
+Saki
+ itsariidon
+itsariidon
+🌺
+ melanincandyqueen
+melanincandyqueen
+#NAME?
+ aesthtokss
+aesthtokss
+Aesthetic
+ wxnicole
+wxnicole
+whitney nicole 🧿
+ houstondollhouse
+houstondollhouse
+Houston Doll House
+ themeshgurlltee
+themeshgurlltee
+🌊
+ tootatis
+tootatis
+ kiera_nicole_
+kiera_nicole_
+Kiera Nicole Bethley
+ blackdiamondmanagementfirm
+blackdiamondmanagementfirm
+Black Diamond Management Firm
+ xixclau
+xixclau
+Clau🤎
+ bachelor_parties_miami
+bachelor_parties_miami
+M🌴am🌴World Wide Dancers
+ bachelor_parties_entv
+bachelor_parties_entv
+Bachelor parties entertainment
+ black_unity_home
+black_unity_home
+• 𝐁𝐥𝐚𝐜𝐤 𝐔𝐧𝐢𝐭𝐲 •
+ baristajazx
+baristajazx
+Jazmyn 🤍
+ shaybae.asf
+shaybae.asf
+Lil Bit 😍🔥
+ shaymfn.bae
+shaymfn.bae
+Lil Bit 🔥😍
+ highvaluewomen.mag
+highvaluewomen.mag
+High Value Lifestyle
+ marcobanderasbcn
+marcobanderasbcn
+Marco Banderas
+ pj.hildreth
+pj.hildreth
+Pj Hildreth
+ thickistmamibackup
+thickistmamibackup
+🧿MIMI 🌿
+ ricosuave100ter
+ricosuave100ter
+Rico 💲uave 🇭🇹
+ jaylakoriyan
+jaylakoriyan
+Jayla Koriyan
+ tribemafiamusic
+tribemafiamusic
+Tribe Mafia
+ atlanta_community.__
+atlanta_community.__
+❗ BLACK | SUCCESS | BUSINESS❗
+ thickistmami2
+thickistmami2
+🧿 MIMI 🌿
+ lazadiaa
+lazadiaa
+Young Barbo
+ mariliaxbro
+mariliaxbro
+rude 🎭
+ nickmocuta
+nickmocuta
+Nick Mocuta
+ runmemymoneymoe
+runmemymoneymoe
+ heavo__
+heavo__
+HeavO Da Gaia
+ onlyonevellii
+onlyonevellii
+Seth Alston
+ soyvictoriamatosa
+soyvictoriamatosa
+Victoria Matos
+ naughti.africa
+naughti.africa
+Beautiful World❤️🌏
+ black.familye
+black.familye
+🖤 𝘽𝙡𝙖𝙘𝙠 𝙁𝙖𝙢𝙞𝙡𝙮 🖤
+ dearestparis
+dearestparis
+𝒫𝒶𝓇𝒾𝓈 𝑀𝒾𝒸𝒽𝒶𝑒𝓁
+ blacksuccesscommunity
+blacksuccesscommunity
+✊🏿 SUPPORT BLACK BUSINESS ✊🏿
+ mauronetonete
+mauronetonete
+Mauro Neto
+ cg_goof
+cg_goof
+Goof
+ fitness_richy_254
+fitness_richy_254
+Richy fitness
+ houstondollhouse.backup
+houstondollhouse.backup
+Houston Dollhouse Backup
+ melaninslayerz
+melaninslayerz
+Melanin✨💫
+ claytonjameswoodley
+claytonjameswoodley
+Clayton Woodley
+ black.queen.family_
+black.queen.family_
+black.queen
+ noblediary
+noblediary
+Noble diary
+ hakani.dread
+hakani.dread
+the potent king
+ lnstabunny
+lnstabunny
+ queenfulani
+queenfulani
+Fulani - Content Creator
+ mandisa_mandys
+mandisa_mandys
+Mandisa Ndlovu
+ mandingo9166
+mandingo9166
+Major Pitts
+ therealearthquake
+therealearthquake
+𝐄 𝐀 𝐑 𝐓 𝐇 𝐐 𝐔 𝐀 𝐊 𝐄
+ batmark_1382
+batmark_1382
+Blancas Vázquez Marco Antonio
+ lacey2040
+lacey2040
+Lacey S Sawyer Jr.
+ florida.babii
+florida.babii
+Taylor♥
+ marvinthetrainer
+marvinthetrainer
+personal trainer-sport-trainer
+ darkskinbeauties
+darkskinbeauties
+Dark Skin Beauties
+
+
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+

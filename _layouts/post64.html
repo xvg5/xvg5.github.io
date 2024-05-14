@@ -1,0 +1,334 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+
+
+Dwayne Johnson  The Rock 	,	aadhya.ig	,	neharoyy._
+iamjhud	,	Aadhya🥂	,	Neha
+iamjhud	,	cyberwarriorsxm cyberwarriorsxm	,	tanisha.das
+Jennifer Hudson	,	Cyber Security | Ethical Hacking | Coding	,	tanisha.das
+dr carlosmonteverde	,	go .tv	,	Tanisha Das
+dr carlosmonteverde	,	go .tv	,	heyits.elinall
+Carlos Monteverde	,	Go .tv	,	heyits.elinall
+jorgeacevedooficial	,	eatmovies	,	• Eli •
+jorgeacevedooficial	,	eatmovies	,	kamkara_
+Jorge Acevedo	,	Mr. MT	,	kamkara_
+mistygoeswild	,	laporpak7.id	,	Yarchuiwor
+mistygoeswild	,	laporpak7.id sadvibes.keras	,	semmichonlungharwo
+💗	,	SADVIBES KERAS	,	semmichonlungharwo
+juanmaelcielo	,	warga.jakbar	,	Curly Firefly
+juanmaelcielo	,	warga.jakbar	,	yamemini
+Juan Manuel ⭐️ Chef🇨🇴	,	INFO JAKARTA BARAT	,	yamemini
+galzfyp	,	_cheeseeecake_	,	Mini Yame
+galzfyp	,	_cheeseeecake_	,	ma_chi_nao
+stunnergirlsx	,	aki	,	ma_chi_nao
+stunnergirlsx	,	ayuvanessaa	,	kaman_jamoh
+Stunnergirls🦋	,	ayuvanessaa awsupan_18	,	kaman_jamoh
+aterciopelados	,	awsupan_18	,	KAMAN
+aterciopelados	,	AWSUPAN 18+	,	ajii_angeles
+Aterciopelados	,	assellbeisebai	,	ajii_angeles
+linda_callejas	,	assellbeisebai	,	Yuju Hunny
+linda_callejas	,	Assel Beisebai	,	sylvia_lalhmingmawii
+Linda Lucía Callejas	,	azi.acosta	,	sylvia_lalhmingmawii
+mariazelzel	,	azi.acosta	,	Sylvia Lalhming Mawii
+mariazelzel	,	Azi Acosta	,	twilight___babykins
+Mariazel	,	ahquote 	,	twilight___babykins
+zonacerooficial	,	FOLKSHIT™	,	Auziana Jyrwa 🦋
+zonacerooficial	,	traveltampan	,	yvonne_zorini
+ZonaCero	,	traveltampan	,	yvonne_zorini
+bianca	,	Travel Tampan	,	Yvonne Zorinpuii
+bianca	,	kkubi99	,	khanimeshidangg
+BIANCA	,	kkubi99	,	khanimeshidangg
+ficogutierrez	,	유백합	,	meee🕳️
+ficogutierrez	,	jiangzhibin24	,	sangsangyeh_
+Fico Gutiérrez	,	jiangzhibin24	,	sangsangyeh_
+andreina_r2	,	liz_6 duniahiburan._	,	san
+andreina_r2	,	duniahiburan._	,	preetika_rai00
+Andreina 💜	,	Dunia Hiburan	,	preetika_rai00
+laplatajoya	,	prankfunfor	,	💙
+laplatajoya	,	prankfunfor	,	usernotfound_095r
+La Plata Joyas	,	Prank Fun For you	,	usernotfound_095r
+jamesphelps_pictures	,	merlyn_jnt	,	aayshreee
+jamesphelps_pictures	,	merlyn_jnt	,	aayshreee
+James Phelps	,	Merlyn Juanita	,	Aayshree
+sbtprogramadoratinho	,	diva__flawless sulthanreceh	,	aashika___rai
+sbtprogramadoratinho	,	sulthanreceh	,	aashika___rai
+Programa do Ratinho	,	HIBURAN LUCU SULTHANRECEH	,	Aashu🦋
+chea baby	,	galauustoryy	,	___betc
+chea baby	,	galauustoryy	,	___betc
+Shea Marie	,	galauustoryy	,	B e t s y | S h a r m a
+girlytikxo	,	bincangranjang_official	,	priyaalimbuu
+girlytikxo	,	bincangranjang_official	,	priyaalimbuu
+Girlies	,	Bincang Ranjang	,	Priya Limbu
+crashdashes	,	liki.lifts RAHASIA PASUTRI HARMONIS	,	awnits.abhishek
+crashdashes	,	unexpected.music_	,	awnits.abhishek
+CRASH DASHES   Dash Cam Videos	,	unexpected.music_	,	Abhishek Kushawaha
+vivianossa	,	Unexpected Music	,	therealangelloweee
+vivianossa	,	gebi.anisa	,	therealangelloweee
+Vivian Ossa	,	gebi.anisa	,	angelloweee
+takensza	,	Gebi Anisa	,	purekazh
+takensza	,	adults.time	,	purekazh
+palomasenadora	,	adults.time	,	333
+palomasenadora	,	Adults Time kindnessfact	,	ammeerrss
+Paloma Valencia	,	kindnessfact	,	ammeerrss
+samuelljackson	,	KindnessFact	,	Amy ⭐️-_-💧
+samuelljackson	,	ruls_casual	,	tt1ff_
+Samuel L Jackson	,	ruls_casual	,	tt1ff_
+lovntme	,	Ruls Casual	,	suz.zer
+lovntme	,	karaysbella	,	suz.zer
+Model🌹	,	karaysbella	,	SU ZY
+discover animal	,	Kara	,	nanababbbyy
+discover animal	,	uncharted_sply uncharted_sply	,	nanababbbyy
+Discover Animal	,	U N C H A R T E D _ S P L Y	,	💫𝑵𝑨𝑵𝑨 | 娜娜姐姐
+ojopublico	,	pemuda_hijrah.2o	,	victoria.knguyen
+ojopublico	,	pemuda_hijrah.2o	,	victoria.knguyen
+OjoPúblico	,	Servant Of Allah	,	Victoria
+el_guerra	,	pottyariai	,	0cmspring
+el_guerra	,	pottyariai	,	0cmspring
+Alberto Guerra	,	Pottyari Ai Pottyari Ai	,	Mai le
+rachelbrosnahan	,	idaman_kku	,	rachie.love
+rachelbrosnahan	,	idaman_kku   diva__flawless	,	rachie.love
+Rachel Brosnahan	,	Diva Flawless	,	Rachel Kim
+rtvcnoticias	,	rizkysuryani21	,	tayler.chung
+rtvcnoticias	,	rizkysuryani21	,	tayler.chung
+RTVC Noticias	,	Rizky Suryani	,	baesylvie
+inzpirarte	,	taliyeah_	,	baesylvie
+inzpirarte	,	taliyeah_	,	sylvia
+Inzpira	,	zynthetica	,	winnays
+compadrelencho	,	zynthetica	,	winnays
+compadrelencho	,	zyn ayangmu_aja11	,	𝐖𝐈𝐍𝐍𝐈𝐄 ⁣♡
+Compadre Lencho	,	ayangmu_aja11	,	viptoriaaaa
+erika_zava	,	IDAMANMU	,	viptoriaaaa
+erika_zava	,	febriandiniiii	,	Victoria 🖤
+Erika Zapata	,	febriandiniiii	,	ms_puiyi
+jennifersueee	,	𝓓𝔀𝓲 𝓕𝓮𝓫𝓻𝓲 𝓐𝓷𝓭𝓲𝓷𝓲	,	ms_puiyi
+jennifersueee	,	ckjesss	,	Siew Pui Yi 🤍
+Jennifer Sue	,	ckjesss	,	nicxlexo_
+deadline	,	Jesica Nababan	,	nicxlexo_
+deadline	,	film.jp.id Idaman	,	𝐧𝐢𝐜𝐨𝐥𝐞🍸🪩
+Deadline Hollywood	,	jakarta.speziial	,	lingggg.c
+yurivargas1	,	jakarta.speziial	,	lingggg.c
+yurivargas1	,	JAKARTA SPEZIAL	,	Lexi Chen
+Yuri Vargas	,	lolita	,	pasang_chonjom
+evamendes	,	lolita	,	pasang_chonjom
+evamendes	,	🍒	,	Pasang Chonjom Khochy
+Eva Mendes	,	cerensavas	,	saroshni______
+yeimypv	,	cerensavas	,	saroshni______
+yeimypv	,	Ceren Savaş kodenuklir.com	,	S A R O 사로🧸
+YEIMY PAOLA VARGAS	,	neringakriziute	,	busy.bee_____
+realmikejfox	,	neringakriziute	,	busy.bee_____
+realmikejfox	,	Neringa Križiūtė	,	Bibechana Lama
+Michael J Fox	,	ochilovers________24	,	lizaachumy_jakhs
+boiadeiraupdate	,	ochilovers________24	,	lizaachumy_jakhs
+boiadeiraupdate	,	Ochi Rosdiana Fanbase	,	Liza🦋
+BOIADEIRA UPDATE ®	,	vicidiorrr	,	thesassymom15
+latinanoticias pe	,	vicidiorrr	,	thesassymom15
+latinanoticias pe	,	vicidior reenuthakur21	,	RUBY
+Latina Noticias	,	reenuthakur21	,	henpu._
+elizabethperkins	,	Reenu Thakur	,	henpu._
+elizabethperkins	,	setitikrindu.co	,	thaturbangirll_
+Elizabeth Perkins	,	setitikrindu.co	,	thaturbangirll_
+muhammadali	,	Setitik Rindu	,	Priyanka
+muhammadali	,	erikaputreal	,	elizbabykins
+Muhammad Ali	,	erikaputreal	,	elizbabykins
+shaktiyogaevd	,	CALL ME R	,	eliz thurr
+shaktiyogaevd	,	nganguyeen Brooke Laurier	,	kunxm
+Shakti Yoga En Conexión	,	wanitamempesona.ind	,	kunxm
+deibyruiz	,	wanitamempesona.ind	,	neicywillyhauz
+deibyruiz	,	galeri wanita mempesona indonesia	,	neicywillyhauz
+Deiby Ruiz	,	vloggerlebahmaduindonesia	,	NEICY WILLY HAUZ
+lamagnoliarooftop	,	vloggerlebahmaduindonesia	,	shreya_chettri04
+lamagnoliarooftop	,	VLOGGER LEBAH MADU INDONESIA	,	shreya_chettri04
+La Magnolia Rooftop	,	curhatan.pena_	,	Shreya Chettri
+valenort	,	curhatan.pena_	,	icespice_98
+valenort	,	Curhatan.Pena_ film.jp.id	,	icespice_98
+𝐕𝐀𝐋𝐄𝐍𝐓𝐈𝐍𝐀 𝐎𝐑𝐓𝐈𝐙 🧸	,	FILM JP ID	,	Ishita Rai
+naturalezafuriosa	,	anisaauliamarbunnn	,	s.nutan97
+naturalezafuriosa	,	anisaauliamarbunnn	,	s.nutan97
+NATURALEZA FURIOSA	,	ABUN	,	Nutan
+salmahayek	,	gabut.cuak	,	qneecttt
+salmahayek	,	gabut.cuak	,	qneecttt
+Salma Hayek Pinault	,	GABUT || VIDEO RANDOM	,	Stamena Ce
+diegotrujillo	,	ruang.dewasa	,	rhea_raveha_limbu
+diegotrujillo	,	ruang.dewasa nganguyeen	,	rhea_raveha_limbu
+Diego Trujillo	,	Ngan Nguyen	,	REURI✨🧿
+sinatra	,	notriisaaaaa	,	merina__leimapokpam
+sinatra	,	notriisaaaaa	,	merina__leimapokpam
+Frank Sinatra	,	Risaa Tjan	,	Merina
+jodiefosterworld	,	ninazatulini22	,	its_grace001
+jodiefosterworld	,	ninazatulini22	,	its_grace001
+Jodie Foster Fanpage	,	Nina Zatulini	,	XG🤍✨
+firstladyofsong	,	brookelaurierr	,	_nive_dita_roy_
+firstladyofsong	,	brookelaurierr michelleryu28	,	_nive_dita_roy_
+Ella Fitzgerald	,	Michelle Ryu	,	Nivedita Roy
+anasofiahenaoe	,	karkartina_	,	_s.macs
+anasofiahenaoe	,	karkartina_	,	_s.macs
+Ana Sofía Henao	,	Kar	,	Sonam Chokey
+bienestamexico	,	wulanguritno	,	swena.pradhan
+bienestamexico	,	wulanguritno	,	swena.pradhan
+Bienesta	,	Sri Wulandari Guritno 🇮🇩🇬🇧	,	🔮 𝙎 𝙒 𝙀 𝙔 🔮
+the curvyqueens	,	folkshitt	,	aditiiii.pradhan
+the curvyqueens	,	folkshitt liki.lifts	,	aditiiii.pradhan
+Blessing	,	likitha	,	tsherrn
+sony	,	jezzamariebagaforo_	,	tsherrn
+sony	,	jezzamariebagaforo_	,	Uden Tshering
+Sony	,	Jezza Marie Bagaforo	,	yeshi_laaa
+thevanguardmagazineofficial	,	kenikmat.an	,	yeshi_laaa
+thevanguardmagazineofficial	,	kenikmat.an	,	Yeshi Choden ཡེ་ཤེས་ .
+The Vanguard Magazine	,	Resep Rahasia Kenikmatan	,	dorjee.droma.904
+erikabonilla_27	,	kodenuklir_com2	,	dorjee.droma.904
+erikabonilla_27	,	kodenuklir_com2 	,	Dorjee Droma
+Erika Bonilla	,	delvinass	,	apiyumlam
+luca sperandiok	,	Adellvina Lintang - Workout | Cook | Selflove	,	apiyumlam
+luca sperandiok	,	nandobelumpulang_ 	,	Api Yumlam
+Luca Sperandio 🦅	,	nandobelumpulang_	,	ase_metha
+hurricaneheritage	,	Nandobelumpulang	,	ase_metha
+hurricaneheritage	,	idn.grassroots 	,	Aseno Metha
+Hurricane Heritage	,	idn.grassroots	,	an758dy
+recetasparaadelgazar1	,	GRASSROOTS	,	an758dy
+recetasparaadelgazar1	,	paulovictorcs94 	,	An Dy
+Recetas Saludables	,	paulovictorcs94 andiepeci	,	aiieshapradhaan_makeup
+sebastiianayalaoficial	,	Andie Peci	,	aiieshapradhaan_makeup
+sebastiianayalaoficial	,	lokerjombang.id 	,	Aìshà Pràdhan
+Sebastian Ayala Popular	,	lokerjombang.id	,	reshma_rajkumari
+imzarahxo	,	LOKER JOMBANG DAN SEKITARNYA	,	reshma_rajkumari
+imzarahxo	,	araaaaaa.a 	,	RESHMA
+Zarah 😇	,	araaaaaa.a	,	iamadenilling
+maragara	,	Araa	,	iamadenilling
+maragara	,	marthasrii___ 	,	Ade Nilling
+Margarita Reyes Gutierrez	,	marthasrii___ bonek_gariskeras	,	know_anchal
+discosfuentes	,	Garis🔥Keras	,	know_anchal
+discosfuentes	,	muhammadhidayatmh96 	,	𝓐𝓷𝓬𝓱𝓪𝓵 𝓢𝓱𝓪𝓻𝓶𝓪 🧿
+Discos Fuentes	,	muhammadhidayatmh96	,	gracine__18
+gal_gadot goddess	,	MH	,	gracine__18
+gal_gadot goddess	,	barisreusfe 	,	L. Gracy Misao💕
+gal gadot	,	barisreusfe	,	basumatarymomo
+michellepfeifferofficial	,	Barış Reus 🐍	,	basumatarymomo
+michellepfeifferofficial	,	surabayafootball12 	,	Mmta Daimary
+Michelle Pfeiffer	,	surabayafootball12 snpmbbppp_ 	,	_.brishu
+mariposadecristalcafe	,	snpmbbppp_	,	_.brishu
+mariposadecristalcafe	,	Info Resmi SNMPTN-UTBK-SBMPTN 2023	,	Brishu Sanyasi
+Mariposa de Cristal	,	olynkintha 	,	prernathapa15
+oscarmoneycantor	,	olynkintha	,	prernathapa15
+oscarmoneycantor	,	Olyn Novrida	,	Prerna Thapa
+oscar fabian Cantor pulido	,	rosaamallia30_ 	,	37_sr_
+lapocionoficial	,	rosaamallia30_	,	37_sr_
+lapocionoficial	,	Sa	,	SR
+ +REPARACIÓN+CRECIMIENTO CAÍDA	,	andiepeci dalianaila	,	silverdoe_11
+doctorbayter	,	23adysetiawan 	,	silverdoe_11
+doctorbayter	,	23adysetiawan	,	Sakshi Grover
+Doctor Bayter	,	ADY SETIAWAN	,	_sujata_sharma_
+artincurve	,	snpmb.snbt 	,	_sujata_sharma_
+artincurve	,	snpmb.snbt	,	𝗦𝘂𝗷𝗮𝘁𝗮 𝗦𝗵𝗮𝗿𝗺𝗮🦋
+Art In Curve	,	SNPMB SNBT UTBK	,	ruth____ie
+teddysphotos	,	andre_iswara52 	,	ruth____ie
+teddysphotos	,	andre_iswara52	,	Ruthi LaLremi Hlonchhing
+Ed Sheeran	,	andre_iswara52 jobforcareer 	,	_senuo_21
+instantbollywood	,	jobforcareer	,	_senuo_21
+instantbollywood	,	𝗝𝗼𝗯𝗳𝗼𝗿𝗰𝗮𝗿𝗲𝗲𝗿 𝗜𝗻𝗱𝗼𝗻𝗲𝘀𝗶𝗮	,	bbee_laishram
+Instant Bollywood	,	surabayafootball1927 	,	bbee_laishram
+tatasolarte	,	surabayafootball1927	,	Bbee Laishram
+tatasolarte	,	Surabaya Football	,	anjulama18
+TATA SOLARTE ❤️🎵	,	folkmemee 	,	anjulama18
+lista_pad	,	folkmemee	,	Anjulama 🌸🌼
+lista_pad	,	FOLKMEME™	,	gebina_tekseng
+Jessie 🥰	,	dalianaila noviana.nilam	,	gebina_tekseng
+mundociclistico	,	Kay | Healthy Segzsual Relationship	,	Gebina !
+mundociclistico	,	selegebuh530 	,	chemeuwu
+Revista Mundo Ciclistico	,	selegebuh530	,	chemeuwu
+lamplamp ir	,	Bi Lop	,	God is a woman!
+
+
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+

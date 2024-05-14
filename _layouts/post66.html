@@ -1,0 +1,223 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+
+
+
+whamofficial	,	yusupfadilah__ 	,	_krishmand
+WHAM!	,	yusupfadilah__	,	_krishmand
+caiocosttacantor	,	Muhamad Yusup Fadilah	,	Krishmand Chettri
+caiocosttacantor	,	jojo_bonek sflll__ 	,	yell_low04
+Caio Costta	,	sflll__	,	yell_low04
+byannatwo	,	persebaya.streaming 	,	kiiro-chan⚘
+byannatwo	,	persebaya.streaming	,	jjshhaa
+Anna🦋	,	mal_jupri 	,	jjshhaa
+fedeciclismocolombia	,	mal_jupri	,	jerusha🤍
+fedeciclismocolombia	,	Jupri	,	veddkaa__
+Federación Colombiana de Ciclismo	,	pengapdi__ilahi27 	,	veddkaa__
+rossylemos	,	pengapdi__ilahi27	,	Yankee’s
+rossylemos	,	muhammad_ainul_yaqin27 	,	raii__ishika
+Rossy Lemos	,	xigax27	,	raii__ishika
+iamjaimiesmiles	,	Iga Guslia Rahmadilah	,	Ishika 💫
+iamjaimiesmiles	,	beritatimnascom 	,	tashiwb
+Jaimie Smiles	,	beritatimnascom	,	tashiwb
+ludwika_paleta	,	Berita Timnas Indonesia	,	WangB
+ludwika_paleta	,	loker_surabaya_gresik_sidoarjo 	,	imsradhasakura
+Ludwika Paleta	,	loker_surabaya_gresik_sidoarjo	,	imsradhasakura
+imperio choppbar	,	LOWONGAN KERJA SURABAYA-GRESIK-SIDOARJO	,	__.eunooia.__
+imperio choppbar	,	lokersurabaya_terkini 	,	__.eunooia.__
+IMPÉRIO BAR BALADA	,	lokersurabaya_terkini Elis Liana Oktaviana	,	s
+giovannaantonelli	,	praz_teguh 	,	cho.kendolkarl
+giovannaantonelli	,	praz_teguh	,	cho.kendolkarl
+Giovanna Antonelli	,	Praz Teguh	,	_.moonshiyeon
+mincultura	,	wkwkland_real 	,	_.moonshiyeon
+mincultura	,	wkwkland_real	,	R_I_S_H_U 💕 💕
+MinCulturas Colombia	,	Mikir Dulu Baru Komen	,	ki_karmaaa
+propellerfellers	,	dekvivitt___ 	,	ki_karmaaa
+propellerfellers	,	dekvivitt___	,	Karma Thinlay Ongmoo Tamang
+Propeller Fellers	,	Adekk 𝐈𝐭𝐬 𝐑𝐞𝐠𝐚𝐫	,	_.k.tashayyy._
+billyjoel	,	akina.a 	,	_.k.tashayyy._
+billyjoel	,	akina.a	,	Karma
+Billy Joel	,	Akina aja	,	khidennn
+jaime_king	,	aaliik_ 	,	khidennn
+jaime_king	,	aaliik_	,	kk
+Jaime King	,	ALIK ⚓️	,	angelpradhan_06
+katharinefoster	,	liiiii.chn 	,	angelpradhan_06
+katharinefoster	,	liiiii.chn	,	Angel Pradhan🧚🏻‍♀️🪐
+Katharine McPhee Foster	,	Ii ii bagimemelucu	,	lodenn._
+igaccolombia	,	bagimemelucu	,	lodenn._
+igaccolombia	,	selmatiranika_ 	,	Ms funny bones✨
+IGAC	,	selmatiranika_	,	ch03y4n9
+babyzinhamtz	,	𝒔𝒂𝒍𝒎𝒐𝒏𓍢ִ໋🌷͙֒✧˚🦢🫧	,	ch03y4n9
+babyzinhamtz	,	tshirttokoh 	,	ch0e 3
+Victoria matosa	,	tshirttokoh	,	letwintogether07
+caterinescobaractriz	,	Satire / Provoke	,	letwintogether07
+caterinescobaractriz	,	jalursenyap.id 	,	CRYPTO EDUCATOR DUFF🌀
+Caterin Escobar	,	jalursenyap.id   meme.seharihari 	,	_rashikaaa_
+dosisdiariadeconspiracion	,	meme.seharihari	,	_rashikaaa_
+dosisdiariadeconspiracion	,	MEME SEHARI-HARI	,	kunjani_02
+Dosis diaria de Conspiración 👁	,	debycantik_ 	,	kunjani_02
+palomavazquezm	,	debycantik_	,	Kunjani Pradhan
+palomavazquezm	,	Ni kadek selvia adnyani	,	denlala._
+Paloma Vazquez	,	nandoariiiss 	,	denlala._
+naturalslim_costarica	,	nandoariiiss	,	𝘿𝙚𝙣🌙
+naturalslim_costarica	,	Ernando Ari Sutaryadi	,	iushmaraii__
+Natural Slim Costa Rica 🇨🇷	,	openkerja Bruno Moreira	,	iushmaraii__
+ella bleu	,	lowongan.kerja_mojokerto 	,	Ayushma Rai
+ella bleu	,	lowongan.kerja_mojokerto	,	pujahpradhan_
+Ella Bleu Travolta	,	Loker Mojokerto Dan Sekitarnya	,	pujahpradhan_
+sugarnextdoor	,	nopeknovian 	,	Puja 🤍
+sugarnextdoor	,	nopeknovian	,	_greyysoul_
+Henna	,	𝐍𝐨𝐩𝐞𝐤 𝐍𝐨𝐯𝐢𝐚𝐧	,	_greyysoul_
+eileenmorenoact	,	jobseeker_jatim 	,	Shristi Chettri
+eileenmorenoact	,	jobseeker_jatim	,	itsyunabishes
+Eileen Moreno	,	Jobseeker_Jatim areadewasanya 	,	itsyunabishes
+lanawrites__	,	areadewasanya	,	𝓢𝓽𝓪𝓻𝓵𝓲𝓰𝓱𝓽 ~🍀🍀
+lanawrites__	,	SOLUSI PASUTRI	,	bhutila._
+LDR fanpage!	,	asmaraku_id 	,	bhutila._
+dualipa	,	asmaraku_id	,	བསྟན་འཛིན་བུ་འཁྲིད་།
+dualipa	,	AsmaraKu.com	,	bhuti__
+DUA LIPA	,	fitnesstip147 	,	bhuti__
+sentidopositivo	,	fitnesstip147	,	Tenzin Bhuti
+sentidopositivo	,	​🇭​​🇦​​🇷​​🇩​ ​🇼​​🇴​​🇷​​🇰​	,	cchimeey
+Sentido Positivo🌷	,	mudahcarikerja ndagel.crew 	,	cchimeey
+nicolesantamaria	,	ndagel.crew	,	འཆི་མེད་ ིྀིྀ
+nicolesantamaria	,	 Dagelan Crew ( D nya Dewasa)	,	sanjana_likmabam_
+Nicole Santamaría	,	rima.p___ 	,	sanjana_likmabam_
+metaselfys	,	rima.p___	,	ꯁꯟꯖꯥꯅꯥ
+metaselfys	,	rimaa🦋	,	dolma_chuzin
+marioduartedlt	,	bloommedia.id 	,	dolma_chuzin
+marioduartedlt	,	bloommedia.id	,	Chuzin Dolma
+Mario Duarte	,	Bloom Media	,	allo.aye
+la_chinitavz	,	xigax27 mudahcarikerja	,	allo.aye
+la_chinitavz	,	Rahmat Thama | Career   Personal Branding	,	🐼Allo🐼
+chinita_yenn	,	justforwife.id 	,	amongla_lims
+karinashala	,	justforwife.id	,	amongla_lims
+karinashala	,	Luxury Lingerie and Sexydress	,	Amongla Yimchunger
+Karina Shalá	,	officialpersebaya 	,	atup_07
+hennextdoor	,	officialpersebaya	,	atup_07
+hennextdoor	,	Persebaya	,	Dare Atup
+Henna 🤍	,	oktavianaelisliana 	,	kepe_kire
+aviationauthor ridakhan	,	oktavianaelisliana yamamotosho1112	,	kepe_kire
+aviationauthor ridakhan	,	SHO YAMAMOTO	,	kepe
+🛫🌏Aviation Author📰📝RidaK RK 	,	myvonnieta 	,	tainpongen
+greeiicy1	,	myvonnieta	,	tainpongen
+greeiicy1	,	Yvonne Jane L. 🌺	,	𝓐𝓲𝓮𝓷
+Greeicy Rendon️️️️ 💎	,	aiirikhaa08 	,	khethoseno
+wild__animalss	,	aiirikhaa08	,	khethoseno
+wild__animalss	,	Adek Utari Reall Acc	,	Asang Susu
+𝐀𝐧𝐢𝐦𝐚𝐥 🦊	,	brunomoreira99 	,	azi_khesoh
+goodshowoficial	,	brunomoreira99 comika.id	,	azi_khesoh
+goodshowoficial	,	manda.jhiime 	,	Azi Khesoh
+Good Show	,	manda.jhiime	,	veronicayeptho
+brandonlee	,	manda🌺	,	veronicayeptho
+brandonlee	,	kom_info124 	,	Veronica🌷
+Brandon Bruce Lee	,	kom_info124	,	azila_the_anar
+onlyskylerlo	,	Delete	,	azila_the_anar
+onlyskylerlo	,	mamat_alkatiri 	,	Azila Sangtam
+skyler	,	mamat_alkatiri	,	a.c.h.i.__
+peakyblindersofficial	,	Mamat Alkatiri greencyber.27 	,	a.c.h.i.__
+peakyblindersofficial	,	greencyber.27	,	Rhimenchila soyah
+Peaky Blinders	,	greencyber.27	,	hann_limkhiungkhiungberu
+doctora_fernanda	,	marselinoferdinan10 	,	hann_limkhiungkhiungberu
+doctora_fernanda	,	marselinoferdinan10	,	Hanlula Yimkhiung
+Fernanda Hernández	,	linojr	,	nzanbeni_ezung
+world_planes_2010	,	gf.bonekfalak1927new 	,	nzanbeni_ezung
+world_planes_2010	,	gf.bonekfalak1927new	,	Baekhyun
+World Planes	,	gf.bonekfalak1927	,	yamonglhu_020804070698
+strebi_war_machines	,	bagimemelucu BONEK JALUR SENYAP	,	yamonglhu_020804070698
+strebi_war_machines	,	leolelis93 	,	yamonglhü02080498
+
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+

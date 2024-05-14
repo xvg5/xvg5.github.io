@@ -1,0 +1,320 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+leolelis93	,	ladylingggg
+Léo Lélis	,	ladylingggg
+kabarmojokerto 	,	Lady Ling
+kabarmojokerto	,	sweet_essence___
+kabar mojokerto	,	sweet_essence___
+psmojokertoputra 	,	Sweet Essence
+psmojokertoputra	,	your_harley_quinnnn
+PERSATUAN SEPAK BOLA MOJOKERTO PUTRA ngakakaja_dulu.id 	,	your_harley_quinnnn
+ngakakaja_dulu.id	,	kikruneinuo iisou
+Ngakak Aja Dulu	,	aien_amri_______
+cokipardedebebas 	,	aien_amri_______
+cokipardedebebas	,	🇦 🇮 🇪 🇳 🇦 🇲 🇷 🇮
+Coki Pardede	,	achung_zeliang97
+n.lidiawaty 	,	achung_zeliang97
+n.lidiawaty	,	Gwen_The Lost Sheep🖤
+リディア	,	_____.its.ahskidirt
+greennord.27 greennord.27	,	_____.its.ahskidirt
+GREEN NORD 27	,	Td donnnn👽
+ciabocil_2 	,	maxina__paonam
+ciabocil_2	,	maxina__paonam
+🕷️	,	Angie Paonam🪬🪐🧿
+lokermojokerto 	,	lorraine_kikon
+lokermojokerto	,	lorraine_kikon
+LOWONGAN KERJA MOJOKERTO	,	•lorraine🍀
+hani.siregar_ 	,	shyamapika_konjengbam
+hani.siregar_ openkerja	,	shyamapika_konjengbam
+Lowongan Kerja BUMN   CPNS	,	Pika
+inriseff 	,	soma_laishram
+inriseff	,	soma_laishram
+inri	,	Soma Laishram
+dk.academy.id 	,	iben_imchen
+dk.academy.id	,	iben_imchen
+DK Academy	,	Iben Imchen
+comikaid 	,	_n_rhakho_
+comikaid 	,	_n_rhakho_
+lokersidoarjo_official	,	Suuu_
+LOKER SIDOARJO dan JATIM	,	alinochophy_
+xyzviachilsx_ 	,	alinochophy_
+xyzviachilsx_	,	𝐿𝒾𝓃𝓍𝓍 ♡
+Via ajhhh✨🦖	,	ely_ayemi
+jobseeker_company 	,	ely_ayemi
+jobseeker_company	,	Ely Jakhalu
+jobseeker_company	,	northeast_girlz
+mndaanjg 	,	northeast_girlz
+mndaanjg edukasi.dewasa	,	NORTHEAST GIRLS SHOUTOUT 🇮🇳
+EDUKASI DEWASA	,	shoutout.teens___
+roymandala_ 	,	shoutout.teens___
+roymandala_	,	SHOUTOUT PAGE 🇮🇳
+ROY MANDALA PUTRA	,	_binapshaaa
+rizkyridhoramadhani 	,	_binapshaaa
+rizkyridhoramadhani	,	Binapsha Pradhan
+Ridhoo	,	_.nikki.la._
+reemar.official18 	,	_.nikki.la._
+reemar.official18 ehhhrara 	,	Nikki
+ehhhrara	,	chodenlaa_
+R a	,	chodenlaa_
+awshitpostid 	,	d3n
+awshitpostid	,	mi_ho_gumiho
+AWSHITPOSTID	,	mi_ho_gumiho
+gekknaa.__ 	,	🐖🧿
+gekknaa.__	,	urvashiborgohain_
+heloww sy gekknaa	,	urvashiborgohain_
+thefitnesscenter.tfc surabayaculture_27	,	Urvashi Borgohain
+SURABAYACULTURE_27🐊	,	chandrika_narzaryyy1
+bcsxpss.1976 	,	chandrika_narzaryyy1
+bcsxpss.1976	,	Chandrika Narzary
+Brigata Curva Sud	,	vikoseno_zashumo
+iamtepteprettyx 	,	vikoseno_zashumo
+iamtepteprettyx	,	Victoria
+Einnahpets DG ♡	,	jenny___ezung__
+tasyaavifa77 	,	jenny___ezung__
+tasyaavifa77 Sherina Septiani	,	J_e_n_n_i_e
+lowongankerjamojokerto 	,	aniteo_k_koza
+lowongankerjamojokerto	,	aniteo_k_koza
+LOKER MOJOKERTO DAN SEKITARNYA	,	Minieteo Ladu
+thebaeyours_ 	,	neiwo_
+thebaeyours_	,	neiwo_
+𝖣 𝖺 𝗇 𝗀 𝖣 𝗎 𝗇 𝗀	,	awo koza
+info.loker.jatim 	,	poopberrie
+info.loker.jatim	,	poopberrie
+Lowongan Kerja Jawa Timur Political Memes Indonesia	,	Berrie nice to meet you 😋
+superindo_karir 	,	shoutout.teens_
+superindo_karir	,	shoutout.teens_
+Super Indo Karir	,	SHOUTOUT TEENS
+daraagungariani 	,	slaying.teens____
+daraagungariani	,	slaying.teens____
+I Gusti Agung Dara Agung Ariani Sthy Jagat	,	SLAYINGTEENS | Shoutout Page ❤️🇮🇳
+meme_random_q 	,	pema_lama_sherpa_
+meme_random_q	,	pema_lama_sherpa_
+M_R_Q Reemar Martin	,	phifong ⋆𐙚₊
+rakyat_plus_62 	,	yangthy_imchen_official
+rakyat_plus_62	,	yangthy_imchen_official
+Rakyat +62	,	Bendangyangerla Imchen
+livyrenata 	,	onty._______.d
+livyrenata	,	onty._______.d
+Livy Renata	,	´･𝓓𝓮𝓮𝓵𝓸𝓿𝓪･`
+modynz 	,	your_potato_chan_official_
+modynz	,	your_potato_chan_official_
+mody member_goblok 	,	🌸ODIMENLA_PONGEN🌸
+member_goblok	,	gracy__thapa01
+MEME DAN VIDEO GOBLOK	,	gracy__thapa01
+ikyyyk__ 	,	Its Grace🦋ྀི
+ikyyyk__	,	siliguri.shoutout
+4yuu_gen 	,	siliguri.shoutout
+4yuu_gen	,	Siliguri Shoutout 🇮🇳
+Saggitarius	,	ri.miii__
+nxmg_shrna 	,	ri.miii__
+nxmg_shrna   mnda	,	Rimiii
+awreceh.id 	,	vimilama
+awreceh.id	,	vimilama
+🅁🄴🄲🄴🄷 🅂🅀🅄🄰🄳	,	Vimi Lama
+keretaapikita 	,	empty_world2024
+keretaapikita	,	empty_world2024
+Kereta Api Kita	,	Its empty
+natashamanapa 	,	lizakaye5244
+natashamanapa	,	lizakaye5244
+Natasha Manapa Politeknik Negeri Jember	,	Liza Kaye
+mybiind 	,	luvvynos_
+mybiind	,	luvvynos_
+BEBY BILLA 🦋✨	,	hema_pakhren
+meme.comic.persebaya 	,	hema_pakhren
+meme.comic.persebaya	,	Hema Himrung
+MEME COMIC PERSEBAYA	,	pranila_gurung
+alleaaa25_ 	,	pranila_gurung
+alleaaa25_	,	Pranila Gurung
+Alea thefitnesscenter.tfc	,	auraofhi
+The Fitness Center	,	auraofhi
+dedysusanto.pj_official 	,	monalisaathokpam
+dedysusanto.pj_official	,	monalisaathokpam
+Dr Dedy Susanto ️️	,	Monalisa Athokpam
+stkk21_ 	,	khusboo__pradhan
+stkk21_	,	khusboo__pradhan
+𝐒𝐚𝐧𝐭𝐢𝐤𝐚	,	Khusboo Pradhan
+sbmptn.id 	,	ashu_babe
+sbmptn.id TasyaAvifa	,	ashu_babe
+pashalovarian 	,	Aachal Pradhan
+pashalovarian	,	blissplo_
+Pasha Lovarian	,	blissplo_
+honey3pie 	,	𝘔𝘶𝘮𝘵𝘢𝘬core 🌷
+honey3pie	,	mighty.drxx
+keqabutan 	,	mighty.drxx
+keqabutan	,	Darsh 🦥
+Keqabutan	,	pollenrai____
+lokersidoarjo_official nadykhtnaptr 	,	pollenrai____
+nadykhtnaptr	,	socially selective 🦋
+Unaa s	,	_tara.av
+ayuswariii19 	,	_tara.av
+ayuswariii19	,	ms.sethii
+fannysoegi 	,	ms.sethii
+fannysoegi	,	Shilpa Sethi
+Fanny Soegiarto	,	zuali_35
+politicalmemes.id 	,	zuali_35
+politicalmemes.id UTBK SNBT 2024	,	nolly_hmar
+annyaerica 	,	nolly_hmar
+annyaerica	,	Nolly LucasKey Judasz
+Annya	,	chhangte_windy
+komunitas_pria_kuat 	,	chhangte_windy
+komunitas_pria_kuat	,	Windy Chhangte
+PROGRAM SOLUSI MASALAH VITALITAS PRIA	,	asmanepal_
+nath4li3maesanchez 	,	asmanepal_
+nath4li3maesanchez	,	barbie
+edukasi.dewasa okeu.oktavia 	,	_babyyygrl
+okeu.oktavia	,	_babyyygrl
+bulleliquid2016 	,	❤️Asian Doll
+bulleliquid2016	,	suzumagarni
+bull distribution	,	suzumagarni
+kawisata 	,	Nepti Magarnii🌹❤
+kawisata	,	rosni_shrestha_
+KAI WISATA	,	rosni_shrestha_
+humaspolije 	,	Rosh_dgaf🕊️
+humaspolije suroboyo.kerras 	,	sangte_nabam_23
+suroboyo.kerras	,	sangte_nabam_23
+SUROBOYO KERAS	,	sangte_nabam
+kay_officially 	,	__ankeeeta__
+kay_officially	,	__ankeeeta__
+Noviana nilam	,	Ankeeta Mahato🌙
+dramaojol.id 	,	nancy55580
+dramaojol.id	,	nancy55580
+Drama Ojek Online Indonesia	,	Nancy🐸
+yamamotosho1112 	,	ura_mendes
+Akhmad Banu Aji | Mentor PTN	,	ura_mendes
+janofahchiny 	,	Ura Mendes
+janofahchiny	,	blessed_with_positivity
+Janofah Chiny	,	blessed_with_positivity
+imyujiaa_2 	,	Pathhu
+imyujiaa_2	,	onika_merry
+Baby Yujia	,	onika_merry
+velisyaicii27 	,	Amu Basar Karko ❀˖°
+velisyaicii27	,	jumcathriine
+Ici Azizah lokermojokertosekitar	,	jumcathriine
+LOWONGAN JATIM SEKITARNYA 💯	,	Jum👸
+keynacecia 	,	limeka_yeptholimi_24
+keynacecia	,	limeka_yeptholimi_24
+Keyna cecia	,	Rongsenienla Longkumer
+windahbasudara 	,	sadlyaddictive
+windahbasudara	,	sadlyaddictive
+Windah Basudara	,	YOURDRUGMEMING
+rizkimbambotttt 	,	cheme_shiu
+rizkimbambotttt ✨	,	cheme_shiu
+rraapd 	,	Chem
+rraapd	,	linaaug21
+ararasocute 	,	linaaug21
+ararasocute	,	Sonali   NALI 
+Arachuu	,	nama_nabam9695
+roselew1s 	,	nama_nabam9695
+roselew1s	,	nama nabam
+rosie 𐐪𐑂	,	_miss.teee_
+husein_hadar rizkimbambot	,	_miss.teee_
+vg.dinn 	,	𝑻𝑹𝑰𝑷𝑻𝑰
+vg.dinn	,	zya_one1
+bellabonita_r.a 	,	zya_one1
+bellabonita_r.a	,	Zya
+Bella Bonita Rafnortfic Agassy	,	yonzneha_
+phatticatt 	,	yonzneha_
+phatticatt	,	Neha Tamang
+Bree	,	ayu_shmita09
+meilan.cindo tokyovibess_ 	,	ayu_shmita09
+tokyovibess_	,	AYUSHMITA BISWAS
+TV	,	pooja_rasaily_101
+prestihastuti 	,	pooja_rasaily_101
+
+
+
+
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+

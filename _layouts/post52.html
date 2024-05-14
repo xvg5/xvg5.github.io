@@ -1,0 +1,450 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+elsajeanofficial
+Sapphire Howell
+ marcosantonio
+marcosantonio
+Marcos Antonio
+ neptuneexplainsitall
+neptuneexplainsitall
+💚UR WAIFU 4 LAIFU💚
+ dilara
+dilara
+DILARA
+ jaianelimma
+jaianelimma
+Jaiane Lima
+ lucaspaqueta
+lucaspaqueta
+Lucas Paquetá
+ hamad.ahwaze1
+hamad.ahwaze1
+hamad.ahwaze1
+ dirkblocker
+dirkblocker
+Dirk Blocker
+ veronicavridge
+veronicavridge
+Veronica Ridge
+ limitlessmacey
+limitlessmacey
+Macey Estrella
+ igorzismo
+igorzismo
+Igor Guimarães
+ therealkurtangle
+therealkurtangle
+Kurt Angle
+ stephaniebeatriz
+stephaniebeatriz
+Stephanie Beatriz
+ msdezfraser
+msdezfraser
+Desirae Fraser
+ lesdomakeup
+lesdomakeup
+Les Do Makeup
+ heitorassali
+heitorassali
+Heitor Assali
+ jenafrumes
+jenafrumes
+JENA
+ gildovigor
+gildovigor
+GIL DO VIGOR
+ fred
+fred
+Fred Bruno
+ k_milaprado
+k_milaprado
+Camila Prado
+ real.amateurallure
+real.amateurallure
+Amateur Allure
+ djrafaloira
+djrafaloira
+Rafaela Pedrotti
+ mayamaniaxo
+mayamaniaxo
+Adriana Maya
+ olucasgutierrez
+olucasgutierrez
+Lucas Gutierrez
+ crisguedes
+crisguedes
+Cris Guedes 🔥
+ tatizaqui
+tatizaqui
+Tati Zaqui
+ lights
+lights
+Lights
+ rafaalisboa_
+rafaalisboa_
+RAFA LISBÔA
+ i.am.mazin
+i.am.mazin
+ rodolfogordinn
+rodolfogordinn
+Gordin VETIN
+ arthurpicoli
+arthurpicoli
+Arthur Picoli
+ duzaomenosemais
+duzaomenosemais
+BigDuzo
+ lily.adrianne
+lily.adrianne
+Lily Adrianne ليلي
+ douglassilva
+douglassilva
+Douglas Silva
+ darylanndenner
+darylanndenner
+Daryl-Ann Denner
+ lindsaycapuano
+lindsaycapuano
+Lindsay Capuano
+ felipeamorimofc
+felipeamorimofc
+Felipe Amorim
+ erikaschneider
+erikaschneider
+Erika Schneider 🇧🇷
+ zoeydeutch
+zoeydeutch
+zoey deutch
+ ninopessoal
+ninopessoal
+MENOR PROGRESSO🥇
+ nickeyhuntsman
+nickeyhuntsman
+Shanna Brooks
+ thatdanstevens
+thatdanstevens
+Dan Stevens
+ mrbeast
+mrbeast
+MrBeast
+ rachelstarr
+rachelstarr
+Rachel Starr
+ alinee.ouriques
+alinee.ouriques
+Aline ouriques
+ matue
+matue
+ _mendesjoao_
+_mendesjoao_
+João Mendes de Assis Moreira
+ romirain
+romirain
+Romi Rain
+ elizabethbanks
+elizabethbanks
+Elizabeth Banks
+ cartiamallan
+cartiamallan
+Cartia Mallan
+ marcinbulka1
+marcinbulka1
+Marcin Bułka
+ sofiaroselive
+sofiaroselive
+Sofia Rose
+ lucasinutilismo
+lucasinutilismo
+Lucas Vinícius
+ vinny18burgos
+vinny18burgos
+Vinny Burgos
+ mingna_wen
+mingna_wen
+Ming-Na Wen
+ dejzi
+dejzi
+Diellza Krasniqi | Dejzi
+ southamericamemes
+southamericamemes
+South America Memes
+ xdannysteelex
+xdannysteelex
+Danny Steele
+ eusoualinny
+eusoualinny
+🎀♡𝓐𝓵𝓲𝓷𝓮 𝓼𝓸𝓪𝓻𝓮𝓼♡🎀
+ rivaldo
+rivaldo
+Rivaldo Ferreira
+ joaocaetano
+joaocaetano
+João Caetano
+ eminem
+eminem
+Marshall Mathers
+ rainbowrowell
+rainbowrowell
+Rainbow Rowell
+ richarlison
+richarlison
+Richarlison
+ patriciaabravanel
+patriciaabravanel
+Patricia Abravanel
+ cedestoni.xo
+cedestoni.xo
+Cedestoni 💟
+ kaylamoody
+kaylamoody
+Kayla Moody
+ lexileetv
+lexileetv
+𝓘𝓽’𝓼 𝓛𝓮𝔁𝓲 ʕ•ᴥ•ʔ★彡
+ musasbr_dv
+musasbr_dv
+𝐌𝐔𝐒𝐀𝐒 𝐁𝐑𝐀𝐒𝐈𝐋𝐄𝐈𝐑𝐀𝐒
+ biah_ot1
+biah_ot1
+Beatriz Rodrigues
+ cocopuffphatty
+cocopuffphatty
+𝑴𝒊𝒓𝒊𝒂𝒎 𝑴𝒂𝒌𝒆𝒃𝒂 🐻
+ girlrafaellaramalho
+girlrafaellaramalho
+RAFAELLA RAMALHO 🌶
+ lovefunkprodutora
+lovefunkprodutora
+LOVE FUNK
+ marlonwayans
+marlonwayans
+Marlon Wayans
+ lauraharrier
+lauraharrier
+LAURA HARRIER
+ yinyleonofficial
+yinyleonofficial
+𝐘𝐈𝐍𝐘𝐋𝐄𝐎𝐍
+ realtokyolynn
+realtokyolynn
+TOKYO LYNN
+ marigonzalez
+marigonzalez
+Mari Gonzalez
+ alanitcha
+alanitcha
+alana azevedo
+ dya.oficial
+dya.oficial
+Diana
+ l.lino17
+l.lino17
+Leandro Lino
+ jaimiealexander
+jaimiealexander
+Jaimie Alexander
+ marcel7sabitzer
+marcel7sabitzer
+Marcel Sabitzer
+ vitorcapial
+vitorcapial
+Vitor Capial
+ kerolaychaves
+kerolaychaves
+Kerolay Chaves
+ matuttomaloka
+matuttomaloka
+MATUTTOMALOKA
+ melodyoficial3
+melodyoficial3
+Melody
+ paulomuzy
+paulomuzy
+Paulo Muzy
+ loud_victor
+loud_victor
+Coringa
+ maribaianinha22
+maribaianinha22
+Mari Baianinha
+ doseofdesiree
+doseofdesiree
+Desiree Dulce
+ spiderman
+spiderman
+Spider-Man
+ thesarahhepolaexperience
+thesarahhepolaexperience
+Sarah Hepola
+ fefobarrichello
+fefobarrichello
+FB🇧🇷
+ _linedias
+_linedias
+Aline Dias
+ mairacardi
+mairacardi
+Maíra Cardi
+ lexiunderwood
+lexiunderwood
+lexi underwood
+ erica.pessoal21
+erica.pessoal21
+Erica Moraes
+ vanessaserfelizreserva
+vanessaserfelizreserva
+Vanessa Freitas
+ hungria_oficial
+hungria_oficial
+Hungria
+ themishamontana
+themishamontana
+Misha Montana
+ duduhaluch
+duduhaluch
+Dudu Haluch
+ euraymarcellle
+euraymarcellle
+Ray Marcelle
+ beautiful_girl_top_
+beautiful_girl_top_
+Beautiful_girl_top⭐️
+ anike.official
+anike.official
+ANIKE EKINA
+ moraesbodybuilder
+moraesbodybuilder
+Felipe Moraes IFBB PRO 🇧🇷
+ tarcisiodoacordeon
+tarcisiodoacordeon
+Tarcísio Do Acordeon
+ tatysindelreal
+tatysindelreal
+SINDEL 🧸
+ seltonmello
+seltonmello
+Selton Mello
+ eriana_blanco
+eriana_blanco
+ERIANA BLANCO
+ christieswadling
+christieswadling
+CEE
+ gebrasiloficial
+gebrasiloficial
+Grêmio Esportivo Brasil
+ annyalvesbroficiall
+annyalvesbroficiall
+THAWANY ALVES OFICIAL
+ natallia.love
+natallia.love
+𝓝𝓪𝓽𝓪𝓵𝓵𝓲𝓪.𝓵𝓸𝓿𝓮
+ donaireneoficial
+donaireneoficial
+Maria Irani
+ aruanfelix
+aruanfelix
+Aruan Felix
+ camilladelucas
+camilladelucas
+Camilla de Lucas
+ brunomars
+brunomars
+
+
+
+
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+

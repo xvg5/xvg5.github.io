@@ -1,0 +1,192 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+
+Javier Bardem	,	pendengarsuara.id	,	Thartey Wrenthley	,	노규오 [吾NAO]🇰🇷
+exiteighty	,	pendengarsuara.id	,	jst_ilo	,	 annalouieaustin
+exiteighty	,	pendengar suara	,	jst_ilo	,	annalouieaustin
+exit eighty	,	asep.supriatna.3010	,	Iloo	,	Anna Louise 🕊
+juanpurrego	,	asep.supriatna.3010	,	pranitasenthakuri	,	 currentcarimportt
+juanpurrego	,	Asep Supriatna	,	pranitasenthakuri	,	currentcarimportt
+Juan Pablo Urrego	,	workoutoit kampunghalamanofficial	,	Pranita Sen Thakuri	,	Current Car 🚙🇩🇴
+fedoremelianenkoofficial	,	kampunghalamanofficial	,	char_shimray	,	 iuliatica
+fedoremelianenkoofficial	,	Kampung Halaman Official	,	char_shimray	,	iuliatica
+Федор Емельяненко	,	episodemanusia	,	Yazing Charchar Shimray	,	Iulia Tica
+takethat	,	episodemanusia	,	esther_kinnyvandyke	,	 jossmooney
+takethat	,	Eccedentesiast.	,	esther_kinnyvandyke	,	jossmooney
+Take That	,	bunda_keisha93	,	Esther Kinny VanDyke	,	Joss Mooney
+xlystudio	,	bunda_keisha93	,	sweachhyayayaya	,	 fafafitness11
+xlystudio	,	Hilda Anggraeni	,	sweachhyayayaya	,	fafafitness11
+XLY Studio	,	ruang.pena politik_in	,	Sweachhya स्वेच्छा 🙋‍♀️	,	Fafa
+apuntesdecata	,	politik_in	,	livi_yeputho	,	 kareenakapoorkhan
+apuntesdecata	,	ruangfilm_id	,	livi_yeputho	,	kareenakapoorkhan
+Cata Gómez	,	ruangfilm_id	,	Livi kits	,	Kareena Kapoor Khan
+boyacoman	,	Ruang Film	,	okina_jamir	,	 annyajuliacg
+boyacoman	,	deanice11	,	okina_jamir	,	annyajuliacg
+Boyacoman	,	deanice11	,	Okina_jamir	,	ANNYA 🐷🍭🧸🎀🤍
+pabloxass	,	Dea Nice	,	sydneygurung	,	 shaharnahmias123
+pabloxass	,	atlasbeachclub	,	sydneygurung	,	shaharnahmias123
+Paolo Due	,	atlasbeachclub Photography Ideas	,	🎀	,	שחר נחמיאס
+acting__tips	,	perlu.mood	,	naffacakes101	,	 anellamiller
+acting__tips	,	perlu.mood	,	naffacakes101	,	anellamiller
+Acting Tips   Estudio de formacion actoral	,	perlu.mood	,	Nafisa Tamrakar	,	Anella Miller
+alcaldiacucuta	,	zivaafisah	,	_.nalna._	,	 tatianadw1
+alcaldiacucuta	,	zivaafisah	,	_.nalna._	,	tatianadw1
+Alcaldía de Cúcuta	,	zivana questa afisah	,	_wang_chen__	,	Tatianadw1
+jenniegarth	,	ayoparty.id	,	_wang_chen__	,	 piink__bombshell
+jenniegarth	,	ayoparty.id	,	Chen🪽	,	piink__bombshell
+Jennie 💛	,	AYO PARTY clow.clow	,	ttrinity4	,	Cierra Nichole 💕
+imkatianakay	,	Daisy Recto (Chloe)	,	ttrinity4	,	 katerina.soria
+imkatianakay	,	kaamonicaa	,	Trinity Rai	,	katerina.soria
+Katiana kay	,	kaamonicaa	,	zezen_kiso	,	Kat Soria
+the_rc_pilots_log	,	Caca Monica	,	zezen_kiso	,	 blissfulellie
+the_rc_pilots_log	,	tristansocial	,	Kevizeno Kiso	,	blissfulellie
+The RC Pilots Log	,	tristansocial	,	21__pnk	,	Ellie  Nice To Meet You
+akinteractive official	,	Tristan Yoder	,	21__pnk	,	 diedells
+akinteractive official	,	photographytipsidea	,	👼	,	diedells
+Ak Interactive	,	photographytipsidea Janofah Chiny	,	sungmo__chang	,	Diede Haspels
+thefilmzonebr	,	syakirah.5919	,	sungmo__chang	,	 vanessaroa.fit
+thefilmzonebr	,	syakirah.5919	,	sungmo_chang	,	vanessaroa.fit
+The Film Zone Brasil	,	syakirah	,	penelopekashung	,	Vanessa Roa
+ellefanning	,	jade.love.123	,	penelopekashung	,	 fannylopezoficial_
+ellefanning	,	jade.love.123	,	Penelope Kashung	,	fannylopezoficial_
+Elle Fanning	,	Jade Love	,	veronica_awungshi	,	𝔽𝕒𝕟𝕟𝕪 𝕃𝕠́𝕡𝕖𝕫
+danielasalazarc_	,	pod.cast9	,	veronica_awungshi	,	 lasirena69
+danielasalazarc_	,	pod.cast9	,	Veronica Awungshi🎀	,	lasirena69
+Daniela Salazar C 	,	𝙋𝙤𝙙𝙘𝙖𝙨𝙩 𝙆𝙚𝙝𝙞𝙙𝙪𝙥𝙖𝙣 mr.thank.you	,	achano_tsopoe_	,	ANTONELLA
+el_olfato	,	Mr. Thank You	,	achano_tsopoe_	,	 nermine_sfar
+el_olfato	,	dini_nurdiyantini	,	Achano	,	nermine_sfar
+El Olfato	,	dini_nurdiyantini	,	angela_murry_	,	Nermine sfar ملكة الإستعراض 🍊
+maria_elena6600	,	DINI NURDIYANTINI	,	angela_murry_	,	 soyregia
+maria_elena6600	,	tom_the_mime_official	,	Angela	,	soyregia
+Elena Maria	,	tom_the_mime_official	,	leno_shohe	,	Lilian Brindis 💎
+kevinburyoficial	,	Tom Mime	,	leno_shohe	,	 natalietortelli
+kevinburyoficial	,	janofahchiny	,	leno	,	natalietortelli
+Kevin Bury	,	janofahchiny kitabuku.id	,	kim_zeliang	,	Natalie Tortelli
+replik8models	,	GERAKAN MEMBACA INDONESIA	,	kim_zeliang	,	 onlyonerhonda
+replik8models	,	siyad_abdali	,	🌼🇰 🇮 🇲 🇿 🇪 🇱 🇮 🇦 🇳 🇬 🌼	,	onlyonerhonda
+Replik8Models	,	siyad_abdali	,	kin_kin_official	,	Rhonda
+iamsarahgrafferty	,	Siyad Ali	,	kin_kin_official	,	 jaacquelinet
+iamsarahgrafferty	,	thanyanan_bow	,	김유진	,	jaacquelinet
+Sarah Rafferty	,	thanyanan_bow	,	tuila_ama_	,	 espana927
+benjaminzg	,	Thanyanan Jaratchaiwong	,	tuila_ama_	,	espana927
+benjaminzg	,	erlina.felicia	,	Rupula Rupu	,	Ana Cozar
+Benjamin Zamora	,	erlina.felicia workoutoit	,	_vi.senn_	,	 vivitarantino96
+create_kids_edu	,	Story of me	,	_vi.senn_	,	vivitarantino96
+create_kids_edu	,	shoepolice__	,	Visaseno Mekro	,	Vivi ✨
+Create Kids Inc	,	shoepolice__	,	o_me_ka11	,	 caroflorez1
+rechismes	,	Shoe Police	,	o_me_ka11	,	caroflorez1
+rechismes	,	aksyip_p	,	sanglam_22	,	Carolina Flórez
+Rechismes	,	aksyip_p	,	sanglam_22	,	 sexycatrachita11
+baddangelofig	,	Muhammad Aksyif Fikri	,	__sris__ti	,	sexycatrachita11
+baddangelofig	,	kumalaciptadewi	,	__sris__ti	,	 jessicanaz
+Angelica Maria	,	kumalaciptadewi twinsgaje	,	Shinobi	,	jessicanaz
+burlesonbullies	,	twinsgaje	,	zizi_zimik	,	Jessica Nazarenus
+burlesonbullies	,	Twins 🍉	,	zizi_zimik	,	 ladyreed._
+Burleson Bullies  LLC ®️	,	aboox_paint	,	Zizi Zimik	,	ladyreed._
+nelsongiraldocatolico	,	aboox_paint	,	babeeskin____	,	𝕋𝕙𝕖𝕠𝕩𝕒𝕣𝕪.
+nelsongiraldocatolico	,	Dedy Kurniawan	,	babeeskin____	,	 tushy
+Nelson Giraldo	,	flisaakmy	,	Banyir baby 💭	,	tushy
+mundo_del_ganadero	,	flisaakmy	,	starsen_walling	,	TUSHY
+mundo_del_ganadero	,	flsa	,	starsen_walling	,	 dunaevskayaaaa
+  Mundo del Ganadero ® 🚜🐮🌿	,	mr.thank.you ruang.pena	,	Asen	,	dunaevskayaaaa
+elderdayanoficial	,	saudade 2.20 – 2.35	,	zimikwon_33	,	𝒟𝓊𝓃𝒶𝑒𝓋𝓈𝓀𝒶𝓎𝒶 𝒩𝒾𝓀𝑜𝓁
+elderdayanoficial	,	jihantihany	,	zimikwon_33	,	 evasavagiou
+Elder Dayan Diaz Rodriguez	,	jihantihany	,	kachuiwon🌻	,	evasavagiou
+soniabarahona academy	,	Jihan	,	ayusang_jamir	,	Eva Savagiou
+
+
+
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+
