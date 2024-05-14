@@ -1,0 +1,499 @@
+---
+layout: default1
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            {% include share.html %}
+        </div>
+
+        <!-- Post -->
+        {% assign author = site.authors[page.author] %}
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">{{ page.title }}</h1>
+
+            </div>
+
+            
+
+            <!-- Post Featured Image -->
+            {% if page.image %}
+
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            {% endif %}
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                {% if page.toc %}
+                    {% if page.beforetoc %}
+                        <p><em>{{page.beforetoc}}</em></p>
+                    {% endif %}
+                    <div class="toc mt-4 mb-4 lead">
+                        <h3 class="font-weight-bold">Summary</h3>
+                        {% include toc.html html=content %}
+                    </div>
+                {% endif %}
+                <!-- End Toc -->
+               
+                {{content}}
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = ''; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = ''; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+
+
+
+naremon_807
+แสนดี มีแต่เจ็บ 
+thaweesoot_06
+thaweesoot_06
+ฉัตรชฎา า.
+m_ookkkkkkkkkkkkkkk
+m_ookkkkkkkkkkkkkkk
+นี่มุกไม่ใช่แคร์
+thanyalak_060652
+thanyalak_060652
+ธัญลักษณ์ ฯ.
+yxki_2010
+yxki_2010
+Yuki Sleepzz
+chawannut.x
+chawannut.x
+karx.iexx
+karx.iexx
+การ์’ฟิวด์
+new_bunyave
+new_bunyave
+บุณยวีร์ แสงเมือง
+chxnxpxrn_2551
+chxnxpxrn_2551
+ชนาพร ร.
+piyawan.20_
+piyawan.20_
+ปิยวรรณ.
+nxght_zzz
+nxght_zzz
+𝑅𝑎𝑝𝑢𝑛𝑧𝑒𝑙
+kao_arrisa
+kao_arrisa
+𐙚
+witzxq9
+witzxq9
+อยากเป็นเอลซ่า
+nxnanichx
+nxnanichx
+Nichanan Kriwiset
+patpattlittlesprout
+patpattlittlesprout
+dinopatt 🦖
+pinnpw
+pinnpw
+Pinn
+xream_29
+xream_29
+Sukanda Khloekhla
+kamkaew.kridtiya
+kamkaew.kridtiya
+𝓀𝒶𝓂𝓀𝒶𝑒𝓌 💐
+pani_205
+pani_205
+Ⓜ️
+paththida_
+paththida_
+❥ ʙᴀɪғᴇʀɴ ⸝⸝ ෆ
+nokchanda_197
+nokchanda_197
+💒꒰nokchanda ꒱💒
+piyathida__05
+piyathida__05
+Piyathida Pookong
+parewe_51
+parewe_51
+pmttrx
+pmttrx
+𝘗𝘳𝘦𝘢𝘮𝘱𝘳𝘦𝘢𝘮•ू♡
+fhai_kum
+fhai_kum
+selenophile  n. 
+juraphorn_sky6
+juraphorn_sky6
+ᴶᵁᴿᴬᴾᴴᴼᴿᴺ ヅ
+_samigshoday.06
+_samigshoday.06
+Suphatsara Sajwas
+cmewwww_
+cmewwww_
+Pariyaporn Sompong
+_cjluvcat
+_cjluvcat
+CJ Chotimon
+patjima_2520
+patjima_2520
+จอนอ ♡
+ppuy_npt
+ppuy_npt
+Puy Nobpanit
+wandisengyi
+wandisengyi
+ᴡᴀɴᴅᴇᴇ_199x
+a.aunaunnn
+a.aunaunnn
+𝑖 𝑓𝑙𝑜𝑤𝑒𝑟 💐  𝑢
+pw.panita
+pw.panita
+มุก ก มิ๊ก ก
+chnml_714
+chnml_714
+ชนมล
+mxw_sp.mm
+mxw_sp.mm
+🌷
+panida557
+panida557
+ปลาย🌷
+cancer3waa
+cancer3waa
+โสดอยู่รู้ยัง
+ktnxka
+ktnxka
+💐
+ladiinuc
+ladiinuc
+น้ำ หวาน
+bbamjdpp
+bbamjdpp
+k_wang.48
+k_wang.48
+กวาง  นี่แหละ.
+milxkq_.05
+milxkq_.05
+🥛
+ssarnoon
+ssarnoon
+ᴘᴜʏɴᴏᴏɴ
+rnt.jas.c
+rnt.jas.c
+Jas Kiki
+nong.aoyyy
+nong.aoyyy
+𝐍𝐚𝐧𝐭𝐚𝐩𝐨𝐫𝐧.♡
+praenatnicha
+praenatnicha
+Natnicha Anu.
+noeyyyy.19
+noeyyyy.19
+Kanokporn Manessri
+jjanyazz
+jjanyazz
+𝖕𝖑𝖆𝖕𝖑𝖆`
+kh_ao2548
+kh_ao2548
+ข้าวสาร ฯ.
+tl2__5
+tl2__5
+น้ำฝน🌊
+d_daww__06
+d_daww__06
+Thansinee Sirisuk
+lukxew_
+lukxew_
+𐙚
+bamna_pat
+bamna_pat
+แบมแบม
+arrumbrellas
+arrumbrellas
+Sarunya Toochakat
+n2pn.ii
+n2pn.ii
+𝑨𝒎•𝒏𝒐𝒐𝒏 ᰔᩚ
+jubjang_gx
+jubjang_gx
+film.kpyy
+film.kpyy
+khrueatip_21
+khrueatip_21
+•🅑🅔🅐🅜•
+dream_baby.a
+dream_baby.a
+Aphisara Hansing
+_yi_nggg
+_yi_nggg
+K anokwan Butrach
+phatphichaaa
+phatphichaaa
+phatphichaaa
+thanchadear
+thanchadear
+dearmiiii
+h4rrysamx
+h4rrysamx
+𖦹
+its.gamgyy
+its.gamgyy
+Pakitta Gamm
+natthida_.zx
+natthida_.zx
+Smile Zx
+_khanitkul.__
+_khanitkul.__
+𝗲𝗶𝘀
+n1ngz__
+n1ngz__
+shechaya
+m.sutim_aa
+m.sutim_aa
+sutimaaaa’a
+aomsin_kwr
+aomsin_kwr
+ออมสิน🥷🏻
+baiimonntc
+baiimonntc
+punyaphon_____
+punyaphon_____
+˚ · .˚ ༘🦋⋆｡˚ 𝓒𝓗𝓔𝓔𝓡˚ · .˚ ༘🦋⋆｡˚
+_wanwisxp
+_wanwisxp
+𝑵𝒂𝒎𝒕𝒂𝒏𝒏~
+sasika__n.27
+sasika__n.27
+🥤
+p.immada_xzzz
+p.immada_xzzz
+Pimmada Kongtawee
+chxxnkan
+chxxnkan
+ma_meawma
+ma_meawma
+ɴɪᴄʜᴀᴋᴏʀɴ 🎠
+gungun____48
+gungun____48
+จา จา คุง ง
+dearr.rr_
+dearr.rr_
+😼
+kxanqz_
+kxanqz_
+🌾
+jitkanya_08
+jitkanya_08
+Jitkanya Klakeang
+esinghotthng
+esinghotthng
+Peingkwan Singtothong
+penpichaphitchom
+penpichaphitchom
+Penpicha Phitchom
+orxnezp08_
+orxnezp08_
+Cxllmepxm Zx
+piggy_1412
+piggy_1412
+พริก กี้.
+nixqz_
+nixqz_
+N
+nxmqz._29
+nxmqz._29
+น้องน้ามมม🫧
+bim___06
+bim___06
+👀
+nutchaployy
+nutchaployy
+𝓟
+lyniniiii
+lyniniiii
+nini
+ppchita_s
+ppchita_s
+Pct S.
+maymaymaki
+maymaymaki
+May-May Tang
+kea_phimphakwan
+kea_phimphakwan
+น.ส.พิมพ์พาขวัญ ชาวคูเวียง
+n.xqqhxyx
+n.xqqhxyx
+มายมี่🧤
+pandazx._09
+pandazx._09
+🖤
+pxmss_
+pxmss_
+nam_kg_bk23
+nam_kg_bk23
+Narm ZX
+ppppphicx_06
+ppppphicx_06
+Phichayaphon Pon-in
+baitong_ttongg
+baitong_ttongg
+Baitong Tongg
+fern_anukul
+fern_anukul
+Kanlaya Anukun
+ouy_boonyanan
+ouy_boonyanan
+ouy boonyanan
+palaloy_ploy
+palaloy_ploy
+tdonutt
+tdonutt
+♡🦋
+nopphaoum
+nopphaoum
+Nopphaket
+notxilgirlz
+notxilgirlz
+トンリュー
+s_sxtitx
+s_sxtitx
+แสตม ป์
+rattikan_56
+rattikan_56
+Daw💫
+bzxm.q
+bzxm.q
+kuatipp_
+kuatipp_
+•𝐊𝐮𝐚𝐭𝐢𝐩͟͟͞͞🦋
+mxrianani_
+mxrianani_
+ชื่อนี้มีแต่ให้ 👇 🆔 madam882  มี ด้วยนะ 
+nisawannnn_
+nisawannnn_
+ออเร็น.
+1hipxyxpxrn_
+1hipxyxpxrn_
+Tïppäÿäpörñ
+ptwitx
+ptwitx
+ปลายตีน🩴
+onamon_07
+onamon_07
+Onamon Saikaew
+_pam243
+_pam243
+Patthawee Pumkaew
+p_anthiiii
+p_anthiiii
+Panthida Thammanam
+cararepc
+cararepc
+ce_napx
+ce_napx
+อันฟอลกูก็ลบติดตามออกด้วยค่าาา
+nawarat18_
+nawarat18_
+ning
+prxkj1_
+prxkj1_
+Warattaya Jitrak
+ii.cxxz
+ii.cxxz
+Nantita Raengsook
+n.m1ng_kz
+n.m1ng_kz
+รพีทรัพย์ ฯ.
+phxtchlxdx._
+phxtchlxdx._
+booooomai
+booooomai
+nongbai
+ingkhwan_
+ingkhwan_
+𝙉𝙖𝙢𝙚𝙚𝙖𝙭𝙣🤍💫
+_mmilz
+_mmilz
+Onpreeya Ponsri
+ncxq.z
+ncxq.z
+จุ๊บจิ๊บ🍩
+6_kar3g
+6_kar3g
+31
+6_apisara
+6_apisara
+elfxzr_
+elfxzr_
+กะแอล🐷
+pxwon.n_
+pxwon.n_
+ภัทร
+8_.sunfebkom_
+8_.sunfebkom_
+ก๋อมแก้ม
+iam_6tz
+iam_6tz
+เเอ๋มอ๋อม
+satika.aa
+satika.aa
+Satika Sritanee
+rwrrn_2
+rwrrn_2
+1hansxrat_z
+1hansxrat_z
+𝗚𝘂𝗶𝘁𝗮𝗿🌟
+_pxtchxrin
+_pxtchxrin
+Pxtchxrin🍡
+ketsara_orn
+ketsara_orn
+Ketsara Boonjaroen
+
+
+
+
+
+
+
+</div></div></div></span>
+                                     </div>
+
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+     
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+
