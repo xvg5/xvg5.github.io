@@ -1,5 +1,5 @@
 ---
-layout: post16
+layout: post17
 title:  "The Role of PPC in Digital Marketing: Basics, Benefits, and Strategies"
 author: admin
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9k9qnb53K6JM4WM6-WwapOSBnLprWXKLZ8JxZArF8cTfsPm3od17scJnbJ89529pWZYt5V55uuVH4iOeGY4zuU5-Wv8neL22g2w2WIukXil9Uc3GtbgVfs0dPCS643AG0unDBsTjEtE872eo6mqaix5nCAjoSGumHGDmtfhZz5Mt42VrwqzNr1fycrPrC/s1600/20240517_091232.jpg"
