@@ -61,10 +61,10 @@
 {
 	"@context": "http://schema.org/",
 	"@type": "WebSite",
-	"url": "{{ site.url }}{{ site.baseurl }}",
+	"url": "{{ site.url }}",
 	"potentialAction": {
 		"@type": "SearchAction",
-		"target": "{{ site.url }}{{ site.baseurl }}?q={search_term_string}",
+		"target": "{{ site.url }}{{ site.baseurl }}/?q={search_term_string}",
 		"query-input": "required name=search_term_string"
 	}
 }
