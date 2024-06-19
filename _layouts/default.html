@@ -1,137 +1,456 @@
----
-layout: post
-title: How to Create Breadcrumbs on GitHub Pages
-image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirhzLBvM8sXBjtq7OO6koaMztZ4q5yTHqnAruVBt3iQpDPeiWcI3f_m4DdknjbMU9ZjTTds_zhmwJbKRjgCMrwuNAfuIMasrCjCaJUzUg7ryNFXT0dXHFofCwQlsZPv6AWw2sSHO6_R2FNEbYFADNU07To-SZujRBGQYvqQ9BAUZy2XzFuEHhwHVcxE1lo/s1600/20240619_193527.png"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <nav>
-        <b>Table of Contents</b>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#setup-github-pages">Setting Up GitHub Pages</a></li>
-            <li><a href="#understanding-breadcrumbs">Understanding Breadcrumbs</a></li>
-            <li><a href="#create-breadcrumb-html">Creating Breadcrumbs in HTML</a></li>
-            <li><a href="#styling-breadcrumbs-css">Styling Breadcrumbs with CSS</a></li>
-            <li><a href="#responsive-breadcrumbs">Making Breadcrumbs Responsive</a></li>
-            <li><a href="#adding-breadcrumbs-to-pages">Adding Breadcrumbs to Your GitHub Pages</a></li>
-            <li><a href="#testing-and-deployment">Testing and Deployment</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-    </nav>
+<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png"/>
 
-    <h3 id="introduction">Introduction</h3>
-    <p>Breadcrumbs are a navigation aid used in user interfaces. They provide users with a way to keep track of their locations within programs or documents. This guide will walk you through creating breadcrumbs on GitHub Pages using HTML and CSS.</p>
 
-    <h3 id="setup-github-pages">Setting Up GitHub Pages</h3>
-    <p>Before you can add breadcrumbs to your GitHub Pages site, you need to set up GitHub Pages. Follow these steps to set up your GitHub Pages:</p>
-    <ol>
-        <li>Go to your GitHub repository.</li>
-        <li>Click on "Settings" at the top of the repository page.</li>
-        <li>Scroll down to the "GitHub Pages" section.</li>
-        <li>Under "Source", select the branch you want to use for GitHub Pages, typically the <code>main</code> branch or a <code>docs</code> folder.</li>
-        <li>Click "Save" to enable GitHub Pages for your repository.</li>
-        <li>Your site will be published at <code>https://your-username.github.io/your-repository</code>.</li>
-    </ol>
+{% seo %}
 
-    <h3 id="understanding-breadcrumbs">Understanding Breadcrumbs</h3>
-    <p>Breadcrumbs are a series of navigational links that help users understand and navigate the hierarchy of a website. They are typically placed at the top of a webpage and show the user's current location in the site’s structure. Each item in the breadcrumb trail is a link to a parent page, allowing users to easily navigate back to previous sections.</p>
-    <p>For example, if you are on a product page within a category on an e-commerce site, the breadcrumb might look like this:</p>
-    <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>&nbsp;-&nbsp; 
-        <li><a href="category.html">Category</a></li>&nbsp;-&nbsp;
-        <li>Product</li>
-    </ul>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    
+<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet"/>
 
-    <h3 id="create-breadcrumb-html">Creating Breadcrumbs in HTML</h3>
-    <p>To create a breadcrumb navigation, you need to write the HTML structure. Here is an example:</p>
-    <pre>
-        <code>
-&lt;ul class="breadcrumb"&gt;
-    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="category.html"&gt;Category&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Current Page&lt;/li&gt;
-&lt;/ul&gt;
-        </code>
-    </pre>
-    <p>Each <code>&lt;li&gt;</code> element represents a step in the breadcrumb trail. The last <code>&lt;li&gt;</code> is the current page and typically does not contain a link.</p>
+<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet"/>
 
-    <h3 id="styling-breadcrumbs-css">Styling Breadcrumbs with CSS</h3>
-    <p>To make your breadcrumbs look good, you can add some CSS styles. Here is an example:</p>
-    <pre>
-        <code>
-.breadcrumb {
-    display: flex;
-    list-style: none;
-    padding: 8px 16px;
-    background-color: #f1f1f1;
-    border-radius: 4px;
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.title }}",
+  "description": "{{ page.title }}",
+  "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+  "uploadDate": "2024-06-19T08:00:00+08:00",
+  "duration": "PT55M47S",
+  "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
 }
-.breadcrumb li {
-    margin-right: 10px;
-}
-.breadcrumb li+li:before {
-    content: "&gt;";
-    margin-right: 10px;
-}
-.breadcrumb a {
-    text-decoration: none;
-    color: #0275d8;
-}
-.breadcrumb a:hover {
-    text-decoration: underline;
-}
-        </code>
-    </pre>
-    <p>This CSS will give your breadcrumbs a clean and simple look. The <code>.breadcrumb</code> class is used to style the entire breadcrumb container, while the <code>.breadcrumb li</code> class styles each breadcrumb item. The <code>.breadcrumb li+li:before</code> selector adds a ">" separator between breadcrumb items.</p>
+</script>
 
-    <h3 id="responsive-breadcrumbs">Making Breadcrumbs Responsive</h3>
-    <p>To ensure that your breadcrumbs look good on all devices, you need to make them responsive. This can be done using media queries in CSS:</p>
-    <pre>
-        <code>
-@media (max-width: 600px) {
-    .breadcrumb {
-        flex-direction: column;
-    }
-    .breadcrumb li {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-    .breadcrumb li+li:before {
-        content: "";
-    }
+	<!--breadcrumb-->
+		<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "photo",
+			"item": "https://rfazriansyah376.github.io/"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "video",
+			"item": "https://rfazriansyah376.github.io/page2/"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "leaked contents",
+			"item": "https://rfazriansyah376.github.io/page3/"
+		},
+		{
+			"@type": "ListItem",
+			"position": 4,
+			"name": "more collections",
+			"item": "https://rfazriansyah376.github.io/page4/"
+		}
+	]
 }
-        </code>
-    </pre>
-    <p>With these media queries, the breadcrumbs will stack vertically on small screens, ensuring they remain readable and user-friendly.</p>
+</script><!--breadcrumb-->
+	
+	<!-- sitelinks -->
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "WebSite",
+	"url": "https://rfazriansyah376.github.io",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://rfazriansyah376.github.io/page2/?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
+}
+</script><!-- sitelinks -->
+	
+	
+	<!-- how to -->
+	<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "HowTo",
+	"name": "{{ page.title }}",
+	"description": "{{ page.title }}",
+	"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+	"totalTime": "PT57M",
+	"estimatedCost": {
+		"@type": "MonetaryAmount",
+		"currency": "USD",
+		"value": "2"
+	},
+	"step": [
+		{
+			"@type": "HowToStep",
+			"name": "find download link",
+			"text": "find download link on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "click download button",
+			"text": "click download button on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		}
+	]
+}
+</script><!-- how to -->
 
-    <h3 id="adding-breadcrumbs-to-pages">Adding Breadcrumbs to Your GitHub Pages</h3>
-    <p>Once you have your HTML and CSS ready, you can add the breadcrumb navigation to your GitHub Pages. Follow these steps:</p>
-    <ol>
-        <li>Open the HTML file where you want to add the breadcrumb navigation.</li>
-        <li>Paste the breadcrumb HTML structure within the <code>&lt;body&gt;</code> tag at the appropriate location.</li>
-        <li>Link the CSS in your <code>&lt;head&gt;</code> section by adding the following line:
-            <pre>
-                <code>
-&lt;link rel="stylesheet" href="path/to/your/styles.css"&gt;
-                </code>
-            </pre>
-        </li>
-        <li>Save the changes and commit them to your repository.</li>
-        <li>Push the changes to GitHub.</li>
-    </ol>
-    <p>Once pushed, your GitHub Pages site will automatically update with the new breadcrumb navigation.</p>
+	
+	
+	
+<meta name="yandex-verification" content="eb02b88e0cf19b61" />
 
-    <h3 id="testing-and-deployment">Testing and Deployment</h3>
-    <p>After adding the breadcrumbs to your GitHub Pages, it is important to test them to ensure they work correctly and look good across different devices:</p>
-    <ol>
-        <li>Open your GitHub Pages site in a web browser.</li>
-        <li>Navigate through different pages to check the breadcrumb trail.</li>
-        <li>Use developer tools (press F12) to simulate different screen sizes and ensure the breadcrumbs are responsive.</li>
-        <li>Fix any issues that arise during testing and push the changes to GitHub.</li>
-    </ol>
+	
+</head>
 
-    <h3 id="conclusion">Conclusion</h3>
-    <p>By following these steps, you can create a functional and aesthetically pleasing breadcrumb navigation for your GitHub Pages site. Breadcrumbs enhance the user experience by making navigation easier and more intuitive. They help users understand the structure of your site and easily return to previous sections.</p>
-    <p>With the combination of HTML and CSS, you can customize the breadcrumbs to fit the design of your site and ensure they are responsive for all devices. Happy coding!</p>
+
+<body class="{{layout}}" >
+
+	    
+
+
+
+
+
+
+
+
+
+	    
+	
+
+	
+	
+	
+	
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<center class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"/>
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                {% if page.url == "/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/terms-and-conditions">Terms and Conditions</a>
+                </li>
+		    
+		    <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/privacy-policy">Privacy Policy</a>
+                </li>
+
+		    <br />
+
+                {% include search-lunr.html %}
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</center>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+	
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    {{ content }}
+
+
+    
+    
+</div>    
+</div>
+
+
+	
+ <a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+	<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags" >
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                {% endfor %}
+            {% else %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+		</div>
+	</div>
+</div>
+
+	</div></div></div></span>
+	
+	
+	
+	
+	
+
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+    
+
+    
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+		    <br />Email: rfazriansyah376@gmail.com
+		    
+            </div>
+            
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+
+{% if site.lazyimages == "enabled" %}
+<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+{% endif %}
+
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+{% if page.layout == 'post' %}
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id='ds' style='width:100%;margin:auto; text-align:center;float:none;overflow:hidden; display:scroll;position:fixed; bottom:0%;z-index:9999'>
+         <div><a id='close-ds' onclick='document.getElementById(&apos;ds&apos;).style.display = &apos;none&apos;;' style='cursor:pointer;'><img alt='close' src='https://3.bp.blogspot.com/-ZZSacDHLWlM/VhvlKTMjbLI/AAAAAAAAF2M/UDzU4rrvcaI/s1600/btn_close.gif' title='close button'/></a></div>
+    <div style='background-color:#fff; text-align:center;display:block;max-width:100%;height:50px;overflow:auto;margin:auto'>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a03ccd983783081c32e98687fa158143',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/a03ccd983783081c32e98687fa158143/invoke.js"></script>
+<br /><script type="text/javascript">
+	atOptions = {
+		'key' : '624f7847107a10488032a7a551cba5b8',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/624f7847107a10488032a7a551cba5b8/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'ac9a478c23cd777b121d82c4be9b2966',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/ac9a478c23cd777b121d82c4be9b2966/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '5fb4250a8668afd9928b28b1f9666ffb',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/5fb4250a8668afd9928b28b1f9666ffb/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '93c978e1d215bc2856d6c15002f5768a',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/93c978e1d215bc2856d6c15002f5768a/invoke.js"></script><script type="text/javascript">
+	atOptions = {
+		'key' : '8c3f4c07f4823b0a09c58bd25bf40e7f',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/8c3f4c07f4823b0a09c58bd25bf40e7f/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '41790db49dd937b4476b9261bfe6c2c3',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/41790db49dd937b4476b9261bfe6c2c3/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '8b3c834ed652ac093d7256450645b41e',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/8b3c834ed652ac093d7256450645b41e/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'c4b64b8f7f8d2ddcbd4a8542265c7c98',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/c4b64b8f7f8d2ddcbd4a8542265c7c98/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'fdf01d974a14502985f975dd7f24e731',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/fdf01d974a14502985f975dd7f24e731/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4eb89e36bf3831c955ed7258c4e8f7c5',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/4eb89e36bf3831c955ed7258c4e8f7c5/invoke.js"></script>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'fd91bb4f5f140787a9af421450c422e8',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//scheduleginnarcotic.com/fd91bb4f5f140787a9af421450c422e8/invoke.js"></script>
+
+</div></div>
+
+<script type="text/javascript">
+   var uid = '342117';
+   var wid = '717034';
+   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
+   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
+</script>
+
+	<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" type="text/css" />
+
+</body>
+</html>
 
 
