@@ -42,7 +42,7 @@
 			"@type": "ListItem",
 			"position": 1,
 			"name": "photo",
-			"item": "{{ base.url }}"
+			"item": "{{ site.url }}"
 		},
 		{
 			"@type": "ListItem",
@@ -54,7 +54,7 @@
 			"@type": "ListItem",
 			"position": 3,
 			"name": "leaked contents",
-			"item": "/{{ page.url }}"
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
 		},
 		{
 			"@type": "ListItem",
