@@ -25,7 +25,7 @@
   "@type": "VideoObject",
   "name": "{{ page.title }}",
   "description": "{{ page.title }}",
-  "thumbnailUrl": "{{ page.image }}",
+  "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
   "uploadDate": "2024-06-17T08:00:00+08:00",
   "duration": "PT55M47S",
   "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
