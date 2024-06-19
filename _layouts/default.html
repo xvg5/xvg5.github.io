@@ -26,23 +26,22 @@
   "name": "{{ page.title }}",
   "description": "{{ page.title }}",
   "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-  "uploadDate": "{{ page.date | date:"%Y-%m-%d" }}",
+  "uploadDate": "{{ page.last_modified_at | date_to_xmlschema }}",
   "duration": "PT55M47S",
   "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
 }
 </script>
 
 <!--
-<span class="post-date"><time class="post-date" datetime="
-
->{{ page.date | date_to_string }}</time></span>           
+<span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
                 {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                (Updated: <time datetime="
+" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                 {% endif %}
                 </small>
             </p>
--->
 
+-->
 	
 <meta name="yandex-verification" content="eb02b88e0cf19b61" />
 
