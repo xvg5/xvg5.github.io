@@ -1,0 +1,136 @@
+---
+layout: post
+title: How to Create Breadcrumbs on GitHub Pages
+image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirhzLBvM8sXBjtq7OO6koaMztZ4q5yTHqnAruVBt3iQpDPeiWcI3f_m4DdknjbMU9ZjTTds_zhmwJbKRjgCMrwuNAfuIMasrCjCaJUzUg7ryNFXT0dXHFofCwQlsZPv6AWw2sSHO6_R2FNEbYFADNU07To-SZujRBGQYvqQ9BAUZy2XzFuEHhwHVcxE1lo/s1600/20240619_193527.png"
+---
+
+    <nav>
+        <b>Table of Contents</b>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#setup-github-pages">Setting Up GitHub Pages</a></li>
+            <li><a href="#understanding-breadcrumbs">Understanding Breadcrumbs</a></li>
+            <li><a href="#create-breadcrumb-html">Creating Breadcrumbs in HTML</a></li>
+            <li><a href="#styling-breadcrumbs-css">Styling Breadcrumbs with CSS</a></li>
+            <li><a href="#responsive-breadcrumbs">Making Breadcrumbs Responsive</a></li>
+            <li><a href="#adding-breadcrumbs-to-pages">Adding Breadcrumbs to Your GitHub Pages</a></li>
+            <li><a href="#testing-and-deployment">Testing and Deployment</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <h3 id="introduction">Introduction</h3>
+    <p>Breadcrumbs are a navigation aid used in user interfaces. They provide users with a way to keep track of their locations within programs or documents. This guide will walk you through creating breadcrumbs on GitHub Pages using HTML and CSS.</p>
+
+    <h3 id="setup-github-pages">Setting Up GitHub Pages</h3>
+    <p>Before you can add breadcrumbs to your GitHub Pages site, you need to set up GitHub Pages. Follow these steps to set up your GitHub Pages:</p>
+    <ol>
+        <li>Go to your GitHub repository.</li>
+        <li>Click on "Settings" at the top of the repository page.</li>
+        <li>Scroll down to the "GitHub Pages" section.</li>
+        <li>Under "Source", select the branch you want to use for GitHub Pages, typically the <code>main</code> branch or a <code>docs</code> folder.</li>
+        <li>Click "Save" to enable GitHub Pages for your repository.</li>
+        <li>Your site will be published at <code>https://your-username.github.io/your-repository</code>.</li>
+    </ol>
+
+    <h3 id="understanding-breadcrumbs">Understanding Breadcrumbs</h3>
+    <p>Breadcrumbs are a series of navigational links that help users understand and navigate the hierarchy of a website. They are typically placed at the top of a webpage and show the user's current location in the site’s structure. Each item in the breadcrumb trail is a link to a parent page, allowing users to easily navigate back to previous sections.</p>
+    <p>For example, if you are on a product page within a category on an e-commerce site, the breadcrumb might look like this:</p>
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html">Category</a></li>
+        <li>Product</li>
+    </ul>
+
+    <h3 id="create-breadcrumb-html">Creating Breadcrumbs in HTML</h3>
+    <p>To create a breadcrumb navigation, you need to write the HTML structure. Here is an example:</p>
+    <pre>
+        <code>
+&lt;ul class="breadcrumb"&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="category.html"&gt;Category&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Current Page&lt;/li&gt;
+&lt;/ul&gt;
+        </code>
+    </pre>
+    <p>Each <code>&lt;li&gt;</code> element represents a step in the breadcrumb trail. The last <code>&lt;li&gt;</code> is the current page and typically does not contain a link.</p>
+
+    <h3 id="styling-breadcrumbs-css">Styling Breadcrumbs with CSS</h3>
+    <p>To make your breadcrumbs look good, you can add some CSS styles. Here is an example:</p>
+    <pre>
+        <code>
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+.breadcrumb li {
+    margin-right: 10px;
+}
+.breadcrumb li+li:before {
+    content: "&gt;";
+    margin-right: 10px;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #0275d8;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+        </code>
+    </pre>
+    <p>This CSS will give your breadcrumbs a clean and simple look. The <code>.breadcrumb</code> class is used to style the entire breadcrumb container, while the <code>.breadcrumb li</code> class styles each breadcrumb item. The <code>.breadcrumb li+li:before</code> selector adds a ">" separator between breadcrumb items.</p>
+
+    <h3 id="responsive-breadcrumbs">Making Breadcrumbs Responsive</h3>
+    <p>To ensure that your breadcrumbs look good on all devices, you need to make them responsive. This can be done using media queries in CSS:</p>
+    <pre>
+        <code>
+@media (max-width: 600px) {
+    .breadcrumb {
+        flex-direction: column;
+    }
+    .breadcrumb li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .breadcrumb li+li:before {
+        content: "";
+    }
+}
+        </code>
+    </pre>
+    <p>With these media queries, the breadcrumbs will stack vertically on small screens, ensuring they remain readable and user-friendly.</p>
+
+    <h3 id="adding-breadcrumbs-to-pages">Adding Breadcrumbs to Your GitHub Pages</h3>
+    <p>Once you have your HTML and CSS ready, you can add the breadcrumb navigation to your GitHub Pages. Follow these steps:</p>
+    <ol>
+        <li>Open the HTML file where you want to add the breadcrumb navigation.</li>
+        <li>Paste the breadcrumb HTML structure within the <code>&lt;body&gt;</code> tag at the appropriate location.</li>
+        <li>Link the CSS in your <code>&lt;head&gt;</code> section by adding the following line:
+            <pre>
+                <code>
+&lt;link rel="stylesheet" href="path/to/your/styles.css"&gt;
+                </code>
+            </pre>
+        </li>
+        <li>Save the changes and commit them to your repository.</li>
+        <li>Push the changes to GitHub.</li>
+    </ol>
+    <p>Once pushed, your GitHub Pages site will automatically update with the new breadcrumb navigation.</p>
+
+    <h3 id="testing-and-deployment">Testing and Deployment</h3>
+    <p>After adding the breadcrumbs to your GitHub Pages, it is important to test them to ensure they work correctly and look good across different devices:</p>
+    <ol>
+        <li>Open your GitHub Pages site in a web browser.</li>
+        <li>Navigate through different pages to check the breadcrumb trail.</li>
+        <li>Use developer tools (press F12) to simulate different screen sizes and ensure the breadcrumbs are responsive.</li>
+        <li>Fix any issues that arise during testing and push the changes to GitHub.</li>
+    </ol>
+
+    <h3 id="conclusion">Conclusion</h3>
+    <p>By following these steps, you can create a functional and aesthetically pleasing breadcrumb navigation for your GitHub Pages site. Breadcrumbs enhance the user experience by making navigation easier and more intuitive. They help users understand the structure of your site and easily return to previous sections.</p>
+    <p>With the combination of HTML and CSS, you can customize the breadcrumbs to fit the design of your site and ensure they are responsive for all devices. Happy coding!</p>
+
