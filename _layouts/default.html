@@ -61,7 +61,7 @@
 {
 	"@context": "http://schema.org/",
 	"@type": "WebSite",
-	"url": "{{ site.url }}",
+	"url": "{{ site.url }}{{ site.baseurl }}",
 	"potentialAction": {
 		"@type": "SearchAction",
 		"target": {{ site.url }}{{ site.baseurl }}?q={search_term_string}",
