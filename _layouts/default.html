@@ -26,9 +26,7 @@
   "name": "{{ page.title }}",
   "description": "{{ page.title }}",
   "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-  "uploadDate": "{% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}",
+  "uploadDate": "(Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)",
   "duration": "PT55M47S",
   "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
 }
