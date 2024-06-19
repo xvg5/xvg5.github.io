@@ -80,6 +80,43 @@
 }
 </script><!-- sitelinks -->
 	
+	
+	<!-- how to -->
+	<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "HowTo",
+	"name": "{{ page.title }}",
+	"description": "{{ page.title }}",
+	"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+	"totalTime": "PT57M",
+	"estimatedCost": {
+		"@type": "MonetaryAmount",
+		"currency": "USD",
+		"value": "2"
+	},
+	"step": [
+		{
+			"@type": "HowToStep",
+			"name": "find download link",
+			"text": "find download link on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "click download button",
+			"text": "click download button on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		}
+	]
+}
+</script><!-- how to -->
+
+	
+	
+	
 <meta name="yandex-verification" content="eb02b88e0cf19b61" />
 
 	
