@@ -175,7 +175,62 @@ button {
     }
 		</style>
 <base target="_blank">
+
 	
+    <style>
+        nav {
+            background-color: #333;
+            width: 250px;
+            height: 100vh;
+            overflow: auto;
+            position: fixed;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            width: 100%;
+        }
+        nav ul li a, .dropdown-btn {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            text-align: left;
+            width: 100%;
+        }
+        nav ul li a:hover, .dropdown-btn:hover {
+            background-color: #575757;
+        }
+        .dropdown-content {
+            display: none;
+            background-color: #444;
+            margin-left: 15px;
+        }
+        .dropdown-content a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 16px;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            width: calc(100% - 260px);
+        }
+    </style>
+
+
+
 </head>
 
 
