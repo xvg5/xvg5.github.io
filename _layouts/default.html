@@ -177,6 +177,8 @@ button {
 <base target="_blank">
 	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <style>
         /* Sidebar styles */
         .sidebar {
@@ -185,13 +187,13 @@ button {
             height: 100%;
             position: fixed;
             top: 0;
-            left: -260px;
-            transition: left 0.3s ease;
+            right: -260px;
+            transition: right 0.3s ease;
             z-index: 1000;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .sidebar.open {
-            left: 0;
+            right: 0;
         }
         .sidebar ul {
             list-style-type: none;
@@ -218,7 +220,7 @@ button {
         .menu-toggle {
             position: fixed;
             top: 10px;
-            left: 10px;
+            right: 10px;
             z-index: 1100;
             cursor: pointer;
             background-color: #333333;
@@ -283,17 +285,17 @@ button {
         /* Responsive adjustments */
         @media (max-width: 1024px) {
             .sidebar.open {
-                left: 0;
+                right: 0;
             }
         }
         @media (max-width: 768px) {
             .sidebar {
-                left: -100%;
+                right: -100%;
                 width: 100%;
                 max-width: 260px;
             }
             .sidebar.open {
-                left: 0;
+                right: 0;
             }
         }
         .sidebar ul li a {
@@ -328,8 +330,18 @@ button {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
     </style>
+
 </head>
 <body class="{{layout}}">
+	
+	<div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="{{ site.url }}/">
+    <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}"/>
+    </a>
+    <!-- End Logo -->
+    	</div>
 	
     <div class="container">
         <div class="sidebar"><br /><br /><br />
