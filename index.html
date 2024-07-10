@@ -16,6 +16,14 @@ title: Home
 
 <!-- Posts Index
 ================================================== -->
+
+ <div class="row">
+    <div class="col-12 mb-4">
+          {% for post in site.categories.seo limit: 6 %}
+          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+            <div class="card">
+             <div class="card-body">
+                
 <section class="recent-posts">
 
     <div class="section-title">
@@ -36,6 +44,14 @@ title: Home
 
 </section>
 
+           </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      
+                
 <!-- Pagination
 ================================================== -->
 <div class="bottompagination">
