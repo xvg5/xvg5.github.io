@@ -177,52 +177,192 @@ button {
 <base target="_blank">
 	
 	
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        nav {
-            background-color: #333;
-            width: 250px;
-            height: 100vh;
-            overflow: auto;
-            position: fixed;
+        /* General styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #333333;
+            transition: background-color 0.3s, color 0.3s;
         }
-        nav ul {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding-top: 60px;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            background-color: #333333;
+            width: 260px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -260px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sidebar.open {
+            left: 0;
+        }
+        .sidebar ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
-        nav ul li {
-            width: 100%;
+        .sidebar ul li {
+            margin-bottom: 8px;
         }
-        nav ul li a, .dropdown-btn {
-            padding: 15px;
+        .sidebar ul li a {
+            display: block;
+            padding: 12px 20px;
             text-decoration: none;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
             font-size: 18px;
-            color: white;
-            display: block;
-            text-align: left;
-            width: 100%;
         }
-        nav ul li a:hover, .dropdown-btn:hover {
-            background-color: #575757;
+        .sidebar ul li a:hover {
+            background-color: #555555;
         }
-        .dropdown-content {
-            display: none;
-            background-color: #444;
-            margin-left: 15px;
-        }
-        .dropdown-content a {
+        .menu-toggle {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1100;
+            cursor: pointer;
+            background-color: #333333;
+            color: #ffffff;
             padding: 10px 15px;
-            text-decoration: none;
-            color: white;
-            display: block;
-            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .dropdown-content a:hover {
-            background-color: #575757;
+        .menu-toggle:hover {
+            background-color: #555555;
         }
-        .dropdown:hover .dropdown-content {
-            display: block;
+
+        /* Main content styles */
+        .main-content {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            margin-left: 280px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 5px;
         }
+        .feed {
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        body.dark-mode .sidebar {
+            background-color: #111111;
+        }
+        body.dark-mode .sidebar ul li a {
+            color: #ffffff;
+        }
+        body.dark-mode .sidebar ul li a:hover {
+            background-color: #333333;
+        }
+        body.dark-mode .menu-toggle {
+            background-color: #333333;
+        }
+        body.dark-mode .menu-toggle:hover {
+            background-color: #555555;
+        }
+        body.dark-mode .main-content {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .main-content {
+                max-width: 100%;
+                margin-left: 0;
+            }
+            .sidebar.open {
+                left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .sidebar {
+                left: -100%;
+                width: 100%;
+                max-width: 260px;
+            }
+            .sidebar.open {
+                left: 0;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+        .sidebar ul li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk perubahan warna */
+}
+
+.sidebar ul li a:hover {
+    background-color: #555555; /* Warna latar belakang saat hover */
+    color: #00aaff; /* Warna teks saat hover */
+}
+
+.main-content h2 {
+    color: #00aaff; /* Warna teks judul */
+}
+
+.menu-toggle {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transisi untuk efek */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-toggle:hover {
+    background-color: #555555;
+    color: #00aaff; /* Warna teks saat tombol dihover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
     </style>
 
 
@@ -267,148 +407,39 @@ button {
     </a>
     <!-- End Logo -->
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarMediumish">
-
-        <!-- Begin Menu -->
-
-            <ul class="navbar-nav ml-auto">
-
-
-
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">SEO</a>
-                <div class="dropdown-content">
-                    <a href="#seo-basics">SEO Basics</a>
-                    <a href="#keyword-research">Keyword Research</a>
-                    <a href="#on-page-seo">On-Page SEO</a>
-                    <a href="#off-page-seo">Off-Page SEO</a>
-                    <a href="#technical-seo">Technical SEO</a>
-                    <a href="#local-seo">Local SEO</a>
-                    <a href="#ecommerce-seo">E-commerce SEO</a>
-                    <a href="#voice-search-seo">Voice Search SEO</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Content Marketing</a>
-                <div class="dropdown-content">
-                    <a href="#content-strategy">Content Strategy</a>
-                    <a href="#blogging">Blogging</a>
-                    <a href="#video-marketing">Video Marketing</a>
-                    <a href="#infographics">Infographics</a>
-                    <a href="#podcasting">Podcasting</a>
-                    <a href="#ebooks-whitepapers">E-books and Whitepapers</a>
-                    <a href="#content-repurposing">Content Repurposing</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Social Media Marketing</a>
-                <div class="dropdown-content">
-                    <a href="#platform-strategies">Platform Strategies</a>
-                    <a href="#content-creation">Content Creation</a>
-                    <a href="#paid-advertising">Paid Advertising</a>
-                    <a href="#community-management">Community Management</a>
-                    <a href="#social-listening">Social Listening</a>
-                    <a href="#influencer-marketing">Influencer Marketing</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Email Marketing</a>
-                <div class="dropdown-content">
-                    <a href="#list-building">List Building</a>
-                    <a href="#segmentation-personalization">Segmentation and Personalization</a>
-                    <a href="#campaign-creation">Campaign Creation</a>
-                    <a href="#analytics-optimization">Analytics and Optimization</a>
-                    <a href="#automation">Automation</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">PPC Advertising</a>
-                <div class="dropdown-content">
-                    <a href="#google-ads">Google Ads</a>
-                    <a href="#bing-ads">Bing Ads</a>
-                    <a href="#display-advertising">Display Advertising</a>
-                    <a href="#social-media-ads">Social Media Ads</a>
-                    <a href="#youtube-ads">YouTube Ads</a>
-                    <a href="#shopping-ads">Shopping Ads</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Affiliate Marketing</a>
-                <div class="dropdown-content">
-                    <a href="#getting-started">Getting Started</a>
-                    <a href="#affiliate-strategies">Affiliate Strategies</a>
-                    <a href="#program-management">Program Management</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Influencer Marketing</a>
-                <div class="dropdown-content">
-                    <a href="#finding-influencers">Finding Influencers</a>
-                    <a href="#campaign-creation">Campaign Creation</a>
-                    <a href="#measuring-roi">Measuring ROI</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Analytics and Data-Driven Marketing</a>
-                <div class="dropdown-content">
-                    <a href="#google-analytics">Google Analytics</a>
-                    <a href="#data-interpretation">Data Interpretation</a>
-                    <a href="#tracking-roi">Tracking ROI</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Conversion Rate Optimization (CRO)</a>
-                <div class="dropdown-content">
-                    <a href="#ab-testing">A/B Testing</a>
-                    <a href="#user-experience">User Experience (UX)</a>
-                    <a href="#landing-page-optimization">Landing Page Optimization</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-btn">Marketing Automation</a>
-                <div class="dropdown-content">
-                    <a href="#tools-platforms">Tools and Platforms</a>
-                    <a href="#workflow-creation">Workflow Creation</a>
-                    <a href="#integration-crm">Integration with CRM</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
-
-
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.url }}/">Home</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.url }}/terms-and-conditions">Terms and Conditions</a>
-                </li>
-		    
-		    <li class="nav-item">
-                <a class="nav-link" href="{{ site.url }}/privacy-policy">Privacy Policy</a>
-                </li>
-
-		    <br />
-
-                {% include search-lunr.html %}
-
+    
+   
+        <div class="sidebar"><br /><br /><br />
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#seo"><i class="fas fa-search"></i> SEO</a></li>
+                <li><a href="#content-marketing"><i class="fas fa-pen"></i> Content Marketing</a></li>
+                <li><a href="#social-media"><i class="fas fa-share-alt"></i> Social Media Marketing</a></li>
+                <li><a href="#email-marketing"><i class="fas fa-envelope"></i> Email Marketing</a></li>
+                <li><a href="#ppc"><i class="fas fa-dollar-sign"></i> PPC Advertising</a></li>
+                <li><a href="#affiliate-marketing"><i class="fas fa-handshake"></i> Affiliate Marketing</a></li>
+                <li><a href="#influencer-marketing"><i class="fas fa-users"></i> Influencer Marketing</a></li>
+                <li><a href="#analytics"><i class="fas fa-chart-line"></i> Analytics & Data-Driven Marketing</a></li>
+                <li><a href="#cro"><i class="fas fa-bullseye"></i> Conversion Rate Optimization (CRO)</a></li>
+                <li><a href="#marketing-automation"><i class="fas fa-robot"></i> Marketing Automation</a></li>
             </ul>
 
-        <!-- End Menu -->
-
-    </div>
-
+            <ul>
+                <li><strong>1. SEO (Search Engine Optimization)</strong>
+                    <ul>
+                        <li>SEO Basics: What is SEO and why is it important.</li>
+                        <li>Keyword Research: Tools and techniques for finding the right keywords.</li>
+                        <li>On-Page SEO: Optimize content, meta tags, and page structure.</li>
+                        <li>Off-Page SEO: Link building, social bookmarking, and brand mentions.</li>
+                        <li>Technical SEO: URL structure, page speed, and mobile optimization.</li>
+                        <li>Local SEO: Optimization for local search and Google My Business.</li>
+                        <li>E-commerce SEO: Optimization of product pages and rich snippets.</li>
+                        <li>Voice Search SEO: Optimization for voice search.</li>
+                    </ul>
+                </li>
+                <!-- Add other sections similarly -->
+            </ul>
+        </div>
     </div>
 </center>
 <!-- End Navigation
