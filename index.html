@@ -1,6 +1,12 @@
 ---
-layout: home
+layout: default
+title: Home
 ---
+
+{% if page.url == "/" %}
+
+
+{% endif %}
 
 
 <div class="home">
@@ -19,36 +25,41 @@ layout: home
           {% for post in site.categories.seo limit: 6 %}
           <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
             <div class="card">
-              <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-              <div class="card-body">
-                <h5 class="card-title">{{ post.title }}</h5>
-                <p class="card-text">{{ post.excerpt }}</p>
-                <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
-              </div>
+<section class="recent-posts">
+
+    <div class="section-title">
+
+        <h2><span>Latest Posts</span></h2>
+
+    </div>
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
             </div>
           </div>
           {% endfor %}
         </div>
       </div>
-      <!-- Content Marketing Section -->
-      <div class="col-12 mb-4">
-        <h2 class="section-title animate__animated animate__fadeInRight">Content Marketing</h2>
-        <div class="row">
-          {% for post in site.categories.content-marketing limit: 6 %}
-          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
-            <div class="card">
-              <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-              <div class="card-body">
-                <h5 class="card-title">{{ post.title }}</h5>
-                <p class="card-text">{{ post.excerpt }}</p>
-                <a href="{{ post.url }}" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      <!-- Tambahkan section lainnya dengan cara yang sama -->
+  
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
     </div>
   </div>
 </div>
+
