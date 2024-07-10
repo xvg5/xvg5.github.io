@@ -6,7 +6,6 @@ title: Home
 {% if page.url == "/" %}
 
 
-
 {% endif %}
 <div class="mainheading" >
    <h1 class="sitetitle">{{ site.name }}</h1>
