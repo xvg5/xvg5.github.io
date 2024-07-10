@@ -230,6 +230,19 @@ button {
             transition: background-color 0.3s;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+             .logo-utama {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1100;
+            cursor: pointer;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
         .menu-toggle:hover {
             background-color: #555555;
         }
@@ -237,13 +250,6 @@ button {
         /* Main content styles */
         .main-content {
             background-color: #ffffff;
-        }
-        .feed {
-            background-color: #ffffff;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         /* Footer styles */
@@ -314,7 +320,12 @@ button {
 .main-content h2 {
     color: #00aaff; /* Warna teks judul */
 }
-
+.main-content h3 {
+    color: #00aaff; /* Warna teks judul */
+}
+.main-content h4 {
+    color: #00aaff; /* Warna teks judul */
+}
 .menu-toggle {
     background-color: #333333;
     color: #ffffff;
@@ -334,7 +345,7 @@ button {
 </head>
 <body class="{{layout}}">
 	
-	<div class="container pr-0">
+	<div class="container pr-0" id="logo-utama">
 
     <!-- Begin Logo -->
     <a class="navbar-brand" href="{{ site.url }}/">
@@ -475,3 +486,4 @@ button {
     
 </body>
 </html>
+
