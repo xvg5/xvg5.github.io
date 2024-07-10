@@ -1,9 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Blog</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+<link rel="icon" href="{{ site.url }}/assets/images/logo.png"/>
+
+
+{% seo %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ page.title }}",
+  "description": "{{ page.title }}",
+  "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+  "uploadDate": "{{ page.date }}",
+  "duration": "PT55M47S",
+  "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
+}
+</script>
+
+	<!--breadcrumb-->
+		<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "photo",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?photo"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "video",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?video"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "leaked contents",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?leaked"
+		},
+		{
+			"@type": "ListItem",
+			"position": 4,
+			"name": "more collections",
+			"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}?collection"
+		}
+	]
+}
+</script><!--breadcrumb-->
+	
+	<!-- sitelinks -->
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "WebSite",
+	"url": "{{ site.url }}",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "{{ site.url }}{{ site.baseurl }}/?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
+}
+</script><!-- sitelinks -->
+	
+	
+	<!-- how to -->
+	<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "HowTo",
+	"name": "{{ page.title }}",
+	"description": "{{ page.title }}",
+	"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+	"totalTime": "PT57M",
+	"estimatedCost": {
+		"@type": "MonetaryAmount",
+		"currency": "USD",
+		"value": "2"
+	},
+	"step": [
+		{
+			"@type": "HowToStep",
+			"name": "find download link",
+			"text": "find download link on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		},
+		{
+			"@type": "HowToStep",
+			"name": "click download button",
+			"text": "click download button on the page",
+			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
+			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
+		}
+	]
+}
+</script><!-- how to -->
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    
+<link href="{{ site.url }}/assets/css/screen.css" rel="stylesheet"/>
+
+<link href="{{ site.url }}/assets/css/main.css" rel="stylesheet"/>
+
+<script src="{{ site.url }}/assets/js/jquery.min.js"></script>
+
+
+
+
+	
+	
+	
+<style type='text/css'>
+	img {
+		loading: lazy;
+		}
+	iframe {
+		loading: lazy;
+		}
+	div {
+		loading: lazy;
+		}
+	details {
+		loading: lazy;
+		}
+	ol {
+		loading: lazy;
+		}
+	ul {
+		loading: lazy;
+		}
+	li {
+		loading: lazy;
+		}
+	b:section {
+		loading: lazy;
+		}
+	b:widget {
+		loading: lazy;
+		}
+	b:include {
+		loading: lazy;
+		}
+	b:if {
+		loading: lazy;
+		}
+button {
+		loading: lazy;
+		}
+	b:with {
+		loading: lazy;
+		}
+    script {
+	loading: lazy;
+	}
+	noscript {
+	loading: lazy;
+	}
+    video {
+    loading: lazy;
+    }
+    p {
+    loading: lazy;
+    }
+		</style>
+<base target="_blank">
+	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* General styles */
