@@ -177,6 +177,8 @@ button {
 <base target="_blank">
 	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <style>
         /* Sidebar styles */
         .sidebar {
@@ -185,13 +187,13 @@ button {
             height: 100%;
             position: fixed;
             top: 0;
-            left: -260px;
-            transition: left 0.3s ease;
+            right: -260px;
+            transition: right 0.3s ease;
             z-index: 1000;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .sidebar.open {
-            left: 0;
+            right: 0;
         }
         .sidebar ul {
             list-style-type: none;
@@ -218,7 +220,7 @@ button {
         .menu-toggle {
             position: fixed;
             top: 10px;
-            left: 10px;
+            right: 10px;
             z-index: 1100;
             cursor: pointer;
             background-color: #333333;
@@ -283,17 +285,17 @@ button {
         /* Responsive adjustments */
         @media (max-width: 1024px) {
             .sidebar.open {
-                left: 0;
+                right: 0;
             }
         }
         @media (max-width: 768px) {
             .sidebar {
-                left: -100%;
+                right: -100%;
                 width: 100%;
                 max-width: 260px;
             }
             .sidebar.open {
-                left: 0;
+                right: 0;
             }
         }
         .sidebar ul li a {
@@ -328,8 +330,18 @@ button {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
     </style>
+
 </head>
 <body class="{{layout}}">
+	
+	<div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="{{ site.url }}/">
+    <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.name }}"/>
+    </a>
+    <!-- End Logo -->
+    	</div>
 	
     <div class="container">
         <div class="sidebar"><br /><br /><br />
@@ -384,7 +396,41 @@ button {
         </div>
         </div>
     </div>
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
 
+
+	<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags" >
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                {% endfor %}
+            {% else %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+		</div>
+	</div>
+</div>
+
+	</div></div></div></span>
+	
 <footer class="footer">
     <div class="container">
     
