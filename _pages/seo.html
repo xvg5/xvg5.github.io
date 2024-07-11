@@ -7,15 +7,16 @@ comments: true
 
 
 <div class="col-12 mb-4">
-        <h2 class="section-title animate__animated animate__fadeInLeft">SEO (Search Engine Optimization)</h2>
+        
         <div class="row">
           {% for post in site.categories.seo limit: 6 %}
           <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
             <div class="card">
               <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
               <div class="card-body">
-                <h5 class="card-title" style="max-width:100%;">
-                <a href="{{ post.url }}" class="btn btn-primary">{{ post.title }}</a></h5>
+                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
+                <a href="{{ post.url }}" class="btn btn-primary">Read More
+                        </a>
               </div>
             </div>
           </div>
