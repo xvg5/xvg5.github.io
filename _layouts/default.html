@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
- 
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>	
-  
-  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+<link rel="icon" href="{{ site.url }}/assets/images/logo.png"/>
+
+
 {% seo %}
-  
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -110,264 +107,226 @@
 
 
 
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
     
-<link href="{{ site.url }}/assets/css/main.css" rel="stylesheet"/>
 <link href="{{ site.url }}/assets/css/screen.css" rel="stylesheet"/>
 
+<link href="{{ site.url }}/assets/css/main.css" rel="stylesheet"/>
 
 <script src="{{ site.url }}/assets/js/jquery.min.js"></script>
 
 
 
 
-
-
-<style type="text/css">
- 	img, iframe, div, details, ol, ul, li, b:section, b:widget, b:include, b:if, b:with, button, script, noscript, video, p {
+	
+		<style type="text/css">
+    img, iframe, div, details, ol, ul, li, b:section, b:widget, b:include, b:if, b:with, button, script, noscript, video, p {
         loading: lazy;
     }
+</style>
+
+
+	
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+        /* Sidebar styles */
+        .sidebar {
+            background-color: #fff;
+            width: 260px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: -260px;
+            transition: right 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sidebar.open {
+            right: 0;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 8px;
+        }
+        .sidebar ul li a {
+            display: block;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .sidebar ul li a:hover {
+            background-color: #555555;
+        }
+        .menu-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1100;
+            cursor: pointer;
+            background-color: #333333;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .menu-toggle:hover {
+            background-color: #555555;
+        }
+
+        /* Main content styles */
+        .main-content {
+            background-color: #ffffff;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .sidebar.open {
+                right: 0;
+            }
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                right: -100%;
+                width: 100%;
+                max-width: 260px;
+            }
+            .sidebar.open {
+                right: 0;
+            }
+        }
+        .sidebar ul li a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #00aaff;
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk perubahan warna */
+}
+
+.sidebar ul li a:hover {
+    background-color: #555555; /* Warna latar belakang saat hover */
+    color: #00aaff; /* Warna teks saat hover */
+}
+h1 {
+    color: #00aaff; /* Warna teks judul */
+}
+.main-content h2 {
+    color: #00aaff; /* Warna teks judul */
+}
+.main-content h3 {
+    color: #00aaff; /* Warna teks judul */
+}
+.main-content h4 {
+    color: #00aaff; /* Warna teks judul */
+}
+b {
+    color: #00aaff; /* Warna teks judul */
+}	
+.menu-toggle {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transisi untuk efek */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-toggle:hover {
+    background-color: #555555;
+    color: #00aaff; /* Warna teks saat tombol dihover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+    </style>
+
     
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f5f5f5; /* Background color lebih netral */
-      color: #333;
-      margin: 0;
-      padding: 0;
-      transition: margin-right 0.3s;
-    }
 
-    .floating-header {
-      position: fixed;
-      top: 0;
-      right: -35;
-      width: 100%;
-      background-color: #fff;
-      color: #ff5000;
-      padding: 10px 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      font-size: 24px; /* Ukuran font judul blog diperkecil */
-      font-weight: 600; /* Ketebalan font judul blog diperbesar */
-      text-transform: bold; /* Teks judul blog menjadi huruf besar */
-    }
-
-    .sidebar {
-      width: 200px;
-      background: #fff; /* Warna biru laut untuk sidebar */
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lebih ringan */
-      padding: 20px;
-      position: fixed;
-      top: 60px; /* Top value diganti dari 0 menjadi 60px */
-      bottom: 0;
-      overflow-y: auto;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      transform: translateX(-100%);
-      z-index: 1000;
-    }
-
-    .sidebar.open {
-      transform: translateX(0);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow sedikit lebih tebal */
-    }
-
-    .sidebar ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .sidebar > ul > li > a {
-      display: block; /* Ubah display ke block */
-      padding: 10px 15px;
-      margin: 5px 0;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-      font-size: 18px; /* Ukuran font judul blog diperkecil */
-      font-weight: 600; /* Ketebalan font judul blog diperbesar */
-      text-transform: uppercase; /* Teks judul blog menjadi huruf besar */
-      background-color: #ff5000; /* Biru muda untuk kategori */
-      color: #fff;
-    }
-
-    .sidebar > ul > li > a:hover {
-      background-color: #ff3333; /* Biru gelap saat hover */
-      color: #000;
-    }
-
-    .dropdown-menu {
-      display: none;
-      list-style-type: none;
-      padding-left: 20px;
-      margin: 10px 0;
-    }
-
-    .sidebar > ul > li.open > .dropdown-menu {
-      display: block;
-    }
-
-    .dropdown-menu > li > a {
-      display: block; /* Ubah display ke block */
-      padding: 8px 15px;
-      margin: 3px 0;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
-      background-color: #ffaaaa; /* Warna biru laut untuk submenu */
-      color: #000;
-    }
-
-    .dropdown-menu > li > a:hover {
-      background-color: #ff0000; /* Biru muda saat hover */
-      color: #fff;
-    }
-
-    .menu-button {
-      position: absolute;
-      top: 7px;
-      right: 50px;
-      background-color: #ff5000;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      z-index: 1001;
-      transition: background-color 0.3s, box-shadow 0.3s;
-      animation: pulse 1.5s infinite;
-    }
-
-    .menu-button:hover {
-      background-color: #ff5000;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      animation: none; /* Disable animation on hover */
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .sidebar {
-        width: auto;
-        height: auto;
-        position: fixed;
-        top: 60px; /* Adjust top value for smaller screens */
-        bottom: auto;
-        margin: 0;
-        border-radius: 0;
-        box-shadow: none;
-      }
-    }
-  </style>
 </head>
 <body>
+	
 
-<div class="floating-header">
-<h1 style="margin: 0; font-size: 24px; font-weight: 600;">	  <a href="/">
+    
+	    <script>
+        function toggleSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('open');
+        }
+
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+	
+	
+	   
+	
+	   
+     
+    <div class="container" style="overflow:auto;">
+        <div class="sidebar" style="overflow:auto;"><br /><br /><br />
+            <ul>
+                
+                <li><a href="/seo"><i class="fas fa-search"></i> SEO</a></li>
+                <li><a href="/content-marketing"><i class="fas fa-pen"></i> Content Marketing</a></li>
+                <li><a href="/social-media"><i class="fas fa-share-alt"></i> Social Media Marketing</a></li>
+                <li><a href="/email-marketing"><i class="fas fa-envelope"></i> Email Marketing</a></li>
+                <li><a href="/ppc"><i class="fas fa-dollar-sign"></i> PPC Advertising</a></li>
+                <li><a href="/affiliate-marketing"><i class="fas fa-handshake"></i> Affiliate Marketing</a></li>
+                <li><a href="/influencer-marketing"><i class="fas fa-users"></i> Influencer Marketing</a></li>
+                <li><a href="/analytics"><i class="fas fa-chart-line"></i> Analytics & Data-Driven Marketing</a></li>
+                <li><a href="/cro"><i class="fas fa-bullseye"></i> Conversion Rate Optimization (CRO)</a></li>
+                <li><a href="/marketing-automation"><i class="fas fa-robot"></i> Marketing Automation</a></li>
+            </ul>
+
+            
+        </div>
+
+        <div class="main-content">
+      
+            
+            	<div id='at09ads' style='width:100%;margin:auto; float:none;overflow:hidden; display:scroll;position:fixed; top:0%;z-index:9999'>
+    <div style='display:block;width:100%;height:60px;overflow:hidden;margin:auto;background-color:#fff; padding:0px;'>
+      <span class="menu-toggle" onclick="toggleSidebar()">
+                Menu
+            </span>
+	    
+  <h1 style="position:absolute;
+        top:14px;
+        left:1px;
+        width:15em;
+        font-size:1.5em;
+        padding:0;">
+	  <a href="/">
   {{ site.name }}
   </a></h1>
-  <button class="menu-button" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
-</div>
-
-<div class="sidebar" id="sidebar">
-	<b>Vacation Destinations by Region</b>
-  <ul>
-    <li>
-      <a href="#" onclick="toggleMenu(this)">Asia</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Japan</a></li>
-        <li><a href="#">Thailand</a></li>
-        <li><a href="#">Maldives</a></li>
-        <li><a href="#">Indonesia</a></li>
-        <!-- Add more popular Asian countries as needed -->
-      </ul>
-    </li>
-    <li>
-      <a href="#" onclick="toggleMenu(this)">Europe</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">France</a></li>
-        <li><a href="#">Italy</a></li>
-        <li><a href="#">Spain</a></li>
-        <li><a href="#">Greece</a></li>
-        <!-- Add more popular European countries as needed -->
-      </ul>
-    </li>
-    <li>
-      <a href="#" onclick="toggleMenu(this)">Americas</a>
-      <ul class="dropdown-menu">    
-        <li><a href="#">United States</a></li>
-        <li><a href="#">Mexico</a></li>
-        <li><a href="#">Brazil</a></li>
-        <li><a href="#">Canada</a></li>
-        <!-- Add more popular American countries as needed -->
-      </ul>
-    </li>
-    <li>
-      <a href="#" onclick="toggleMenu(this)">Africa</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">South Africa</a></li>
-        <li><a href="#">Kenya</a></li>
-        <li><a href="#">Egypt</a></li>
-        <li><a href="#">Morocco</a></li>
-        <!-- Add more popular African countries as needed -->
-      </ul>
-    </li>
-    <li>
-      <a href="#" onclick="toggleMenu(this)">Oceania</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Australia</a></li>
-        <li><a href="#">New Zealand</a></li>
-        <li><a href="#">Fiji</a></li>
-        <li><a href="#">French Polynesia</a></li>
-        <!-- Add more popular Oceanian countries as needed -->
-      </ul>
-    </li>
-    <li>
-      <a href="#" onclick="toggleMenu(this)">Middle East</a>
-      <ul class="dropdown-menu">
-        <li><a href="#">United Arab Emirates</a></li>
-        <li><a href="#">Saudi Arabia</a></li>
-        <li><a href="#">Jordan</a></li>
-        <!-- Add more popular Middle Eastern countries as needed -->
-      </ul>
-    </li>
-  </ul>
-</div>
-
-
-
-<script>
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('open');
-  }
-
-  function toggleMenu(element) {
-    const parentLi = element.parentElement;
-    const siblings = parentLi.parentElement.children;
-
-    for (let sibling of siblings) {
-      if (sibling !== parentLi && sibling.classList.contains('open')) {
-        sibling.classList.remove('open');
-      }
-    }
-
-    parentLi.classList.toggle('open');
-  }
-</script>
-
-    <div class="main-content" style="padding:2%;">
-    	
     
-                	<noscript id="deferred-styles">
+    </div></div>
+    
+            	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
 	</noscript>
@@ -415,8 +374,7 @@
 </div>
 
 	</div></div></div></span>
-	<br />
-	<center>
+	
 <footer class="footer">
     <div class="container">
     
@@ -433,7 +391,6 @@
         </div>
     </div>
 </footer>
-</center>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -452,6 +409,6 @@
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
     
-
 </body>
 </html>
+
