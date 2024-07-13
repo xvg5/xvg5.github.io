@@ -119,80 +119,32 @@
 
 
 	
-	
-	
-<style type='text/css'>
-	img {
-		loading: lazy;
-		}
-	iframe {
-		loading: lazy;
-		}
-	div {
-		loading: lazy;
-		}
-	details {
-		loading: lazy;
-		}
-	ol {
-		loading: lazy;
-		}
-	ul {
-		loading: lazy;
-		}
-	li {
-		loading: lazy;
-		}
-	b:section {
-		loading: lazy;
-		}
-	b:widget {
-		loading: lazy;
-		}
-	b:include {
-		loading: lazy;
-		}
-	b:if {
-		loading: lazy;
-		}
-button {
-		loading: lazy;
-		}
-	b:with {
-		loading: lazy;
-		}
-    script {
-	loading: lazy;
-	}
-	noscript {
-	loading: lazy;
-	}
-    video {
-    loading: lazy;
+		<style type="text/css">
+    img, iframe, div, details, ol, ul, li, b:section, b:widget, b:include, b:if, b:with, button, script, noscript, video, p {
+        loading: lazy;
     }
-    p {
-    loading: lazy;
-    }
-		</style>
-<base target="_blank">
+</style>
+
+
+	
 	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <style>
         /* Sidebar styles */
         .sidebar {
-            background-color: #333333;
+            background-color: #fff;
             width: 260px;
             height: 100%;
             position: fixed;
             top: 0;
-            left: -260px;
-            transition: left 0.3s ease;
+            right: -260px;
+            transition: right 0.3s ease;
             z-index: 1000;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .sidebar.open {
-            left: 0;
+            right: 0;
         }
         .sidebar ul {
             list-style-type: none;
@@ -210,7 +162,7 @@ button {
             transition: background-color 0.3s;
         }
         .sidebar ul li a i {
-            margin-left: 10px;
+            margin-right: 10px;
             font-size: 18px;
         }
         .sidebar ul li a:hover {
@@ -219,11 +171,11 @@ button {
         .menu-toggle {
             position: fixed;
             top: 10px;
-            left: 10px;
+            right: 10px;
             z-index: 1100;
             cursor: pointer;
             background-color: #333333;
-            color: #ffffff;
+            color: #fff;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -249,52 +201,29 @@ button {
             bottom: 0;
         }
 
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #000000;
-            color: #ffffff;
-        }
-        body.dark-mode .sidebar {
-            background-color: #111111;
-        }
-        body.dark-mode .sidebar ul li a {
-            color: #ffffff;
-        }
-        body.dark-mode .sidebar ul li a:hover {
-            background-color: #333333;
-        }
-        body.dark-mode .menu-toggle {
-            background-color: #333333;
-        }
-        body.dark-mode .menu-toggle:hover {
-            background-color: #555555;
-        }
-        body.dark-mode .main-content {
-            background-color: #1a1a1a;
-            color: #ffffff;
-        }
+
 
         /* Responsive adjustments */
         @media (max-width: 1024px) {
             .sidebar.open {
-                left: 0;
+                right: 0;
             }
         }
         @media (max-width: 768px) {
             .sidebar {
-                left: -100%;
+                right: -100%;
                 width: 100%;
                 max-width: 260px;
             }
             .sidebar.open {
-                left: 0;
+                right: 0;
             }
         }
         .sidebar ul li a {
     display: block;
     padding: 12px 20px;
     text-decoration: none;
-    color: #ffffff;
+    color: #00aaff;
     transition: background-color 0.3s, color 0.3s; /* Transisi untuk perubahan warna */
 }
 
@@ -302,7 +231,9 @@ button {
     background-color: #555555; /* Warna latar belakang saat hover */
     color: #00aaff; /* Warna teks saat hover */
 }
-
+h1 {
+    color: #00aaff; /* Warna teks judul */
+}
 .main-content h2 {
     color: #00aaff; /* Warna teks judul */
 }
@@ -312,6 +243,9 @@ button {
 .main-content h4 {
     color: #00aaff; /* Warna teks judul */
 }
+b {
+    color: #00aaff; /* Warna teks judul */
+}	
 .menu-toggle {
     background-color: #333333;
     color: #ffffff;
@@ -327,6 +261,7 @@ button {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
     </style>
+
     
 
 </head>
@@ -354,45 +289,42 @@ button {
     <div class="container" style="overflow:auto;">
         <div class="sidebar" style="overflow:auto;"><br /><br /><br />
             <ul>
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#seo"><i class="fas fa-search"></i> SEO</a></li>
-                <li><a href="#content-marketing"><i class="fas fa-pen"></i> Content Marketing</a></li>
-                <li><a href="#social-media"><i class="fas fa-share-alt"></i> Social Media Marketing</a></li>
-                <li><a href="#email-marketing"><i class="fas fa-envelope"></i> Email Marketing</a></li>
-                <li><a href="#ppc"><i class="fas fa-dollar-sign"></i> PPC Advertising</a></li>
-                <li><a href="#affiliate-marketing"><i class="fas fa-handshake"></i> Affiliate Marketing</a></li>
-                <li><a href="#influencer-marketing"><i class="fas fa-users"></i> Influencer Marketing</a></li>
-                <li><a href="#analytics"><i class="fas fa-chart-line"></i> Analytics & Data-Driven Marketing</a></li>
-                <li><a href="#cro"><i class="fas fa-bullseye"></i> Conversion Rate Optimization (CRO)</a></li>
-                <li><a href="#marketing-automation"><i class="fas fa-robot"></i> Marketing Automation</a></li>
+                
+                <li><a href="/seo"><i class="fas fa-search"></i> SEO</a></li>
+                <li><a href="/content-marketing"><i class="fas fa-pen"></i> Content Marketing</a></li>
+                <li><a href="/social-media"><i class="fas fa-share-alt"></i> Social Media Marketing</a></li>
+                <li><a href="/email-marketing"><i class="fas fa-envelope"></i> Email Marketing</a></li>
+                <li><a href="/ppc"><i class="fas fa-dollar-sign"></i> PPC Advertising</a></li>
+                <li><a href="/affiliate-marketing"><i class="fas fa-handshake"></i> Affiliate Marketing</a></li>
+                <li><a href="/influencer-marketing"><i class="fas fa-users"></i> Influencer Marketing</a></li>
+                <li><a href="/analytics"><i class="fas fa-chart-line"></i> Analytics & Data-Driven Marketing</a></li>
+                <li><a href="/cro"><i class="fas fa-bullseye"></i> Conversion Rate Optimization (CRO)</a></li>
+                <li><a href="/marketing-automation"><i class="fas fa-robot"></i> Marketing Automation</a></li>
             </ul>
 
-            <ul>
-                <li><strong>1. SEO (Search Engine Optimization)</strong>
-                    <ul>
-                        <li>SEO Basics: What is SEO and why is it important.</li>
-                        <li>Keyword Research: Tools and techniques for finding the right keywords.</li>
-                        <li>On-Page SEO: Optimize content, meta tags, and page structure.</li>
-                        <li>Off-Page SEO: Link building, social bookmarking, and brand mentions.</li>
-                        <li>Technical SEO: URL structure, page speed, and mobile optimization.</li>
-                        <li>Local SEO: Optimization for local search and Google My Business.</li>
-                        <li>E-commerce SEO: Optimization of product pages and rich snippets.</li>
-                        <li>Voice Search SEO: Optimization for voice search.</li>
-                    </ul>
-                </li>
-                <!-- Add other sections similarly -->
-            </ul>
+            
         </div>
 
         <div class="main-content">
       
             
-            	<div id='at09ads' style='width:100%;margin:auto; text-align:left;float:none;overflow:hidden; display:scroll;position:fixed; left:5px; top:0%;z-index:9999'>
-    <div style='text-align:left;display:block;width:100%;height:60px;overflow:hidden;margin:auto;background-color:#000; padding:3px;'>
-      <div class="menu-toggle" onclick="toggleSidebar()">
+            	<div id='at09ads' style='width:100%;margin:auto; float:none;overflow:hidden; display:scroll;position:fixed; top:0%;z-index:9999'>
+    <div style='display:block;width:100%;height:60px;overflow:hidden;margin:auto;background-color:#fff; padding:0px;'>
+      <span class="menu-toggle" onclick="toggleSidebar()">
                 Menu
-            </div>
-    	</div></div>
+            </span>
+	    
+  <h1 style="position:absolute;
+        top:14px;
+        left:1px;
+        width:15em;
+        font-size:1.5em;
+        padding:0;">
+	  <a href="/">
+  {{ site.name }}
+  </a></h1>
+    
+    </div></div>
     
             	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"/>
@@ -450,7 +382,9 @@ button {
     
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }}&nbsp;-&nbsp;<a href="{{ site.url }}">{{ site.name }}</a>
+      <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp; •&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+		    <br />
+		    Copyright © {{ site.time | date: "%Y" }}&nbsp;-&nbsp;<a href="{{ site.url }}">{{ site.name }}</a>
 		
             </div>
             
@@ -477,3 +411,4 @@ button {
     
 </body>
 </html>
+
