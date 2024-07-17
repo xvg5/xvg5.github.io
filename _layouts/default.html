@@ -630,7 +630,71 @@ b {
 
 
 </div></div></div></span>
-    
+
+
+
+
+
+  <!-- Link to Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Other meta tags and styles -->
+  <style>
+    /* CSS Styling for Back to Top Button */
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: skyblue;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 40%;
+      text-decoration: none;
+      text-align: center;
+      z-index: 1000;
+      transition: opacity 0.3s ease-out;
+      border: 2px solid white;
+      font-size: 24px; /* Adjust icon size */
+      line-height: 1; /* Ensures the icon is vertically centered */
+    }
+
+    .back-to-top:hover {
+      background-color: #d14000;
+    }
+
+    @media screen and (max-width: 768px) {
+      .back-to-top {
+        bottom: 10px;
+        right: 10px;
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <a id="back-to-top" href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+      } else {
+        document.getElementById("back-to-top").style.display = "none";
+      }
+    }
+
+    document.getElementById("back-to-top").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  </script>
+
+
+	
 </body>
 </html>
 
