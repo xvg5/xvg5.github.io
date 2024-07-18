@@ -304,7 +304,8 @@ b {
                 <li><a href="/cro"><i class="fas fa-bullseye"></i> Conversion Rate Optimization (CRO)</a></li>
                 <li><a href="/marketing-automation"><i class="fas fa-robot"></i> Marketing Automation</a></li>
 	</ul>
-            
+           <input type="text" id="search-input" placeholder="Search..." style="padding:5px;">
+    <ul id="results-container"></ul> 
         </div>
 
         <div class="main-content">
@@ -325,12 +326,22 @@ b {
 	  <a href="/">
   {{ site.name }}
   </a></h1>
-
-{% include search-lunr.html %}
 	    
     </div></div>
     
-            	<noscript id="deferred-styles">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.7.2/simple-jekyll-search.min.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json',
+      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+      noResultsText: 'No results found'
+    });
+  </script>
+
+
+        	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
 	</noscript>
