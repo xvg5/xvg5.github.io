@@ -268,7 +268,7 @@ b {
     
 
 </head>
-<body>
+<body class="{{layout}}">
 	
 
     
@@ -304,8 +304,7 @@ b {
                 <li><a href="/cro"><i class="fas fa-bullseye"></i> Conversion Rate Optimization (CRO)</a></li>
                 <li><a href="/marketing-automation"><i class="fas fa-robot"></i> Marketing Automation</a></li>
 	</ul>
-       <input type="text" id="search-input" placeholder="Search...">
-<ul id="results-container"></ul>
+       {% include search-lunr.html %}
         </div>
 
         <div class="main-content">
