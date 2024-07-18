@@ -268,7 +268,7 @@ b {
     
 
 </head>
-<body>
+<body class="{{layout}}" >
 	
 
     
@@ -290,7 +290,9 @@ b {
 	   
      
     <div class="container" style="overflow:auto;">
-        <div class="sidebar" style="overflow:auto;"><br /><br /><br />
+        <div class="sidebar" style="overflow:auto;"><br /><br />
+		<div style="padding:10px;">
+			{% include search-lunr.html %} </div>
             <ul>
                 
                 <li><a href="/seo"><i class="fas fa-search"></i> SEO</a></li>
