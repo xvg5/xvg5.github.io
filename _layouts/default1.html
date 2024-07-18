@@ -268,7 +268,7 @@ b {
     
 
 </head>
-<body class="{{layout}}">
+<body class="{{layout}}" >
 	
 
     
@@ -290,7 +290,9 @@ b {
 	   
      
     <div class="container" style="overflow:auto;">
-        <div class="sidebar" style="overflow:auto;"><br /><br /><br />
+        <div class="sidebar" style="overflow:auto;"><br /><br /> <br />
+		<div style="padding:10px;">
+			{% include search-lunr.html %} </div>
             <ul>
                 
                 <li><a href="/seo"><i class="fas fa-search"></i> SEO</a></li>
@@ -303,8 +305,9 @@ b {
                 <li><a href="/analytics"><i class="fas fa-chart-line"></i> Analytics & Data-Driven Marketing</a></li>
                 <li><a href="/cro"><i class="fas fa-bullseye"></i> Conversion Rate Optimization (CRO)</a></li>
                 <li><a href="/marketing-automation"><i class="fas fa-robot"></i> Marketing Automation</a></li>
-	</ul>
-       {% include search-lunr.html %}
+            </ul>
+
+            
         </div>
 
         <div class="main-content">
@@ -325,22 +328,10 @@ b {
 	  <a href="/">
   {{ site.name }}
   </a></h1>
-	    
+    
     </div></div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.7.2/simple-jekyll-search.min.js"></script>
-  <script>
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json',
-      searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-      noResultsText: 'No results found'
-    });
-  </script>
-
-
-        	<noscript id="deferred-styles">
+            	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
 	</noscript>
@@ -355,8 +346,6 @@ b {
         </div>
     </div>
 
-
-	
 <footer class="footer">
     <div class="container">
     
@@ -612,6 +601,8 @@ b {
 
 
 
+
+
   <!-- Link to Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   
@@ -669,40 +660,8 @@ b {
       document.documentElement.scrollTop = 0;
     });
   </script>
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-
-	<script>
-  var searchData = {};
-
-  fetch('/search.json')
-    .then(response => response.json())
-    .then(data => {
-      searchData = data;
-      const idx = lunr(function () {
-        this.field('title')
-        this.field('content')
-        this.ref('url')
-
-        searchData.forEach(function (doc) {
-          this.add(doc)
-        }, this)
-      })
-
-      document.getElementById('search-input').addEventListener('input', function () {
-        const query = this.value
-        const results = idx.search(query)
-        const resultContainer = document.getElementById('results-container')
-
-        resultContainer.innerHTML = results.map(result => {
-          const item = searchData.find(d => d.url === result.ref)
-          return `<li><a href="${item.url}">${item.title}</a></li>`
-        }).join('')
-      })
-    })
-</script>
 
 
+	
 </body>
 </html>
-
