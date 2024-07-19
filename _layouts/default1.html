@@ -120,7 +120,7 @@
 
 	
 		<style type="text/css">
-    img, iframe, div, details, ol, ul, li, b:section, b:widget, b:include, b:if, b:with, button, script, noscript, video, p {
+    img, iframe, div, details, ol, ul, li, button, script, noscript, video, span, p {
         loading: lazy;
     }
 </style>
@@ -140,8 +140,8 @@
             top: 0;
             right: -260px;
             transition: right 0.3s ease;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 9900;
+            box-shadow: 0 4px 4px #00aaff;
         }
         .sidebar.open {
             right: 0;
@@ -152,7 +152,7 @@
             margin: 0;
         }
         .sidebar ul li {
-            margin-bottom: 8px;
+            margin-bottom: 0px;
         }
         .sidebar ul li a {
             display: block;
@@ -172,10 +172,11 @@
             position: fixed;
             top: 10px;
             right: 10px;
-            z-index: 1100;
+            z-index: 99910;
             cursor: pointer;
             background-color: #00aaff;
             color: #fff;
+	    box-shadow: 0 0px 4px #00aaff;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
@@ -270,7 +271,9 @@ b {
 </head>
 <body>
 	
-<span style="color:#fff;" class="{{layout}}" ></span>
+<p class="{{layout}}" ></p>
+	
+
     
 	    <script>
         function toggleSidebar() {
@@ -291,7 +294,7 @@ b {
      
     <div class="container" style="overflow:auto;">
         <div class="sidebar" style="overflow:auto;"><br /><br /> <br />
-		<div style="padding:10px;" >
+		<div style="padding:10px;">
 			{% include search-lunr.html %} </div>
             <ul>
                 
@@ -346,6 +349,7 @@ b {
         </div>
     </div>
 
+	
 <footer class="footer">
     <div class="container">
     
@@ -395,7 +399,7 @@ b {
       background-color: rgba(0, 0, 0, 0.5);
       justify-content: center;
       align-items: center;
-      z-index: 10000;
+      z-index: 99999;
     }
 
     .ad-content {
