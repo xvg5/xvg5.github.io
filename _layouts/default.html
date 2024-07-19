@@ -120,7 +120,7 @@
 
 	
 		<style type="text/css">
-    img, iframe, div, details, ol, ul, li, b:section, b:widget, b:include, b:if, b:with, button, script, noscript, video, p {
+    img, iframe, div, details, ol, ul, li, b:section, b:widget, b:include, b:if, b:with, button, script, noscript, video, span, p {
         loading: lazy;
     }
 </style>
@@ -140,8 +140,8 @@
             top: 0;
             right: -260px;
             transition: right 0.3s ease;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 99000;
+            box-shadow: 0 2px 4px #ff5000;
         }
         .sidebar.open {
             right: 0;
@@ -152,7 +152,7 @@
             margin: 0;
         }
         .sidebar ul li {
-            margin-bottom: 8px;
+            margin-bottom: 0px;
         }
         .sidebar ul li a {
             display: block;
