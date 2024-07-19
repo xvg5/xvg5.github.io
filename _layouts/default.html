@@ -120,7 +120,7 @@
 
 	
 		<style type="text/css">
-    img, iframe, div, details, ol, ul, li, b:section, b:widget, b:include, b:if, b:with, button, script, noscript, video, span, p {
+    img, iframe, div, details, ol, ul, li, button, script, noscript, video, span, p {
         loading: lazy;
     }
 </style>
@@ -141,7 +141,7 @@
             right: -260px;
             transition: right 0.3s ease;
             z-index: 99000;
-            box-shadow: 0 2px 4px #ff5000;
+            box-shadow: 0 4px 4px #00aaff;
         }
         .sidebar.open {
             right: 0;
@@ -172,7 +172,7 @@
             position: fixed;
             top: 10px;
             right: 10px;
-            z-index: 1100;
+            z-index: 99910;
             cursor: pointer;
             background-color: #00aaff;
             color: #fff;
@@ -268,7 +268,9 @@ b {
     
 
 </head>
-<body class="{{layout}}" >
+<body>
+	
+<p class="{{layout}}" ></p>
 	
 
     
@@ -429,7 +431,7 @@ b {
       background-color: rgba(0, 0, 0, 0.5);
       justify-content: center;
       align-items: center;
-      z-index: 10000;
+      z-index: 99999;
     }
 
     .ad-content {
