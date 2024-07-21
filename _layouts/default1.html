@@ -345,21 +345,7 @@ b {
             <div class="main-content">
       {{ content }}
 		    
-		 <div id="sri-ayu">
-  <h3>Related Posts</h3>
-  <ul>
-    {% assign related_posts = site.posts | where: "category", page.category | where: "title", "!=" , page.title %}
-    {% if related_posts.size > 0 %}
-      {% for post in related_posts limit: 3 %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    {% else %}
-      <li>No related posts found.</li>
-    {% endif %}
-  </ul>
-</div>
+		 
 		    
       </div>     </div>
         </div>
