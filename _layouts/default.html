@@ -344,6 +344,55 @@ b {
 <div class="container">
             <div class="main-content">
       {{ content }}
+
+
+
+<!-- related post start -->
+  <!-- CSS for Sri Ayu -->
+  <style>
+    #sri-ayu {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f7f7f7;
+      border: 1px solid #e1e1e1;
+    }
+
+    #sri-ayu b {
+      margin-bottom: 15px;
+    }
+
+    #sri-ayu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #sri-ayu li {
+      margin-bottom: 10px;
+    }
+
+    #sri-ayu a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    #sri-ayu a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+<div id="sri-ayu">
+  <b>Related Posts</b>
+  <ul>
+    {% assign related_posts = site.posts | where: "category", page.category | where: "title", "!=" , page.title %}
+    {% for post in related_posts limit: 3 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- related post end -->		    
+		    
       </div>     </div>
         </div>
         </div>
