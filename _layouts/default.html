@@ -74,38 +74,7 @@
 </script><!-- sitelinks -->
 	
 	
-	<!-- how to -->
-	<script type="application/ld+json">
-{
-	"@context": "http://schema.org/",
-	"@type": "HowTo",
-	"name": "{{ page.title }}",
-	"description": "{{ page.title }}",
-	"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-	"totalTime": "PT57M",
-	"estimatedCost": {
-		"@type": "MonetaryAmount",
-		"currency": "USD",
-		"value": "2"
-	},
-	"step": [
-		{
-			"@type": "HowToStep",
-			"name": "find download link",
-			"text": "find download link on the page",
-			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
-		},
-		{
-			"@type": "HowToStep",
-			"name": "click download button",
-			"text": "click download button on the page",
-			"image": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
-			"url": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"
-		}
-	]
-}
-</script><!-- how to -->
+	
 
 
 
@@ -270,6 +239,23 @@ b {
     </style>
 
     
+  <!-- alt img -->
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      // Dapatkan judul halaman
+      var pageTitle = '{{ page.title | escape }}';
+      
+      // Pilih semua elemen gambar di halaman
+      var images = document.querySelectorAll('img');
+      
+      // Loop melalui setiap gambar dan tambahkan atribut alt dan loading
+      images.forEach(function(image) {
+        image.setAttribute('alt', pageTitle);
+        image.setAttribute('loading', 'lazy');
+      });
+    });
+  </script><!-- alt img -->
+
 
 </head>
 <body>
@@ -433,10 +419,10 @@ b {
     .interstitial-ad {
       display: none;
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      bottom: 10%;
+      left: 10%;
+      width: 320px;
+      height: 50px;
       background-color: rgba(0, 0, 0, 0.5);
       justify-content: center;
       align-items: center;
@@ -449,7 +435,7 @@ b {
       border-radius: 0px;
       box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
       text-align: center;
-      max-width: 100%;
+      max-width: 320px;
       height: 100%;
       overflow: auto;
       position: relative;
@@ -463,21 +449,35 @@ b {
 
     .close-button {
       position: absolute;
-      top: 15px;
-      right: 10px;
-      background-color: transparent;
+      top: 2px;
+      right: 2px;
+      background-color: #fff;
       border: none;
+        border-radius: 50px;
       font-size: 20px;
       cursor: pointer;
-      color: #ff0000;
+      color: #000;
     }
   </style>
 
 <div class="interstitial-ad">
   <div class="ad-content">
     <button class="close-button" onclick="closeAd()"><b>X</b></button>
-    <br />
-  <center>  <b>Ad by Adsterra</b><br />
+   
+  <center>  
+
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'a03ccd983783081c32e98687fa158143',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/a03ccd983783081c32e98687fa158143/invoke.js"></script>
+
+<br />
     <hr />
       <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css" type="text/css" />
 <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script><center>
@@ -591,16 +591,6 @@ b {
 </script>
 <script type="text/javascript" src="//evendisciplineseedlings.com/624f7847107a10488032a7a551cba5b8/invoke.js"></script><br />
 <script type='text/javascript' src='//evendisciplineseedlings.com/17/b4/9e/17b49eac92bf71497fe3d22ec2d4d99e.js'></script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'a03ccd983783081c32e98687fa158143',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/a03ccd983783081c32e98687fa158143/invoke.js"></script>
 
 
 	<script type="text/javascript">
@@ -821,4 +811,3 @@ b {
 	
 </body>
 </html>
-
