@@ -10,7 +10,7 @@
     social media marketing
   </li>
   <li>
-    <b>ioma.my.id<b>
+    <b>ioma.my.id</b>
   </li>
 </ul>
 <hr />
@@ -28,7 +28,7 @@
     affiliate marketing
   </li>
   <li>
-    <b>ioma.my.id<b>
+    <b>ioma.my.id</b>
   </li>
 </ul>
 <hr />
