@@ -291,7 +291,8 @@ b {
 
     
      
-           <div class="after-post-tags">
+             
+      <div class="after-post-tags">
                 <ul class="tags">
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
@@ -299,10 +300,9 @@ b {
                         <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
                     </li>
                     {% endfor %}
-                    {% assign sortedTags = nil %}
+                    {% endassign %}
                 </ul>
-            </div>         
-                    
+            </div>              
                 
 
 
