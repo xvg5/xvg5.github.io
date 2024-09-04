@@ -2,8 +2,8 @@
 name: "rfazriansyah376"
 title: "rfazriansyah376"
 description: "Build relationships, not links"
-logo: '/assets/images/logo.png'
-favicon: '/assets/images/logo.png'
+logo: '/favicon.ico'
+favicon: '/favicon.ico'
 baseurl: /
 google_analytics: 'UA-246564983-1'
 disqus: 'demowebsite'
