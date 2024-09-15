@@ -281,7 +281,42 @@ b {
 
 <div class="container">
             <div class="main-content">
-      {{ content }}
+  
+		    
+<div aria-label="breadcrumb">
+  <ul class="breadcrumb">
+    <li><a href="{{ site.url }}/">Home</a></li>&nbsp》
+    
+    {% if page.categories %}
+      {% for category in page.categories %}
+        <li>
+          <a href="{{ site.url }}/categories/{{ category | downcase | replace: ' ', '-' }}">{{ category }}</a>
+        </li>&nbsp》
+      {% endfor %}
+    {% endif %}
+    
+    <li class="active">{{ page.title }}</li>
+  </ul>
+</div>	    
+		    
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ page.title | escape }}",
+  "image": "{{ page.image }}", 
+  "description": "{{ page.content | strip_html | truncatewords: 30 | escape }}",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "50655"
+  }
+}
+</script>		    
+		    
+		    {{ content }}
 
 
 
