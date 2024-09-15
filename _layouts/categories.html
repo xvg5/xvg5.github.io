@@ -1,36 +1,8 @@
 ---
-title: "Categories"
 layout: default1
-permalink: "/categories.html"
 ---
 
 
-
-
-
-
-<h2>   
-Seo
-</h2>
-
-
-<div class="col-12 mb-4">
-               <div class="row">
-          {% for post in site.categories.seo limit: 3 %}
-          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
-            <div class="card">
-           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-           </a>
-              <div class="card-body">
-                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
-                <a href="{{ post.url }}" class="btn btn-primary">Read More
-                        </a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
 
 
 
@@ -145,45 +117,24 @@ Seo
     );
 </script>
 
-<h2>Content Marketing</h2>
-<div class="col-12 mb-4">
-               <div class="row">
-          {% for post in site.categories.content-marketing limit: 3 %}
-          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
-            <div class="card">
-           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-           </a>
-              <div class="card-body">
-                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
-                <a href="{{ post.url }}" class="btn btn-primary">Read More
-                        </a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
+<ul id="category-posts">
+	<h2>{{ page.title }}</h2>
+  {% for post in site.posts %}
+    {% if post.categories contains page.category %}
+      <li id="post-{{ post.id }}">
+        <a href="{{ post.url }}">
+          {% if post.image %}
+            <img src="{{ post.image }}" alt="{{ post.title }}" id="post-image-{{ post.id }}" class="post-image">
+          {% endif %}
+          <br />{{ post.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
-<h2>
-Social Media Marketing  
-</h2>
-<div class="col-12 mb-4">
-               <div class="row">
-          {% for post in site.categories.social-media-marketing limit: 3 %}
-          <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
-            <div class="card">
-           <a href="{{ post.url }}">   <img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}">
-           </a>
-              <div class="card-body">
-                <h5 class="card-title" style="max-width:100%;">{{ post.title }}</h5>
-                <a href="{{ post.url }}" class="btn btn-primary">Read More
-                        </a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
+
+
 
 
 <div class="jontor" loading="lazy" style="width:100%; height:5px; overflow:auto;">
