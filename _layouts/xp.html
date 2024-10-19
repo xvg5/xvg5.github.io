@@ -54,19 +54,7 @@ post_class: post-template
 
 
 <div aria-label="breadcrumb">
- 
-    Tags :&nbsp
-    
-    {% if page.categories %}
-      {% for category in page.categories %}
-        
-          <a href="{{ site.url }}/categories/{{ category | downcase | replace: ' ', '-' }}">{{ category }}</a>
-        &nbsp
-      {% endfor %}
-    {% endif %}
-    
-    
-</div>	   
+
 
 
             <!-- Rating -->
