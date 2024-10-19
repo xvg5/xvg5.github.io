@@ -52,7 +52,7 @@ post_class: post-template
             </div>
 
 
-<!-- <div aria-label="breadcrumb">
+<div aria-label="breadcrumb">
  
     Tags :&nbsp
     
@@ -65,7 +65,7 @@ post_class: post-template
     {% endif %}
     
     
-</div>	   -->
+</div>	   
 
 
             <!-- Rating -->
@@ -93,28 +93,24 @@ post_class: post-template
             <div class="mainheading">
 
                 <!-- Author Box -->
-<div style="background-color: #f6f6f6; border: 1px solid #009ee0; padding: 17px; text-align: center;">
-                <b>Writer:</b>
                 {% if page.author %}
               <span class="row post-top-meta"> 
                     <span class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
-                    <a target="_blank" class="link-dark" href="{{ author.web }}">    <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                    </a>    
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
                         {% else %}
-                 <a target="_blank" class="link-dark" href="{{ author.web }}">       <img class="author-thumb" src="{{ author.gravatar }}" alt="{{ author.display_name }}">
-                 </a>
+                        <img class="author-thumb" src="{{ author.gravatar }}" alt="{{ author.display_name }}">
                         {% endif %}
                     </span>
                     <span>
                         <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
-<br>
+
                         <span class="author-description">{{ author.description }}</span>
                     </span>
                 </span>
                 {% endif %}
 
-</div>
+            
 
        <!-- Post Share -->
         <div class="col-md-2 pl-0">
@@ -123,7 +119,7 @@ post_class: post-template
      
 
             <!-- Prev/Next -->
-         <div class="spa">  
+         <div class="spa">   <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
         Previous Aticle   <a class="prev d-block col-md-6" href="{{ site.baseurl }}{{page.previous.url}}">
          {% if page.previous.image %}
@@ -138,8 +134,8 @@ post_class: post-template
           {% endif %}  <br />   {{page.next.title}} </a>
              
             {% endif %}
-            
-            
+            <div class="clearfix"></div>
+            </div>
          </div>
             <!-- End Categories -->
 
