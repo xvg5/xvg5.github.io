@@ -119,25 +119,8 @@ post_class: post-template
         </div>
      
 
-            <!-- Prev/Next -->
-         <div class="spa">   <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            {% if page.previous.url %}
-        Previous Aticle   <a class="prev d-block col-md-6" href="{{ site.baseurl }}{{page.previous.url}}">
-         {% if page.previous.image %}
-            <img src="{{ page.previous.image }}" alt="{{ page.previous.title }}" id="post-image-{{ post.id }}" class="post-image">
-          {% endif %}  <br />
-            {{page.previous.title}}</a>
-            {% endif %}
-         <hr />   {% if page.next.url %}
-          Next Article  <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}{{page.next.url}}">
-           {% if page.next.image %}
-            <img src="{{ page.next.image }}" alt="{{ page.next.title }}" id="post-image-{{ post.id }}" class="post-image">
-          {% endif %}  <br />   {{page.next.title}} </a>
-             
-            {% endif %}
-            <div class="clearfix"></div>
-            </div>
-         </div>
+            
+         
             <!-- End Categories -->
 
         </div>
