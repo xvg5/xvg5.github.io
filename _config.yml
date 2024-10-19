@@ -14,23 +14,77 @@ permalink: /:title/
 # Authors
 authors:
   admin:
-    name: Admin
-    display_name: Admin
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFwGjE_3CniDpICGJCN6SFJs9AxE1E_O5P87qmdK5YLZ0RiGX9dvRbkLTEADd7gn1oyZDImcsnBlJvVo2qHmnx42x9tplw9HiMT-pTxEKN5_AfmO3gclpW2ARXyBb_dTR2iSqCt9qXK8dAxp9JvcOfhZ4-Fpv9PYgtfPubIiNp4mSKPpGKXF9TIFIs-HY/s1600/20241019_225029.jpg
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+  admin2:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
     gravatar: e56154546cf4be74e393c62d1ae9f9d4
     email: rfazriansyah376@gmail.com
     web: /aboutme
-    twitter: https://twitter.com/wowthemesnet
     description: "Author of this blog"
-  john:
-    name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: /
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
-
+  admin3:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+  admin4:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+  admin5:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+  admin6:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+  admin7:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+  admin8:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"            
+  admin9:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+  admin10:
+    name: Rais Fazriansyah
+    display_name: Rais Fazriansyah
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: rfazriansyah376@gmail.com
+    web: /aboutme
+    description: "Author of this blog"
+        
+    
 # Plugins
 plugins:
   - jekyll-paginate
@@ -70,3 +124,4 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "enabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
