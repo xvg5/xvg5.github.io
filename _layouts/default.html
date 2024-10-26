@@ -8,10 +8,7 @@
 	<meta name="yandex-verification" content="c32a16b22cf91744" />
 	
 
-	
-
 {% seo %}
-
 
 <style>
     .spo {
@@ -28,40 +25,24 @@
   "description": "{{ page.title }}",
   "thumbnailUrl": "{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}",
   "uploadDate": "{{ page.date }}",
-  "duration": "PT55M47S",
+  "duration": "PT25M27S",
   "contentUrl": "https://video.twimg.com/ext_tw_video/1143674758455648262/pu/vid/320x630/fhxIIe2IBzgv6J7T.mp4"
 }
 </script>
 
 	
-	
-	
-
-	<style>
-.iska2-grid-item img, .img-fluid, .img-fluid lazyimg, .spa img, .featured-image, .card-img-top {
-  width: 100%;
-  height: auto; /* Menjaga proporsi gambar */
-  display: block; /* Menghindari jarak kosong di bawah gambar */
-  object-fit: cover; /* Memastikan gambar proporsional tanpa distorsi */
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
-}
-</style>
-
-
-<style>
-.iska2in img, iska2in img, #iska2in img, {
-  width: 100%;
-  height: auto; /* Menjaga proporsi gambar */
-  display: block; /* Menghindari jarak kosong di bawah gambar */
-  object-fit: cover; /* Memastikan gambar proporsional tanpa distorsi */
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
-}
-</style>
+		
 	
 
-    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-47JWR7KBQ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-47JWR7KBQ5');
+</script>
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
@@ -73,7 +54,211 @@
 <script src="{{ site.url }}/assets/js/jquery.min.js"></script>
 
 
+<style>
+.iska2-grid-item img, .img-fluid lazyimg, .spa img, .featured-image, .card-img-top {
+  width: 100%;
+  height: auto; /* Menjaga proporsi gambar */
+  max-width: 100%; /* Membatasi lebar maksimum gambar */
+  display: block; /* Menghindari jarak kosong di bawah gambar */
+  object-fit: cover; /* Memastikan gambar proporsional tanpa distorsi */
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+</style>
 
+    <style>
+        #iska-cantik-slider-container {
+            position: relative; 
+            max-width: 100%; 
+            margin: auto; 
+            overflow: hidden;
+            padding: 5px; 
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 80, 0, 0.3)), #000000;
+            border-radius: 3px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #iska-cantik-slider { 
+            display: flex; 
+            transition: transform 0.5s ease-in-out; 
+        }
+        #iska-cantik-slide { 
+            min-width: 100%; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+        }
+        #iska-cantik-slide img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 3px; 
+            object-fit: cover; 
+            box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5); 
+            margin-bottom: 8px; 
+        }
+        #iska-cantik-title { 
+            font-size: 1.1em; 
+            background-color: #00000000; 
+            color: #fff; 
+            padding: 4px; 
+            border-radius: 3px; 
+            margin-bottom: 5px; 
+        }
+        #iska-cantik-description { 
+            padding: 0 8px; 
+            font-size: 0.85em; 
+            color: white; 
+        }
+        #iska-cantik-prev, #iska-cantik-next { 
+            position: absolute; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            background-color: rgba(255, 255, 255, 0.8); 
+            color: #000000; 
+            border: none; 
+            padding: 8px; 
+            cursor: pointer; 
+            border-radius: 50%; 
+            z-index: 10; 
+        }
+        #iska-cantik-prev:hover, #iska-cantik-next:hover { 
+            background-color: rgba(255, 255, 255, 0.9); 
+        }
+        #iska-cantik-prev { left: 10px; } 
+        #iska-cantik-next { right: 10px; }
+        a { text-decoration: none; }
+        @media (max-width: 100%) { 
+            #iska-cantik-slide img { 
+                width: 100%; 
+                height: auto; 
+            } 
+            #iska-cantik-title { 
+                font-size: 1em; 
+            } 
+            #iska-cantik-description { 
+                font-size: 0.75em; 
+            }
+        }
+    </style>
+
+	
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 2rem 0;
+  width: 100%;
+}
+th, td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+th {
+  background-color: #008c5f; /* header background color */
+  color: #fff; /* header text color */
+  font-weight: 600;
+}
+tr {
+  padding: 0;
+}
+td {
+  vertical-align: middle;
+}
+tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, .075); /* striped background color */
+}
+@media screen and (max-width: 640px) {
+  thead, th {
+    display: none;
+  }
+  tr, td {
+    display: block;
+  }
+  tr {
+    border: 1px solid rgba(0, 0 , 0 ,.15);
+    margin-bottom: 2rem;
+  }
+  tr:last-child {
+    margin-bottom: 0;
+  }
+  tr:nth-child(even) td {
+    background-color: transparent;
+  }
+  td {
+    clear: both;
+    text-align: left;
+  }
+  td:before {
+    content: attr(data-label)'- ';
+    float: left;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+}</style>
+	
+	
+<style>
+#category-posts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsif grid */
+  gap: 5px;
+}
+
+#category-posts h2 {
+  grid-column: 1 / -1; /* Header memenuhi lebar grid */
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#category-posts li {
+  background-color: #00aaff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#category-posts li:hover {
+  transform: translateY(-5px); /* Efek hover */
+  box-shadow: 0 4px 10px #00000050; /* Bayangan saat hover */
+}
+
+#category-posts a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+#category-posts img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#category-posts li .post-image {
+  max-height: 200px; /* Batasi tinggi gambar */
+}
+
+#category-posts li:hover a {
+  color: #fff; /* Ubah warna teks saat hover */
+}
+
+@media (max-width: 768px) {
+  #category-posts {
+    grid-template-columns: 1fr; /* Kolom tunggal di perangkat kecil */
+  }
+
+  #category-posts h2 {
+    font-size: 1.5em;
+  }
+}
+</style>
 
 	
 		<style type="text/css">
@@ -171,6 +356,7 @@
             .sidebar {
                 right: -100%;
                 width: 100%;
+                max-width: 100%;
             }
             .sidebar.open {
                 right: 0;
@@ -262,13 +448,20 @@ b {
 	
 	
 	   
-
+	
 	   
      
     <div class="container" style="overflow:auto;">
         <div class="sidebar" style="overflow:auto;"><br /><br /> <br />
-		
+		<!--<div style="padding:10px;">
+
+<p class="lead">
+        {{ site.description }}
+    </p>		
 			
+			{% include search-lunr.html %} </div>
+		-->
+		
             <ul>
                 
                 <li><a href="/seo"><i class="fas fa-search"></i> SEO</a></li>
@@ -295,11 +488,14 @@ b {
                 Menu
             </span>
 	    
-  
-    <div style="position:absolute;top:-1000px;left:0px;"><a href="/" ><img alt="" border="0" height="32px" src="/favicon.ico" width="32px" /></a></div><h1 style="position:absolute;top:14px;left:5px;width:15em;font-size:1.5em;padding:0;">{% include search-lunr.html %} 
-    </h1>
+<div style="position:absolute;top:15px;left:-1110px;"><a href="/" ><img alt="" border="0" height="32px" src="/favicon.ico" width="32px" /></a></div><h1 style="position:absolute;top:14px;left:5px;width:15em;font-size:1.5em;padding:0;">
+	{% include search-lunr.html %}
+	<!-- <a href="/">{{ site.name }}</a>
+-->
+</h1>
 	    
-    </div></div>  
+	    
+    </div></div>
     
             	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"/>
@@ -310,80 +506,51 @@ b {
 
 <div class="container">
             <div class="main-content">
-      {{ content }}
+  
+		    
+<div aria-label="breadcrumb">
+  <ul class="breadcrumb">
+    <li><a href="{{ site.url }}/">Home</a></li>&nbsp》
+    
+    {% if page.categories %}
+      {% for category in page.categories %}
+        <li>
+          <a href="{{ site.url }}/categories/{{ category | downcase | replace: ' ', '-' }}">{{ category }}</a>
+        </li>&nbsp》
+      {% endfor %}
+    {% endif %}
+    
+    <li class="active">{{ page.title }}</li>
+  </ul>
+</div>	    
+		    
 
-
-
-	
 
 	    
+		    
+		    {{ content }}
+
+
+
+		    
 		    
 		    
       </div>     </div>
         </div>
         </div>
     </div>
-    
-    
- 
-<center>
-   <script type="text/javascript">
+
+	<br /><center>
+		<script type="text/javascript">
 	atOptions = {
-		'key' : '372c305fe9278ddc0e2a01420d27b80e',
+		'key' : '4b16bc3328cfa7aaa580f4cbb5e80a45',
 		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
+		'height' : 50,
+		'width' : 320,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/372c305fe9278ddc0e2a01420d27b80e/invoke.js"></script></center>
-
-    
-    
-    
-<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
-<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
-<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
-</div>
-<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
-<div style="display: none;" loading="lazy">
-
-
-	<!-- Categories Jumbotron
-================================================== -->
-<div class="jumbotron fortags" >
-	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
-            <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
-            </div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
-		
-	</div>
-</div>
-
-	</div></div></div></span>
-
-
-
-
-
-
-
-
-
+<script type="text/javascript" src="//evendisciplineseedlings.com/4b16bc3328cfa7aaa580f4cbb5e80a45/invoke.js"></script></center>
 		<!-- mailchimp -->
 <div id="mc_embed_shell">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
@@ -492,7 +659,8 @@ b {
                     <img src="https://media.licdn.com/dms/image/v2/C5603AQH9E_cf_BBpQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1630396406257?e=2147483647&v=beta&t=lpLlvk490_pWJqZf0NJFk0bfdT6sAwCdnZoMVzqO4kE" alt="Tania Shakila">
                     <br /><b>Annisa Mauliani</b>
                 </a>
-                <p>IT Project Manager,<br>SEO Specialist	</p>
+                <p>IT Project Manager,<br>SEO Specialist
+		</p>
             </div>
             <div class="goblogpisan-item">
                 <a href="https://www.linkedin.com/in/hanifains?trk=people-also-viewed_member-name">
@@ -532,9 +700,9 @@ b {
  alt="Irena Nabella">
                     <br /><b>Anggita Permata</b>
                 </a>
-                <p>Content Writer,<br>Web Desainer, <br>Web Developer
-</p>
-            </div>
+                <p>Content Writer
+<br>Web Desainer, <br>Web Developer,<br>
+		</p>  </div>
     
          <div class="goblogpisan-item">
                 <a href="https://www.linkedin.com/in/fenny-laurenze-9b0779272?trk=people-also-viewed_member-name">
@@ -542,7 +710,7 @@ b {
  alt="Irena Nabella">
                     <br /><b>Fenny Laurenze</b>
                 </a>
-                <p>Sales & Marketing Specialist, <br>Web Developer,<br>Webmaster
+                <p>Sales & Marketing Specialist,<br>Web Developer,<br>Webmaster
 </p>
             </div>
     
@@ -563,10 +731,8 @@ b {
 
  
 
+    
 
-	
-
-	
 <footer class="footer">
     <div class="container">
     
@@ -600,6 +766,7 @@ b {
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
+
 
 
 
@@ -656,14 +823,14 @@ b {
   <center>  
 <script type="text/javascript">
 	atOptions = {
-		'key' : '7096299bdb00e89c211a1f5111792146',
+		'key' : '34ad9678be45451fe6dd800ae726154f',
 		'format' : 'iframe',
 		'height' : 50,
 		'width' : 320,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/7096299bdb00e89c211a1f5111792146/invoke.js"></script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/34ad9678be45451fe6dd800ae726154f/invoke.js"></script>
 
 <br />
     <hr />
@@ -725,58 +892,60 @@ b {
 </script>  
 	    <br />
 	  
-<script type="text/javascript">
+	<script type="text/javascript">
 	atOptions = {
-		'key' : '312dcd8c983e4060a24e6d0d4a1b58e8',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/312dcd8c983e4060a24e6d0d4a1b58e8/invoke.js"></script>
-
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'f4319a55c4ac85ebac8a19619bc316c4',
+		'key' : '923d0b2a52a11230ae44601d60bca317',
 		'format' : 'iframe',
 		'height' : 90,
 		'width' : 728,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/f4319a55c4ac85ebac8a19619bc316c4/invoke.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="//evendisciplineseedlings.com/923d0b2a52a11230ae44601d60bca317/invoke.js"></script>
+	<script type="text/javascript">
 	atOptions = {
-		'key' : '04c92046d02db081b383b91a7056425f',
+		'key' : 'ad7f6db39da45a3f72af9dbc13885c0a',
 		'format' : 'iframe',
 		'height' : 600,
 		'width' : 160,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/04c92046d02db081b383b91a7056425f/invoke.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="//evendisciplineseedlings.com/ad7f6db39da45a3f72af9dbc13885c0a/invoke.js"></script>
+	
+	<script type="text/javascript">
 	atOptions = {
-		'key' : 'caa42a9cc3d6bb2d70cdd5e65ab9ce77',
-		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/caa42a9cc3d6bb2d70cdd5e65ab9ce77/invoke.js"></script>
-
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'bed6dc3f10b0c8755642b193c0b92f22',
+		'key' : '3ae4ced2b1adc7b85bdddbc6a527a180',
 		'format' : 'iframe',
 		'height' : 60,
 		'width' : 468,
 		'params' : {}
 	};
 </script>
-<script type="text/javascript" src="//evendisciplineseedlings.com/bed6dc3f10b0c8755642b193c0b92f22/invoke.js"></script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/3ae4ced2b1adc7b85bdddbc6a527a180/invoke.js"></script>
+
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a93cf52b45e05f4edf897f2b77114976',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/a93cf52b45e05f4edf897f2b77114976/invoke.js"></script>
+	
+  <script type="text/javascript">
+	atOptions = {
+		'key' : 'b6c6ec11cfac1901799f107ad33d07e1',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//evendisciplineseedlings.com/b6c6ec11cfac1901799f107ad33d07e1/invoke.js"></script>
+
 
   </center>
   </div>
@@ -796,7 +965,6 @@ b {
     setTimeout(showAd, 5000);
   };
 </script>
-
 
 
 
@@ -929,7 +1097,49 @@ b {
         }
     });
 </script>
-	
+
+
+
+
+
+
+
+
+
+<a id="show_id" onclick="document.getElementById('spoiler_id').style.display=''; document.getElementById('show_id').style.display='none';"></a><span id="spoiler_id" style="display: none;"><a class="link" onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';"></a>
+<div style="background-color: rgba(0, 0, 0, 0); margin: 1px;">
+<div class="smallfont"><i><span style="font-size: 16px; font-weight: bold; margin-right: 3px;"></span></i><input onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Hide'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'new posts'; }" style="background-color: #00000000; font-size: 16px; width: auto;" type="button" value="new posts" />
+</div>
+<div class="alt2" style="background-color: rgba(255, 255, 255, 0); margin: 0px; padding: 0px;">
+<div style="display: none;" loading="lazy">
+
+
+	<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags" >
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            {% assign categories_list = site.categories %}
+            {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
+                {% endfor %}
+            {% else %}
+                {% for category in categories_list %}
+                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                {% endfor %}
+            {% endif %}
+            {% assign categories_list = nil %}
+		
+	</div>
+</div>
+
+	</div></div></div></span>
 
 
 <script type="text/javascript">
@@ -939,8 +1149,5 @@ b {
    pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
 </script>
 
-		
-
-	
 </body>
 </html>
