@@ -268,12 +268,9 @@ b {
      
     <div class="container" style="overflow:auto;">
         <div class="sidebar" style="overflow:auto;"><br /><br /> <br />
-		<div style="padding:10px;">
+		<div 
 
-			<p class="lead">
-        {{ site.description }}
-    </p>			
-			{% include search-lunr.html %} </div>
+			
             <ul>
                 
                 <li><a href="/seo"><i class="fas fa-search"></i> SEO</a></li>
@@ -301,7 +298,8 @@ b {
             </span>
 	    
   
-    <div style="position:absolute;top:-1000px;left:0px;"><a href="/" ><img alt="" border="0" height="32px" src="/favicon.ico" width="32px" /></a></div><h1 style="position:absolute;top:14px;left:5px;width:15em;font-size:1.5em;padding:0;"><a href="/">{{ site.name }}</a></h1>
+    <div style="position:absolute;top:-1000px;left:0px;"><a href="/" ><img alt="" border="0" height="32px" src="/favicon.ico" width="32px" /></a></div><h1 style="position:absolute;top:14px;left:5px;width:15em;font-size:1.5em;padding:0;">{% include search-lunr.html %} 
+    </h1>
 	    
     </div></div>
     
